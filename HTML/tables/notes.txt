@@ -1,0 +1,74 @@
+TOPIC:
+HTML TABLES
+
+DEFINITION:
+
+Tables are used to display data in rows and columns.
+
+TAGS:
+
+<table>
+
+Meaning:
+Table Tag
+
+Use:
+Creates a table.
+
+--------------------------------
+
+<tr>
+
+Meaning:
+Table Row
+
+Use:
+Creates a row.
+
+--------------------------------
+
+<th>
+
+Meaning:
+Table Heading
+
+Use:
+Creates heading cells.
+
+--------------------------------
+
+<td>
+
+Meaning:
+Table Data
+
+Use:
+Stores table content.
+
+--------------------------------
+
+colspan
+
+Meaning:
+Column Span
+
+Use:
+Merge multiple columns.
+
+--------------------------------
+
+rowspan
+
+Meaning:
+Row Span
+
+Use:
+Merge multiple rows.
+
+REAL WORLD USE:
+
+Student Records
+Employee Data
+Product Lists
+Reports
+Invoices

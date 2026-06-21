@@ -1,0 +1,68 @@
+TOPIC:
+HTML LINKS
+
+DEFINITION:
+Links connect one webpage to another webpage.
+
+TAGS:
+
+<a>
+
+Meaning:
+Anchor Tag
+
+Use:
+Creates hyperlinks.
+
+Example:
+
+<a href="https://google.com">
+Google
+</a>
+
+--------------------------------
+
+href
+
+Meaning:
+Hypertext Reference
+
+Use:
+Specifies destination URL.
+
+--------------------------------
+
+target="_blank"
+
+Meaning:
+Open link in new tab.
+
+Use:
+External websites.
+
+--------------------------------
+
+mailto:
+
+Meaning:
+Open email application.
+
+Use:
+Contact forms.
+
+--------------------------------
+
+tel:
+
+Meaning:
+Phone call link.
+
+Use:
+Mobile websites.
+
+REAL WORLD USE:
+
+Navigation Menu
+Footer Links
+Buttons
+Social Media Links

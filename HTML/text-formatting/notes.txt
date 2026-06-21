@@ -1,0 +1,98 @@
+TOPIC:
+TEXT FORMATTING
+
+DEFINITION:
+Used to style and highlight text.
+
+TAGS:
+
+<b>
+
+Meaning:
+Bold Text
+
+Use:
+Visual emphasis
+
+--------------------------------
+
+<strong>
+
+Meaning:
+Important Text
+
+Use:
+SEO and Accessibility
+
+--------------------------------
+
+<i>
+
+Meaning:
+Italic Text
+
+Use:
+Style text
+
+--------------------------------
+
+<em>
+
+Meaning:
+Emphasized Text
+
+Use:
+Important pronunciation
+
+--------------------------------
+
+<u>
+
+Meaning:
+Underline Text
+
+Use:
+Highlight words
+
+--------------------------------
+
+<mark>
+
+Meaning:
+Highlighted Text
+
+Use:
+Highlight content
+
+--------------------------------
+
+<sub>
+
+Meaning:
+Subscript
+
+Use:
+Chemical formulas
+
+Example:
+H2O
+
+--------------------------------
+
+<sup>
+
+Meaning:
+Superscript
+
+Use:
+Mathematical powers
+
+Example:
+X²
+
+REAL WORLD USE:
+
+Educational Websites
+Blogs
+Documentation
+Articles

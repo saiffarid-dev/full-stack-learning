@@ -1,0 +1,70 @@
+TOPIC:
+HEADINGS AND PARAGRAPHS
+
+DEFINITION:
+Used to organize webpage content.
+
+TAGS:
+
+<h1> to <h6>
+
+Meaning:
+Headings.
+
+Use:
+Create content hierarchy.
+
+Example:
+
+<h1>Main Title</h1>
+
+--------------------------------
+
+<p>
+
+Meaning:
+Paragraph.
+
+Use:
+Display text content.
+
+Example:
+
+<p>Hello World</p>
+
+--------------------------------
+
+<hr>
+
+Meaning:
+Horizontal Rule.
+
+Use:
+Creates horizontal line.
+
+Example:
+
+<hr>
+
+--------------------------------
+
+<br>
+
+Meaning:
+Line Break.
+
+Use:
+Moves content to next line.
+
+Example:
+
+Hello
+<br>
+World
+
+REAL WORLD USE:
+
+Blogs
+News Websites
+Portfolio Websites
+Documentation

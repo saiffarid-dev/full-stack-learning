@@ -1,0 +1,67 @@
+TOPIC:
+HTML DOCUMENT STRUCTURE
+
+DEFINITION:
+HTML document structure is the foundation of every webpage.
+
+TAGS:
+
+<!DOCTYPE html>
+
+Meaning:
+Defines HTML5 document.
+
+Use:
+Tells browser which HTML version is used.
+
+--------------------------------
+
+<html>
+
+Meaning:
+Root element of webpage.
+
+Use:
+Contains complete webpage.
+
+--------------------------------
+
+<head>
+
+Meaning:
+Stores webpage information.
+
+Use:
+Contains title, meta tags, links.
+
+--------------------------------
+
+<title>
+
+Meaning:
+Webpage title.
+
+Use:
+Displayed in browser tab.
+
+--------------------------------
+
+<body>
+
+Meaning:
+Visible content area.
+
+Use:
+Contains text, images, forms, tables.
+
+--------------------------------
+
+REAL WORLD USE:
+
+Every website uses these tags.
+
+Examples:
+Google
+Amazon
+Netflix
+Facebook

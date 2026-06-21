@@ -1,0 +1,65 @@
+TOPIC:
+HTML LISTS
+
+DEFINITION:
+Lists are used to organize related items.
+
+TAGS:
+
+<ul>
+
+Meaning:
+Unordered List
+
+Use:
+Displays bullet points.
+
+Example:
+
+<ul>
+<li>HTML</li>
+</ul>
+
+--------------------------------
+
+<ol>
+
+Meaning:
+Ordered List
+
+Use:
+Displays numbered list.
+
+Example:
+
+<ol>
+<li>Step 1</li>
+</ol>
+
+--------------------------------
+
+<li>
+
+Meaning:
+List Item
+
+Use:
+Represents individual item.
+
+--------------------------------
+
+Nested List
+
+Meaning:
+List inside another list.
+
+Use:
+Create hierarchy.
+
+REAL WORLD USE:
+
+Navigation Menus
+Feature Lists
+Course Content
+Product Categories
+Website Menus

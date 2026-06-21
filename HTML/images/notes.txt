@@ -1,0 +1,69 @@
+TOPIC:
+HTML IMAGES
+
+DEFINITION:
+Images are used to display visual content on webpages.
+
+TAGS:
+
+<img>
+
+Meaning:
+Image Tag
+
+Use:
+Displays images.
+
+Example:
+
+<img src="image.jpg">
+
+--------------------------------
+
+src
+
+Meaning:
+Source
+
+Use:
+Specifies image location.
+
+--------------------------------
+
+alt
+
+Meaning:
+Alternative Text
+
+Use:
+Shown when image cannot load.
+
+Important For SEO.
+
+--------------------------------
+
+width
+
+Meaning:
+Image Width
+
+Use:
+Controls image size.
+
+--------------------------------
+
+height
+
+Meaning:
+Image Height
+
+Use:
+Controls image height.
+
+REAL WORLD USE:
+
+Product Images
+Profile Pictures
+Gallery Sections
+Blogs
+News Websites
