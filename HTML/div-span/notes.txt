@@ -1,0 +1,79 @@
+TOPIC:
+DIV AND SPAN
+
+DEFINITION:
+
+Div and Span are generic containers.
+
+Used to group content.
+
+--------------------------------
+
+<div>
+
+Meaning:
+Division Element
+
+Use:
+Groups large sections.
+
+Type:
+Block Element
+
+Example:
+
+<div>
+    Content
+</div>
+
+--------------------------------
+
+<span>
+
+Meaning:
+Inline Container
+
+Use:
+Style small text portions.
+
+Type:
+Inline Element
+
+Example:
+
+<span>
+    HTML
+</span>
+
+--------------------------------
+
+BLOCK ELEMENTS:
+
+div
+h1
+p
+section
+
+Start from new line.
+
+--------------------------------
+
+INLINE ELEMENTS:
+
+span
+a
+strong
+em
+
+Do not start from new line.
+
+--------------------------------
+
+REAL WORLD USE:
+
+Cards
+Navbar
+Sidebar
+Hero Section
+Product Section
+Footer

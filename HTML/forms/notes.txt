@@ -1,0 +1,92 @@
+TOPIC:
+HTML FORMS
+
+DEFINITION:
+
+Forms are used to collect user information.
+
+TAGS:
+
+<form>
+
+Meaning:
+Form Container
+
+Use:
+Groups all form elements.
+
+--------------------------------
+
+<input>
+
+Meaning:
+Input Field
+
+Use:
+Accepts user input.
+
+Types:
+
+text
+email
+password
+radio
+checkbox
+
+--------------------------------
+
+<label>
+
+Meaning:
+Input Description
+
+Use:
+Describes form fields.
+
+--------------------------------
+
+<select>
+
+Meaning:
+Dropdown Menu
+
+Use:
+Choose one option.
+
+--------------------------------
+
+<option>
+
+Meaning:
+Dropdown Item
+
+Use:
+Represents a choice.
+
+--------------------------------
+
+<textarea>
+
+Meaning:
+Multi-line Text Field
+
+Use:
+Long messages.
+
+--------------------------------
+
+<button>
+
+Meaning:
+Button
+
+Use:
+Submit form.
+
+REAL WORLD USE:
+
+Login Form
+Registration Form
+Contact Form
+Feedback Form
+Job Application Form
