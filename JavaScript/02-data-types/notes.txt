@@ -1,0 +1,268 @@
+=================================
+JAVASCRIPT DATA TYPES
+=================================
+
+Definition:
+Data Type defines the kind of data stored in a variable.
+
+Use:
+It helps JavaScript understand how to store, process, and manipulate data.
+
+---------------------------------
+1. STRING
+---------------------------------
+
+Definition:
+A sequence of characters enclosed in quotes.
+
+Use:
+Stores text such as names, messages, and addresses.
+
+Example:
+let name = "Saif";
+
+---------------------------------
+2. NUMBER
+---------------------------------
+
+Definition:
+Represents numeric values, including integers and decimals.
+
+Use:
+Used for calculations, age, marks, prices, etc.
+
+Example:
+let age = 20;
+let price = 99.99;
+
+---------------------------------
+3. BOOLEAN
+---------------------------------
+
+Definition:
+Represents a logical value: true or false.
+
+Use:
+Used in conditions and decision-making.
+
+Example:
+let isStudent = true;
+
+---------------------------------
+4. UNDEFINED
+---------------------------------
+
+Definition:
+A variable that has been declared but not assigned a value.
+
+Use:
+Indicates that a value is not yet available.
+
+Example:
+let city;
+
+---------------------------------
+5. NULL
+---------------------------------
+
+Definition:
+Represents an intentionally empty value.
+
+Use:
+Used to reset or clear a variable.
+
+Example:
+let car = null;
+
+---------------------------------
+6. BIGINT
+---------------------------------
+
+Definition:
+Used to store very large integers beyond the Number limit.
+
+Use:
+Handles large numerical values accurately.
+
+Example:
+let bigNum = 12345678901234567890n;
+
+---------------------------------
+7. SYMBOL
+---------------------------------
+
+Definition:
+A unique and immutable value.
+
+Use:
+Creates unique identifiers.
+
+Example:
+let id = Symbol("id");
+
+=================================
+OBJECT DATA TYPES
+=================================
+
+---------------------------------
+8. OBJECT
+---------------------------------
+
+Definition:
+A collection of key-value pairs.
+
+Use:
+Stores related data in a single structure.
+
+Example:
+let user = {
+  name: "Saif",
+  age: 20
+};
+
+---------------------------------
+9. ARRAY
+---------------------------------
+
+Definition:
+An ordered collection of multiple values.
+
+Use:
+Stores lists of data.
+
+Example:
+let fruits = ["Apple", "Mango", "Banana"];
+
+---------------------------------
+10. DATE
+---------------------------------
+
+Definition:
+Represents date and time values.
+
+Use:
+Used for calendars, timestamps, and scheduling.
+
+Example:
+let today = new Date();
+
+=================================
+TYPEOF OPERATOR
+=================================
+
+Definition:
+Returns the data type of a value.
+
+Use:
+Helps identify the type of stored data.
+
+Examples:
+typeof "Saif";     // string
+typeof 20;         // number
+typeof true;       // boolean
+
+=================================
+QUICK REVISION
+=================================
+
+String    -> Text Data
+Number    -> Numeric Data
+Boolean   -> True / False
+Undefined -> No Value Assigned
+Null      -> Empty Value
+BigInt    -> Large Numbers
+Symbol    -> Unique Value
+Object    -> Key-Value Data
+Array     -> Multiple Values
+Date      -> Date & Time
+
+
+
+# # # # # # # #  # # #  # # #  # #  # # #  # #  # #  # 
+
+
+//=============== Type Conversion ==============//
+//=============== Type Conversion =============//
+
+TYPE CONVERSION IN JAVASCRIPT
+
+Definition:
+Type Conversion is the process of converting one data type into another.
+
+Use:
+It is used when data needs to be changed from one type to another for calculations or processing.
+
+1. String to Number
+
+Converts a string value into a number.
+
+Example:
+Number("20")
+
+Code:
+let age = "20";
+let newAge = Number(age);
+
+Result:
+"20" → 20
+
+2. Number to String
+
+Converts a number into a string.
+
+Example:
+String(20)
+
+Code:
+let age = 20;
+let newAge = String(age);
+
+Result:
+20 → "20"
+
+3. Boolean to Number
+
+true  → 1
+false → 0
+
+Code:
+Number(true);
+Number(false);
+
+4. Number to Boolean
+
+1 → true
+0 → false
+
+Code:
+Boolean(1);
+Boolean(0);
+
+Why Type Conversion?
+
+Without Conversion:
+let age = "20";
+console.log(age + 5);
+
+Output:
+205
+
+Because "20" is a string.
+
+With Conversion:
+let age = Number("20");
+console.log(age + 5);
+
+Output:
+25
+
+Because 20 is now a number.
+
+Quick Revision:
+
+Number("20")  → String to Number
+String(20)    → Number to String
+Number(true)  → 1
+Number(false) → 0
+Boolean(1)    → true
+Boolean(0)    → false
