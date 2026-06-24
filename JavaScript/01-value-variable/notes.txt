@@ -1,0 +1,26 @@
+=================================
+LET, CONST, VAR
+=================================
+
+console.log()
+- Used to print output in the console.
+
+var
+- Old way to declare variables.
+- Can be reassigned.
+- Can be redeclared.
+
+let
+- Modern variable declaration.
+- Can be reassigned.
+- Cannot be redeclared.
+
+const
+- Modern variable declaration.
+- Cannot be reassigned.
+- Cannot be redeclared.
+
+Best Practice:
+- Use const by default.
+- Use let when value changes.
+- Avoid var.
