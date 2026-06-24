@@ -1,0 +1,28 @@
+=================================
+IF ELSE STATEMENT
+=================================
+
+if
+- Executes code when condition is true.
+
+if else
+- Executes one block if true.
+- Executes another block if false.
+
+else if
+- Used to check multiple conditions.
+
+Syntax:
+
+if(condition){
+   code
+}
+else{
+   code
+}
+
+Use Cases:
+- Login System
+- Age Verification
+- Grade System
+- Access Control
