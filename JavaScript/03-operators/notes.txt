@@ -1,0 +1,171 @@
+========================================
+JAVASCRIPT OPERATORS
+========================================
+
+Definition:
+Operators are special symbols used to perform operations on values and variables.
+
+Example:
+let a = 10;
+let b = 5;
+
+========================================
+1. ARITHMETIC OPERATORS
+========================================
+
+Used for mathematical calculations.
+
++   Addition
+-   Subtraction
+*   Multiplication
+/   Division
+%   Modulus (Remainder)
+**  Exponentiation (Power)
+
+Examples:
+
+10 + 5  = 15
+10 - 5  = 5
+10 * 5  = 50
+10 / 5  = 2
+10 % 3  = 1
+2 ** 3  = 8
+
+========================================
+2. ASSIGNMENT OPERATORS
+========================================
+
+Used to assign values to variables.
+
+=   Assign
++=  Add and Assign
+-=  Subtract and Assign
+*=  Multiply and Assign
+/=  Divide and Assign
+%=  Modulus and Assign
+
+Example:
+
+let x = 10;
+
+x += 5;   // 15
+x -= 5;   // 10
+
+========================================
+3. COMPARISON OPERATORS
+========================================
+
+Used to compare two values.
+
+==   Equal To
+===  Strict Equal To
+!=   Not Equal To
+!==  Strict Not Equal To
+>    Greater Than
+<    Less Than
+>=   Greater Than or Equal To
+<=   Less Than or Equal To
+
+Examples:
+
+10 == "10"   // true
+10 === "10"  // false
+10 > 5       // true
+
+Important:
+==  checks only value.
+=== checks value and data type.
+
+========================================
+4. LOGICAL OPERATORS
+========================================
+
+Used to combine multiple conditions.
+
+&&   AND
+||   OR
+!    NOT
+
+Examples:
+
+true && true   // true
+true || false  // true
+!true          // false
+
+========================================
+5. STRING OPERATOR
+========================================
+
+Used to join strings.
+
++   Concatenation
+
+Example:
+
+"Hello" + " World"
+
+Output:
+Hello World
+
+========================================
+6. UNARY OPERATORS
+========================================
+
+Operate on a single operand.
+
+++   Increment (+1)
+--   Decrement (-1)
+
+Example:
+
+let count = 5;
+
+count++;
+count--;
+
+========================================
+7. TERNARY OPERATOR
+========================================
+
+A shorthand form of if...else.
+
+Syntax:
+
+condition ? trueValue : falseValue
+
+Example:
+
+let age = 18;
+
+age >= 18 ? "Adult" : "Minor";
+
+========================================
+8. TYPE OPERATORS
+========================================
+
+typeof
+
+Used to check the data type of a value.
+
+Examples:
+
+typeof "Saif"     // string
+typeof 20         // number
+typeof true       // boolean
+
+========================================
+SUMMARY
+========================================
+
+Arithmetic  → Mathematical calculations
+Assignment  → Assign values
+Comparison  → Compare values
+Logical     → Combine conditions
+String      → Join strings
+Unary       → Increment / Decrement
+Ternary     → Short if-else
+Type        → Check data type
+
+========================================
+END OF NOTES
+========================================
