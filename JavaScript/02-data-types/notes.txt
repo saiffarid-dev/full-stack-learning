@@ -266,3 +266,43 @@ Number(true)  → 1
 Number(false) → 0
 Boolean(1)    → true
 Boolean(0)    → false
+
+
+
+######## ++++++++++++ ##########
+
+💨💨💨💨 CONCATENATION 💨💨💨💨
+
+CONCATENATION
+
+Definition:
+Concatenation means joining two or more strings together.
+
+Use:
+Used to combine text, variables, and messages.
+
+Operator:
++
+
+Examples:
+
+"Hello" + " World"
+Output:
+Hello World
+
+"10" + 5
+Output:
+105
+
+20 + 5
+Output:
+25
+
+Important:
+String + String = Joined String
+String + Number = Joined String
+Number + Number = Addition
+
+
+
+
