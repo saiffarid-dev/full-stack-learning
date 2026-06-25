@@ -1,6 +1,4 @@
-=================================
 IF ELSE STATEMENT
-=================================
 
 if
 - Executes code when condition is true.
@@ -26,3 +24,44 @@ Use Cases:
 - Age Verification
 - Grade System
 - Access Control
+
+###################### Switch STATEMENT ################
+
+Definition:
+- Switch statement is used to execute one block of code from multiple options.
+
+Syntax:
+
+switch(expression){
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+}
+
+Keywords:
+switch  -> Starts the switch statement.
+case    -> Checks a value.
+break   -> Stops execution.
+default -> Runs if no case matches.
+
+Best Use:
+- Day Finder
+- Calculator
+- ATM Menu
+- Language Selection
+- Menu System
+
+Difference:
+
+if else
+- Used for conditions.
+
+switch
+- Used for fixed values.
