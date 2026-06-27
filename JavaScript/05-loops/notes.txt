@@ -1,0 +1,114 @@
+JavaScript ......>>...>..>..>>
+
+Definition:
+A loop is used to execute a block of code repeatedly until a condition becomes false.
+
+Why use Loops?
+- Reduce code repetition.
+- Save time and improve readability.
+- Execute the same task multiple times.
+
+=========================================
+Types of Loops
+=========================================
+
+1. While Loop
+- Executes code as long as the condition is true.
+- Condition is checked before execution.
+
+Syntax:
+while (condition) {
+    // code
+}
+
+Use:
+- When the number of iterations is unknown.
+
+=========================================
+
+2. Do While Loop
+- Executes the code at least one time.
+- Condition is checked after execution.
+
+Syntax:
+do {
+    // code
+} while (condition);
+
+Use:
+- When the code must run at least once.
+
+=========================================
+
+3. For Loop
+- Best when the number of iterations is known.
+
+Syntax:
+for (initialization; condition; update) {
+    // code
+}
+
+Use:
+- Counting numbers.
+- Repeating tasks a fixed number of times.
+
+=========================================
+
+4. For...In Loop
+- Used to iterate over object properties.
+
+Syntax:
+for (let key in object) {
+    // code
+}
+
+Use:
+- Objects
+
+=========================================
+
+5. For...Of Loop
+- Used to iterate over iterable values.
+
+Syntax:
+for (let value of array) {
+    // code
+}
+
+Use:
+- Arrays
+- Strings
+- Maps
+- Sets
+
+=========================================
+Loop Keywords
+=========================================
+
+break
+- Stops the loop immediately.
+
+continue
+- Skips the current iteration and moves to the next.
+
+=========================================
+Difference
+=========================================
+
+While Loop
+- Condition checked first.
+- May execute zero times.
+
+Do While Loop
+- Condition checked last.
+- Executes at least one time.
+
+For Loop
+- Initialization, condition, and update are written in one place.
+- Best for fixed iterations.
+
+
+✔ Always update the loop variable.
+✔ Avoid infinite loops.
+✔ Use meaningful variable names.
+✔ Choose the
