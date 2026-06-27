@@ -342,3 +342,91 @@ for(let key in student) {
         i++;
     }
 }
+
+// While loop 
+
+{
+    let i = 1;
+    while (i <= 5) {
+        console.log(i);
+        i++;
+    }
+}
+
+// do while loop
+
+{
+    let i = 1;
+    do {
+        console.log(i);
+        i++;
+    } while (i <= 5);
+}
+
+// for loop 
+
+{
+    for (let i = 1; i <= 5; i++){
+        console.log(i);
+    }
+}
+
+
+
+
+// Nested Loop
+
+{
+    for (let i = 1; i <= 3; i++) {
+        for (let j = 1; j<= 2; j ++){
+            console.log(i, j);
+        }
+    }
+}
+
+// for ...of loop 
+
+{
+    let fruits = ["Apple", "Mango", "Banana"];
+    for (let fruit of fruits) {
+        console.log(fruit);
+    }
+}
+
+// for ...in loop
+
+{
+    let student = {
+        name: "Adil",
+        age: 25,
+        city: "Patna"
+    };
+    for (let key in student) {
+        console.log(key + " : " + student [key]);
+    }
+}
+
+
+// Break statement
+
+
+{
+    for (let i = 1; i <= 10; i++)
+    {
+        if (i === 6) {
+            break;
+        }
+        console.log(i);
+    }
+}
+
+// Continue Statement
+
+{
+    for (let i = 1; i <= 5; i++) {
+        if (i === 3) {
+            continue;
+        }
+        console.log(i);
+    }
+}

@@ -1,0 +1,32 @@
+Topic : JavaScript Functions
+
+Definition:
+A function is a reusable block of code used to perform a specific task.
+
+Use:
+✔ Code Reuse
+✔ Clean Code
+✔ Easy Maintenance
+✔ Modular Programming
+
+Syntax:
+
+function functionName() {
+    // code
+}
+
+Call:
+
+functionName();
+
+Parameter:
+Input passed to function.
+
+Return:
+Sends value back from function.
+
+Benefits:
+- Reusable
+- Readable
+- Less Repetition
+- Professional Coding
