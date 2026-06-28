@@ -171,16 +171,164 @@
 
 {
     function calculator(a, b, operator) {
-        if (operator === "+")
+        if (operator === "+"){
             return a + b;
-        if (operator === "-")
+        }
+        else if (operator === "-"){
             return a - b;
-        if (operator === "*")
+        }
+        else if (operator === "*"){
             return a * b;
-        if (operator === "/")
+        }
+        else if (operator === "/"){
             return a / b;
+        }
+        else {
+            return "Invalid Operater";
+        }
+
     }
-    console.log(calculator(20, 10, "+"));
+    console.log(calculator(20, 10, "+")); // 30
+    console.log(calculator(20, 10,"-")); // 10
+    console.log(calculator(20, 10,"*")); //200
+    console.log(calculator(20, 10, "/")); 2
+    console.log(calculator(20, 10, "%")); //Invalid Operator 
 }
 
 
+
+// =======----->>> Named Function =======----->
+
+{
+    function greet(name) {
+        return "Hello " + name;
+    }
+    
+    console.log(greet("saif"));
+}
+
+// Function Expression
+
+
+{
+    let add = function(a, b) {
+        return a + b;
+    };
+    console.log(add(10, 20));
+}
+
+
+// 03 Anonymous function
+
+{
+    let message = function() {
+        console.log("Welcome");
+    };
+    message();
+}
+
+// 04 Arrow Function
+
+{
+    const square = (num) => {
+    return num * num;
+    };
+    console.log(square(5));
+}
+
+// IIFE (Immediately invoked function expression)
+
+{
+    (function () {
+    console.log("IIFE Executed");
+    })();
+
+}
+
+// Callback function
+
+{
+    function greet(name, callback) {
+        console.log ("Hello " + name);
+        callback();
+    }
+
+    function bye(){
+        console.log("Good Bye");
+    }
+    greet("Saif", bye);
+}
+
+
+//  Higher Order Function
+
+{
+    function calculater(a, b, operation) {
+        return operation(a ,b);
+    }
+    function multiply(x, y) {
+        return x * y;
+    }
+
+    console.log(calculater(5, 4, multiply));
+
+}
+
+// Recursive Function
+
+{
+    function factorial(n) {
+    if (n === 1) {
+        return 1;
+    }
+    return n * factorial(n-1);
+    
+    } 
+    console.log(factorial(5));
+
+}
+
+
+// Constructor Function
+
+{
+    function Student(name, age) {
+    this.name = name;
+    this.age = age;
+    }
+    let s1 = new Student("Saif", 20);
+    console.log(s1);
+
+}
+
+// General Function
+
+{
+    function evenOdd(num) {
+    if (num % 2 === 0) {
+        return "Even";
+    }
+    return "Odd";
+    }
+    console.log(evenOdd(15));
+}
+
+// Asynchronous Function
+
+{
+    setTimeout(function (){
+    console.log("Hello after 2 second");
+    },2000);
+}
+
+
+// Method function
+
+let student = {
+    name: "Saif",
+
+    intorduce: function () {3
+        console.log("My Name is " + this.name);
+    }
+};
+student.intorduce();
