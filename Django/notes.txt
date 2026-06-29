@@ -1,0 +1,120 @@
+=========================================
+            DJANGO - INTRODUCTION
+=========================================
+
+Topic No : 01
+Topic Name : Introduction to Django
+
+-----------------------------------------
+1. What is Django?
+-----------------------------------------
+
+English:
+Django is a high-level Python web framework used to build secure, fast, scalable, and maintainable web applications.
+
+Hinglish:
+Django ek Python Web Framework hai jiska use website aur web applications banane ke liye kiya jata hai. Isse development fast aur easy ho jata hai.
+
+-----------------------------------------
+2. Short History of Django
+-----------------------------------------
+
+• Django was created in 2003.
+• It was developed by Adrian Holovaty and Simon Willison.
+• It was released publicly in 2005.
+• The framework is named after guitarist Django Reinhardt.
+• Today, Django is one of the most popular Python web frameworks.
+
+Hinglish:
+Django ko pehle newspaper websites ko jaldi banane ke liye develop kiya gaya tha. Baad me ye open-source bana diya gaya aur aaj duniya bhar me use hota hai.
+
+-----------------------------------------
+3. What is a Framework?
+-----------------------------------------
+
+English:
+A framework is a collection of pre-written code that helps developers build applications faster.
+
+Hinglish:
+Framework matlab pehle se bana hua code jise use karke hume sab kuch zero se nahi likhna padta.
+
+-----------------------------------------
+4. Why use Django?
+-----------------------------------------
+
+• Fast Development
+• Secure
+• Scalable
+• Free and Open Source
+• Built-in Admin Panel
+• Easy Database Management
+• Authentication Support
+• Clean Project Structure
+
+-----------------------------------------
+5. Real Life Uses
+-----------------------------------------
+
+Django is used to build:
+
+• E-commerce Websites
+• Social Media Apps
+• School Management Systems
+• Hospital Management Systems
+• Blog Websites
+• Portfolio Websites
+• APIs
+
+-----------------------------------------
+6. Advantages
+-----------------------------------------
+
+✓ Fast
+✓ Secure
+✓ Powerful
+✓ Beginner Friendly
+✓ Large Community
+✓ Easy to Learn
+
+-----------------------------------------
+7. Disadvantages
+-----------------------------------------
+
+✗ Heavy for very small projects
+✗ Slightly more opinionated than some frameworks
+
+-----------------------------------------
+8. Interview Questions
+-----------------------------------------
+
+Q1. What is Django?
+
+Answer:
+Django is a high-level Python web framework used for building secure, fast, and scalable web applications.
+
+Q2. Which language is Django based on?
+
+Answer:
+Python.
+
+Q3. Is Django Frontend or Backend?
+
+Answer:
+Backend Framework.
+
+-----------------------------------------
+9. Revision Notes
+-----------------------------------------
+
+✓ Python Framework
+✓ Backend Development
+✓ Fast
+✓ Secure
+✓ Scalable
+✓ Open Source
+✓ Admin Panel
+✓ ORM Support
+
+=========================================
+            END OF TOPIC - 01
+=========================================
