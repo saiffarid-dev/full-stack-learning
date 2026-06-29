@@ -1,0 +1,429 @@
+=========================================
+JavaScript Arrays - Complete Notes
+=========================================
+
+Definition
+----------
+An Array is a special object used to store multiple values in a single variable.
+
+Hinglish:
+Array ek data structure hai jisme multiple values ko ek hi variable me store kiya jata hai.
+
+-----------------------------------------
+
+Why Use Arrays?
+---------------
+• Store multiple values.
+• Easy data management.
+• Easy looping.
+• Fast access using index.
+
+-----------------------------------------
+
+Syntax
+------
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+-----------------------------------------
+
+Index
+-----
+
+Array indexing starts from 0.
+
+Example
+
+0 → Apple
+1 → Banana
+2 → Mango
+
+Access
+
+array[index]
+
+Example
+
+fruits[0]
+
+-----------------------------------------
+
+Create Array
+------------
+
+1. Array Literal []
+
+let fruits = ["Apple", "Banana"];
+
+2. Empty Array
+
+let fruits = [];
+
+3. Constructor
+
+let fruits = new Array("Apple","Banana");
+
+-----------------------------------------
+
+Types of Arrays
+---------------
+
+• String Array
+• Number Array
+• Boolean Array
+• Mixed Array
+• Empty Array
+• Nested Array
+
+-----------------------------------------
+
+Properties
+----------
+
+length
+
+Returns total number of elements.
+
+Example
+
+array.length
+
+-----------------------------------------
+
+Loops
+-----
+
+for
+
+for...of
+
+-----------------------------------------
+
+Array Methods
+-------------
+
+push()
+
+Adds element at the end.
+
+-----------------------------------------
+
+pop()
+
+Removes last element.
+
+-----------------------------------------
+
+shift()
+
+Removes first element.
+
+-----------------------------------------
+
+unshift()
+
+Adds element at beginning.
+
+-----------------------------------------
+
+includes()
+
+Checks whether an element exists.
+
+Returns true or false.
+
+-----------------------------------------
+
+indexOf()
+
+Returns first index.
+
+Not Found → -1
+
+-----------------------------------------
+
+lastIndexOf()
+
+Returns last index.
+
+-----------------------------------------
+
+slice()
+
+Copies elements.
+
+Original array does not change.
+
+-----------------------------------------
+
+splice()
+
+Add / Remove / Replace elements.
+
+Original array changes.
+
+-----------------------------------------
+
+concat()
+
+Merges arrays.
+
+Returns new array.
+
+-----------------------------------------
+
+join()
+
+Converts array into string.
+
+-----------------------------------------
+
+reverse()
+
+Reverses array.
+
+-----------------------------------------
+
+sort()
+
+Sorts array.
+
+-----------------------------------------
+
+Advanced Methods
+----------------
+
+map()
+
+Creates a new array after transforming every element.
+
+-----------------------------------------
+
+filter()
+
+Returns matching elements.
+
+-----------------------------------------
+
+reduce()
+
+Converts entire array into one value.
+
+Example
+
+Sum
+Average
+Maximum
+Minimum
+
+-----------------------------------------
+
+find()
+
+Returns first matching element.
+
+-----------------------------------------
+
+findIndex()
+
+Returns index of first matching element.
+
+-----------------------------------------
+
+some()
+
+Returns true if at least one element matches.
+
+-----------------------------------------
+
+every()
+
+Returns true if all elements match.
+
+-----------------------------------------
+
+flat()
+
+Converts nested array into single array.
+
+-----------------------------------------
+
+flatMap()
+
+Map + Flat together.
+
+-----------------------------------------
+
+Modern JavaScript
+-----------------
+
+Array Destructuring
+
+Extract values into variables.
+
+Example
+
+let [a,b] = array;
+
+-----------------------------------------
+
+Spread Operator (...)
+
+Copy or Merge arrays.
+
+-----------------------------------------
+
+Rest Operator (...)
+
+Collect remaining values into an array.
+
+-----------------------------------------
+
+Useful Array Methods
+--------------------
+
+Array.isArray()
+
+Checks whether value is array.
+
+-----------------------------------------
+
+Array.from()
+
+Creates array from iterable.
+
+-----------------------------------------
+
+Array.of()
+
+Creates new array from values.
+
+-----------------------------------------
+
+fill()
+
+Fills array with same value.
+
+-----------------------------------------
+
+copyWithin()
+
+Copies part of array.
+
+-----------------------------------------
+
+entries()
+
+Returns index and value.
+
+-----------------------------------------
+
+keys()
+
+Returns all indexes.
+
+-----------------------------------------
+
+values()
+
+Returns all values.
+
+-----------------------------------------
+
+Best Practices
+--------------
+
+✔ Use Array Literal [].
+
+✔ Use meaningful variable names.
+
+✔ Prefer for...of for simple loops.
+
+✔ Use map(), filter(), reduce() for modern JavaScript.
+
+✔ Avoid modifying original array unless required.
+
+-----------------------------------------
+
+Interview Points
+----------------
+
+• Array stores multiple values.
+
+• Index starts from 0.
+
+• Array is an Object in JavaScript.
+
+• Arrays are mutable.
+
+• Duplicate values are allowed.
+
+• Mixed data types are allowed.
+
+-----------------------------------------
+
+Most Important Methods
+----------------------
+
+★★★★★ push()
+
+★★★★★ pop()
+
+★★★★★ shift()
+
+★★★★★ unshift()
+
+★★★★★ includes()
+
+★★★★★ indexOf()
+
+★★★★★ splice()
+
+★★★★★ slice()
+
+★★★★★ map()
+
+★★★★★ filter()
+
+★★★★★ reduce()
+
+★★★★★ find()
+
+★★★★★ findIndex()
+
+★★★★★ some()
+
+★★★★★ every()
+
+★★★★★ Spread (...)
+
+★★★★★ Destructuring
+
+-----------------------------------------
+
+Real Project Uses
+-----------------
+
+• Shopping Cart
+
+• Product List
+
+• Todo App
+
+• User List
+
+• API Response
+
+• Dashboard
+
+• React Components
+
+• Data Filtering
+
+• Search
+
+• Pagination
+
+=========================================
+JavaScript Arrays Complete ✅
+=========================================

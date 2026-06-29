@@ -185,3 +185,147 @@ console.log(table);
     console.log(fruits.indexOf("Mango"));
     console.log(fruits.indexOf("kiwi"));
 }
+
+
+// ======------>>>> lastindesof()========----->>.
+
+{
+    let fruits = ["Apple", "Banana", "Mango", "Banana"];
+    console.log(fruits.lastIndexOf("Banana"));
+
+}
+
+
+// ==============------>>>>> Slice()-----==========>>>>
+
+{
+    let fruits = ["Apple", "Banana", "Mango", "Orange", "kiwi"];
+    console.log(fruits.slice(1,4));
+}
+
+
+// =========>>>> Splice() ======---->>>>
+
+{
+    let fruits = ["Apple", "Banana", "Mango", "orange"];
+    fruits.splice(1,2);
+    console.log(fruits);
+}
+
+
+// ==========----->>>> Concat() ======--->>>
+
+{
+    let fruits = ["Apple", "Banana",];
+    let vegetables = ["Potato", "Tomato"];
+    let result = fruits.concat(vegetables);
+    console.log(result);
+}
+
+
+// ====== >>>> Join ====>>>>
+
+{
+    let fruits = ["Apple", "Banana", "Mango"];
+    console.log(fruits.join(" - "));
+}
+
+
+// ======>>>>>>>Topic Map()=======>>>>
+
+{
+    let numbers = [10, 20, 30, 40, 50];
+    let doubleNumbers = numbers.map(function (num) {
+        return num * 2;
+    });
+    console.log(numbers);
+    console.log(doubleNumbers);
+}
+
+
+// ==== Arrow function =====>.
+
+{
+    let numbers =[10, 20, 30, 40, 50];
+
+    let result = numbers.map(num => num * 2);
+
+    console.log(result);
+}
+
+
+// ==========----->>>> Filter -----=====>>
+
+{
+    let numbers = [10, 15, 20, 25, 30, 35];
+    let evenNumbers = numbers.filter(function (num) {
+        return num % 2 === 0; 
+    });
+    console.log(numbers);
+    console.log(evenNumbers);
+}
+
+// =======--->>>> Array Destructing =====>>>>
+
+{
+    let fruits = ["Apple", "Banana", "Mango"];
+    let [first, second, third] = fruits;
+    console.log(first);
+    console.log(second);
+    console.log(third);
+}
+
+// ======= Sepread Operator(...) ======
+
+{
+    let arr1 = [10, 20, 30];
+    let arr2 = [...arr1];
+    console.log(arr2);
+}
+
+
+// =======>>>> Merge Arrays ====>>
+
+{
+    let frontend = ["HTML", "CSS", "JavaScript"];
+    let backend = ["Python", "Django"];
+    let fullStack = [...frontend, ...backend];
+    console.log(fullStack);
+}
+
+
+// ======>>> Rest Operator(...) ----====>>
+
+{
+    let [first, ...others] = [10, 20, 30, 40, 50];
+    console.log(first);
+    console.log(others);
+}
+
+
+// ======>>>> Array Destructuring with Skip =====>>>>
+
+{
+    let fruits = ["Apple", "Banana", "Mango"];
+    let [first, third] = fruits;
+    console.log(first);
+    console.log(third);
+}
+
+
+// ======Swap Variables =====>>.
+
+{
+    let a = 10;
+    let b = 20;
+
+    [a, b] = [b, a];
+
+    console.log(a);
+    console.log(b);
+
+    
+
+}
+
+
