@@ -536,4 +536,106 @@
 }
 
 
+// ======== Advance Object =========>>>>>
+// >>>>>>>>>Nested Objects>>>>>>>>>>>>>>
+
+// jab ek object k andar dusra object hota hai, use Nested Object bolte hai
+
+
+// Nested Object ==
+
+{
+    let student = {
+        name: "saif",
+        age: 21,
+        address: {
+            city: "Patna",
+            state: "Bihar"
+        }
+    };
+    console.log(student);
+}
+
+
+// Access Nested Object 
+
+{
+    let student =  {
+        name: "Saif",
+        address: {
+            city: "Patna",
+            state: "Bihar"
+        }
+    };
+
+    console.log(student.address.city);
+    console.log(student.address.state);
+}
+
+// Update Nested  Property ====
+
+{
+    let student = {
+        name: "Saif",
+        address:{
+            city: "Patna"
+        }
+    };
+    student.address.city = "Delhi";
+    console.log(student); 
+    
+}
+
+
+// Array Inside Object =====>>>
+// Jab object ki kisi object me Array store hota hai use array inside Object bolte hai
+
+{
+    let student = {
+        name: "Saif",
+        age: 22,
+        skill: ["HTML", "CSS", "JavaScript"]
+    };
+    console.log(student);
+}
+
+// Access Array >>>>
+
+{
+    let student = {
+        name: "Ahmad",
+        age: 25,
+        skills: ["HTML", "CSS", "JavaScript"]
+    };
+    console.log(student.skills);
+    console.log(student.skills[0]);
+    console.log(student.skills[2]);
+}
+
+
+// Update array element
+
+{
+    let student = {
+        name: "Ali",
+        age: 19,
+        skills: ["HTML", "Python", "CSS"]
+    };
+
+    student.skills[1] = "JAVA";
+    console.log(student);
+}
+
+
+// Add NEW Skill =======
+
+{
+    let studnet = {
+        name: "Gani",
+        age: 25,
+        skills: ["Java", "Python", "C"]
+    };
+    studnet.skills.push("React");
+    console.log(studnet);
+}
 
