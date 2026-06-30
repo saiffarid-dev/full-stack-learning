@@ -1,0 +1,400 @@
+=========================================
+JavaScript Objects - Complete Notes
+=========================================
+
+Definition
+----------
+An Object is a collection of key-value pairs used to store related data.
+
+Hinglish:
+Object ek data structure hai jo data ko key : value pair me store karta hai.
+
+-----------------------------------------
+
+Why Use Objects?
+----------------
+• Store related data.
+• Easy to organize information.
+• Real-world data representation.
+• Fast property access.
+
+-----------------------------------------
+
+Syntax
+------
+
+let student = {
+    name: "Saif",
+    age: 21
+};
+
+-----------------------------------------
+
+Object Structure
+----------------
+
+Key : Value
+
+Example
+
+name : "Saif"
+
+age : 21
+
+city : "Patna"
+
+-----------------------------------------
+
+Ways to Create Object
+---------------------
+
+1. Object Literal {} ⭐⭐⭐⭐⭐
+
+let student = {
+    name: "Saif"
+};
+
+2. Empty Object
+
+let student = {};
+
+3. Constructor
+
+let student = new Object();
+
+-----------------------------------------
+
+Access Properties
+-----------------
+
+Dot Notation
+
+student.name
+
+Bracket Notation
+
+student["name"]
+
+-----------------------------------------
+
+Update Property
+---------------
+
+student.age = 22;
+
+-----------------------------------------
+
+Add Property
+------------
+
+student.city = "Patna";
+
+-----------------------------------------
+
+Delete Property
+---------------
+
+delete student.city;
+
+-----------------------------------------
+
+Check Property
+--------------
+
+"name" in student
+
+Returns
+
+true / false
+
+-----------------------------------------
+
+Object Method
+-------------
+
+A function inside an object is called a Method.
+
+Example
+
+let student = {
+
+    greet: function(){
+
+    }
+
+}
+
+Call
+
+student.greet();
+
+-----------------------------------------
+
+this Keyword
+------------
+
+Represents the current object.
+
+Example
+
+this.name
+
+-----------------------------------------
+
+for...in Loop
+-------------
+
+Used to iterate over object properties.
+
+Syntax
+
+for(let key in object){
+
+}
+
+Value
+
+object[key]
+
+-----------------------------------------
+
+Built-in Methods
+----------------
+
+Object.keys()
+
+Returns all keys.
+
+Example
+
+Object.keys(student)
+
+-----------------------------------------
+
+Object.values()
+
+Returns all values.
+
+Example
+
+Object.values(student)
+
+-----------------------------------------
+
+Object.entries()
+
+Returns key-value pairs.
+
+Example
+
+Object.entries(student)
+
+-----------------------------------------
+
+Object Destructuring
+--------------------
+
+Extract object properties into variables.
+
+Example
+
+let {name, age} = student;
+
+-----------------------------------------
+
+Spread Operator (...)
+--------------------
+
+Copies or merges objects.
+
+Example
+
+let copy = {
+    ...student
+};
+
+-----------------------------------------
+
+Optional Chaining (?.)
+----------------------
+
+Safely accesses nested properties.
+
+Example
+
+student.address?.city
+
+Returns
+
+undefined
+
+Instead of Error
+
+-----------------------------------------
+
+Object.assign()
+---------------
+
+Copies or merges objects.
+
+Example
+
+Object.assign({}, obj1, obj2);
+
+-----------------------------------------
+
+Object.freeze()
+---------------
+
+Locks an object.
+
+✔ Read Only
+
+❌ Add
+
+❌ Update
+
+❌ Delete
+
+-----------------------------------------
+
+Object.seal()
+-------------
+
+Seals an object.
+
+✔ Update
+
+❌ Add
+
+❌ Delete
+
+-----------------------------------------
+
+Interview Difference
+--------------------
+
+Dot (.)
+
+Access Property
+
+--------------------
+
+Bracket ([])
+
+Access using String or Variable
+
+--------------------
+
+Object.keys()
+
+Returns Keys
+
+--------------------
+
+Object.values()
+
+Returns Values
+
+--------------------
+
+Object.entries()
+
+Returns Key + Value
+
+--------------------
+
+freeze()
+
+No Add
+
+No Update
+
+No Delete
+
+--------------------
+
+seal()
+
+Update Allowed
+
+No Add
+
+No Delete
+
+-----------------------------------------
+
+Best Practices
+--------------
+
+✔ Use Object Literal {}
+
+✔ Use meaningful property names.
+
+✔ Use this inside methods.
+
+✔ Use Optional Chaining for nested objects.
+
+✔ Use Spread Operator to copy objects.
+
+✔ Use Destructuring for clean code.
+
+-----------------------------------------
+
+Most Important Topics
+---------------------
+
+★★★★★ Object Literal
+
+★★★★★ Access Property
+
+★★★★★ Update Property
+
+★★★★★ Object Method
+
+★★★★★ this Keyword
+
+★★★★★ Object.keys()
+
+★★★★★ Object.values()
+
+★★★★★ Object.entries()
+
+★★★★★ for...in Loop
+
+★★★★★ Destructuring
+
+★★★★★ Spread Operator
+
+★★★★★ Optional Chaining
+
+★★★★★ Object.assign()
+
+★★★★★ Object.freeze()
+
+★★★★★ Object.seal()
+
+-----------------------------------------
+
+Real Project Uses
+-----------------
+
+• User Profile
+
+• Student Management
+
+• Employee Data
+
+• Product Details
+
+• Shopping Cart
+
+• Banking System
+
+• Authentication
+
+• API Response
+
+• React Props
+
+• JSON Data

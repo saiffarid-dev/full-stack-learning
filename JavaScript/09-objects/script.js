@@ -258,3 +258,282 @@
     };
     console.log(Object.entries(student));
 }
+
+
+
+// ====== === >>> For .... in Loop =====>>>
+{
+    let student = {
+        name: "Saif",                     // for ...in loop object ki saari properties (keys) ko ek ek
+        age: 21,                          // access karne ke liye use hota hai
+        city: "Patna"
+    };
+    for (let key in student) {
+        console.log(key);
+    }
+}
+
+
+// ============>PRATICE CODE 2 ==========>>>
+
+{
+    let student = {
+        name: "Saif",
+        age: 21,
+        city: "Patna"               // yaha student ki key ki value print m aaya.
+    };
+    for (let key in student) {
+        console.log(student[key]);
+    }
+} 
+
+
+// ======== Pratice code 03 key + Value in output =====>>
+
+{
+    let student = {
+        name: "Saif",
+        age: 21,
+        city: "Patna"
+    };
+    for (let key in student) {
+        console.log(key + " : " + student[key]);
+    }
+}
+
+
+// ========>>>>>>>> Topic 09 Object Destruturing =====>>>
+// Object Destruturing ka matlab hai object ki properties ko alag alag variables me store karne.
+
+
+{
+    let student = {
+        name: "Saif",
+        age: 21,
+        city: "Patna"
+    };
+    let { name, age, city } = student;
+    console.log(name);
+    console.log(age);
+    console.log(city);
+}
+
+
+// Only one property =======>>>>>
+
+{
+    let studnet = {
+        name:  "Saif",
+        age: 21,
+        city: "Patna"
+    };
+    let { name } = studnet;
+    console.log(name);
+}
+
+// CODE for Default Value ======>>>>
+
+{
+    let student = {
+        name: "Saif"
+    };
+    let { name, city = "Patna" } = student;
+    console.log(name);
+    console.log(city);
+}
+
+
+// ======>>>>> CODE PRATICE Rename Variable
+
+{
+    let student = {
+        name: "saif",
+        age: 21
+    };
+    let { name: studentName } = student;
+    console.log(studentName);
+}
+
+
+
+// =====>>>> Spread  Operator(....) object ko copy ye merge karne ke liye use hota hai..
+
+{
+    let student = {
+        name: "Saif",
+        age: 21
+    };
+    let copyStudent = {               // This is Copy object method hai
+        ...student
+    };
+    console.log(copyStudent);
+}
+
+// ===== Add New Property =======>>>>
+
+{
+    let student = {
+        name: "Saif",
+        age: 21
+    };
+    let newStudent = {
+        ...student, city: "Patna"
+    };
+
+    console.log(newStudent);
+}
+
+
+
+// ========== Merge Object ========>>>>
+
+{
+    let personal = {
+        name: "Saif",
+        age: 21
+    };
+    let education = {
+        course: "BCA",
+        college: "ABC College"
+    };                                   // this is merge object syntax with example
+    let studnet = {
+        ...personal,
+        ...education
+    };
+    console.log(studnet);
+}
+
+
+// ====== Overwrite Property ========>>>
+
+{
+    let student = {
+        name: "Saif",
+        age: 21 
+    };
+    let updateStudent = {
+        ...student,
+        age: 22
+    };
+    console.log(updateStudent);
+}
+
+// ========>>>> Optional Chaining (?) ===== >>>>>>
+
+// Optional Chaining (?) object ki property ko safely access karta hai Agar property nahi hogi 
+// to error nhi aayega sirf undefined milega...
+
+
+// {
+//     let studnet = {
+//         name: "Saif"
+//     };                                  this code is output is type error student is not defined
+//     console.log(student.city.name);
+// }+
+
+
+// With optional Chaining ====>>
+
+// {
+//     let satudent = {
+//         name: "Saif"                       // this is undefined code output
+//     };
+//     console.log(student.city?.name);
+// }
+
+
+{
+    let student = {
+        name: "saif",
+        address: {
+            city: "Patna"
+        }
+    };
+    console.log(student.address?.city);
+}
+
+
+// =====>>>>> Topic 12 Object.assign() -=-=======>>
+
+{
+    let studnet = {
+        name: "Saif",
+        age: 21
+    };
+    let copy = Object.assign({},studnet);
+    console.log(copy);
+}
+
+
+// Merge Two Objects ======>>>>>
+
+{
+    let personal = {
+        name: "Saif",
+        age: 21
+    };
+    let education = {
+        course: "BCA",
+        city: "Patna"
+    };
+    let studnet = Object.assign({},personal, education);
+    console.log(studnet);
+}
+
+// ===========>>>> Update Property =============>>>>>
+
+{
+    let student = {
+        name: "Saif",
+        age: 21
+    };
+    let update = Object.assign({},student, {
+        age: 22
+    });
+    console.log(update);
+}
+
+
+// ==========>> Merge Three Objects =======>>>
+
+{
+    let obj1 = { a: 1};
+    let obj2 = { b: 2};
+    let obj3 = { c: 3};
+
+    let result = Object.assign({}, obj1, obj2, obj3);
+    console.log(result);
+}
+
+
+// ======>>>> Topic 13 Object.freeze  =========>>>>
+// Object.freeze () obj ko lock kar deta hai iske baad object me Add, update or delete kuh b nhi kr skte
+
+ 
+
+
+{
+    let student = {
+        name: "Saif",
+        age: 21 
+    };
+    Object.freeze(student);
+    student.age = 25;
+    console.log(student);
+}
+
+
+//  ================= Topic 14 (Object.seal()) =========
+
+{
+    let student = {
+        name: "Saif",
+        age: 21
+    };
+    Object.seal(student);
+    student.age = 22;
+    console.log(student);
+}
+
+
+
