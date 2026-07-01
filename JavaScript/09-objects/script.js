@@ -639,3 +639,363 @@
     console.log(studnet);
 }
 
+
+// =========== Loop Through Skills ==========
+{
+    let student = {
+        skills: ["HTML", "CSS", "JavaScript"]
+    };
+    for (let skill of student. skills) {
+        console.log(skill);
+    }
+}
+
+// ===========Object Inside Array ============
+{
+    let student = [
+        {
+            name: "Saif",
+            age: 21 
+        },
+
+        {
+            name: "Ali",
+            age: 22
+        },
+
+        {
+            name: "Raju",
+            age: 23
+        }
+    ];
+    console.log(student);
+}
+
+// ========== Access Object ========
+
+{
+    let student = [
+        { name: "saif", age: 21 },
+
+        {name: "Ali", age: 22 }
+    ];
+
+    console.log(student[0].name);
+    console.log(student[1].age);
+}
+
+
+// ============ Update Object ========
+
+{
+    let students = [
+
+        { name: "Raj", age: 22 },
+
+        { name: "Ali", age: 23 }
+    ];
+
+    students[0].age = 25;
+
+    console.log(students);
+}
+
+
+// ============ Add new Object ===========
+
+{
+    let students = [
+        { name: "saif", age: 30 }
+    ];
+    
+    students.push ({
+        name: "Prince",
+        
+        age: 23
+    });
+
+    console.log(students);
+}
+
+
+
+// ====== >>>>> Deep Copy vs Shallow Copy ==========>>>>>
+
+{
+    let student1 = {
+        name: "saif",
+        age: 21
+    };
+
+    let student2 = student1;
+
+    student2.age = 25;
+                                       
+    console.log(student1);           // Note done k output same aaye age 25 q ki same obj ko point le rahe hai
+    console.log(student2);
+}
+
+
+
+// ============== >>>> Shallow Copy using Spread ============>>>
+
+{
+    let student1 = {
+        name: "saif",
+        age: 21
+    };
+
+    let student2 = {
+        ...student1
+    };
+
+    student2.age = 30;
+
+    console.log(student1);
+
+    console.log(student2);
+    
+}
+
+
+//  CODE PRATICE 03 ======>>>> Problem with Shallow Copy =====>>>
+
+{
+    let student1 = {
+        name: "saif",
+        address: {
+            city: "Patna"
+        }
+    };
+
+    let student2 = {
+        ...student1
+    };
+    student2.address.city = "Delhi";
+
+    console.log(student1);
+    console.log(student2);         // Nested Objec copy nhi hue Referece same raha..
+
+}
+
+
+
+//  ===== Deep Copy =======>>>>>>
+
+{
+    let student1 = {
+        name: "Saif",
+        address: {
+            city: "Agra"
+        }
+    };
+
+    let student2 = JSON.parse(JSON.stringify(student1));
+    student2.address.city = "Delhi";
+
+    console.log(student1);
+    console.log(student2);      /// output m dono complete alag alag pura copy ho ga 
+}
+
+// ======>>>>> Object Reference ---->>>>
+
+// object are stored by referece, not by value.
+
+
+
+// object reference
+
+{
+    let student1 = {
+        name: "Raju",
+        age: 21
+    };
+    let student2 = student1;
+    console.log(student1);
+    console.log(student2);        // student1 or student2 dono ki value same hogi
+}
+
+
+// Modify Reference ======>>>>>
+
+{
+    let student1 = {
+        name: "saif",
+        age: 21
+    };
+
+    let student2 = student1;
+
+    student2.age = 30;
+                              
+    console.log(student1);  // dono obj chnage ho gye q ki dono same reference ko point kar rhe hai
+    console.log(student2);    
+}
+
+// code Reference Comparison ============>>
+
+{
+    let student1 = {
+        name: "Saif"
+    };
+
+    let student2 = student1;
+
+    console.log(student1 === student2);
+}
+
+
+// ==========>>>> Different Objects ===========>>>
+
+{
+    let student1 = {
+        name: "saif"
+    };
+
+    let student2 = {
+        name: "saif"
+    };
+
+    console.log(student1 === student2); // note output false aaye q ki dono alag alag obj m hai 
+}
+
+
+//   Reference Check ===========>>>
+
+{
+    let car1 = {
+        brand: "Alto"
+    };
+    let car2 = car1;
+    
+    car2.brand =  "Audi";
+
+    console.log(car1.brand);
+    console.log(car2.brand);
+}
+
+
+// ========== >>>> Object.hasOwn() hasOwnProperty()
+
+
+
+{
+    let student = {
+        name: "Saif",
+        age: 21
+    };
+
+    console.log(Object.hasOwn(student,"name"));
+
+    console.log(Object.hasOwn(student,"city"));
+}
+
+//  hasOwn Property() =======>>>>
+
+{
+    let student = {
+        name: "saif",
+        age: 21
+    };
+
+    console.log(student.hasOwnProperty("name"));
+
+    console.log(student.hasOwnProperty("city"));
+}
+// code 02 hasOwnProperty()
+
+
+{
+    let student = {
+        name: "saif",
+        age: 21
+    };
+
+    console.log(student.hasOwnProperty("name"));
+    console.log(student.hasOwnProperty("city0"));
+}
+
+
+// ==========>>>> Object -Create () ==============>>>
+
+{
+    let person = {
+        country: "India"
+    };
+    let student = Object.create(person);
+    console.log(student.country);     /// Country prototype se milta hai islye console.log(student)
+}                                       //direct nhi dikhegi
+
+
+//  =====>>> Access Prototype Property ========>>>
+
+{
+    let person = {
+        country: "India"
+    };
+    let student = Object.create(person);
+    student.name = "saif";
+
+    console.log(student.name);
+    console.log(student.country);
+}
+
+
+// Check Prototype =====>>>>
+
+{
+    let person = {
+        country: "India"
+    };
+    let student = Object.create(person);
+
+    console.log(Object.getPrototypeOf(student));
+}
+
+
+// ======>>>> Object.fromEntries() convert an array of key-value pairs into an object.
+
+
+// Code Object.formEntries()
+
+{
+    let data = [
+        ["name", "saif"],
+        ["age", 21]
+    ];
+    let student = Object.fromEntries(data);
+
+    console.log(student);
+}
+
+// code -2 Properties >>>>>
+
+{
+    let data = [
+        ["name", "Saif"],
+        ["age", 21],
+        ["city", "Patna"]
+    ];
+
+    let student = Object.fromEntries(data);
+    console.log(student);
+}
+
+
+// code Numbers ====>>>>
+
+{
+    let marks = [
+        ["Math", 90],
+        ["English", 85],
+        ["Science", 55]
+    ];
+    let result = Object.fromEntries(marks);
+
+    console.log(result);
+}
+
+
+
+
+
