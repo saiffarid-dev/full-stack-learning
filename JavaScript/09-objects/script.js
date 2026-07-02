@@ -996,6 +996,440 @@
 }
 
 
+// ------======>>>>> Empaty Array =====----->>>>
+
+{
+    let data = [];
+    let obj = Object.fromEntries(data);
+    console.log(obj);
+}
+
+// =====------>>> (entries() + fromEntries())
+
+{
+    let student = {
+        name: "saif",
+        age: 22
+    };
+    
+    let entries = Object.entries(student);
+
+    let newStudent = Object.fromEntries(entries);
+    
+    console.log(newStudent);
+}
 
 
+// ==========-->>>> Object.getOwnProperyName() ==========---->>>>
+
+{
+    let student = {
+        name: "saif",
+        age: 21,
+        city: "Patna"
+    };
+    console.log(Object.getOwnPropertyNames(student));
+}
+
+// ======== ---> Store In Variable----====>>
+
+{
+    let car =  {
+        brand: "BMW",
+        model: "X5",
+        year: 2025
+    };
+    
+    let properties = Object.getOwnPropertyNames(car);
+
+    console.log(properties);
+}
+
+
+// ====== ===  Pratice Code Property + Value =======>>>
+
+{
+    let student = {
+        name: "saif",
+        age: 20,
+        city: "Patna"
+    };
+
+    let properties = Object.getOwnPropertyNames(student);
+
+    for (let property of properties) {
+        console.log(property, ":", student[property]);
+    }
+}
+
+
+// ====== >>> Empty Object ====== >>> 
+
+{
+    let student = {};
+    
+    console.log(Object.getOwnPropertyNames(student));
+}
+
+
+// ======>>>>> Object.defineProperty() ======>>>>
+
+{
+    let student = {};
+
+    Object.defineProperty(student, "name", {
+        value: "saif"
+    });
+
+    console.log(student);
+}
+
+
+// ==========>>>>>>>== Read Only Property -----====>>
+
+{
+    let student = {};
+
+    Object.defineProperty(student, "name", {
+        value: "Saif",
+        writable: false
+    });
+    
+    student.name = "Ali";
+
+    console.log(student.name);     // value change nhi hogy
+}
+
+
+// ==========--->>> Writable =  true =====---- >>>
+
+
+{
+    let student = {};
+
+    Object.defineProperty(student, "name", {
+        value: "Saif",
+        writable: true
+    });
+
+    student.name = "Ali";
+
+    console.log(student.name);
+}
+
+
+// ===== >>>> Enumerable ====---==>>>
+
+{
+    let student = {};
+
+    Object.defineProperty(student, "name", {
+        value: "saif",
+        enumerable: true
+    });
+
+    console.log(Object.keys(student));
+}
+
+
+
+// ===== ----->>>>> JSON.stringify() ======------>>>
+
+{
+
+    let studnet = {
+        name: "saif",
+        age: 21
+    };
+    
+    let jsonData = JSON.stringify(studnet);
+
+    console.log(jsonData);
+}
+
+
+// ======== Check Data Type ======>>>
+
+{
+    let student = {
+        name: "Saif",
+        age: 21
+    };
+
+    let jsonData = JSON.stringify(student);
+
+    console.log(typeof jsonData);
+}
+
+
+
+// ========= Array of Object =====>>>
+
+{
+    let student = [
+        {name: "saif", age: 21},
+
+        {name: "Ali", age: 22}
+    ];
+
+    let jsonData = JSON.stringify(student);
+
+    console.log(jsonData);
+}
+
+
+// ======== Pretty Print ========>>>
+
+{
+    let studnet = {
+        name: "kaif",
+        age: 21,
+        city: "Patna"
+    };
+
+    let jsonData = JSON.stringify(studnet, null, 4);
+
+    console.log(jsonData);
+}
+
+
+
+// =========== Local Stroage Example =========>>>
+
+{    let student = {
+        name: "Saif",
+        age: 21
+    };
+
+    let data = JSON.stringify(student);
+
+    console.log(data); 
+    
+    // local stroage .setItem("student", data);
+}
+
+
+
+// =========== JSON.parse()  ========>>>
+
+{
+    let jsonData = '{"name": "Saif", "age": 21}';
+
+    let student = JSON.parse(jsonData);
+
+    console.log(student);
+}
+
+
+// ======= Access Property ======= 
+
+{
+    let jsonData = 
+
+    '{"name": "Saif", "age": 21}';
+    
+    let student = JSON.parse(jsonData);
+
+    console.log(student.name);
+
+    console.log(student.age);
+}
+
+
+// ====== JSON. stringify + JSON.parse 
+
+{
+    let student = {
+        name: "saif",
+        age: 22
+    };
+
+    let jsonData = JSON.stringify(student);
+
+    let newStudent = JSON.parse(jsonData);
+
+    console.log(newStudent);
+}
+
+
+
+// ===========>>>>  Spread Operator =======>>>>>
+
+{
+    let student1 = {
+        name: "saif",
+        age: 21
+    };
+
+    let student2 = {
+        ...student1
+    };
+
+    console.log(student2);
+}
+
+
+
+// =======>>>>> === Object Assign () ======>>>
+
+{
+    let student1 = {
+        name: "raj",
+        age: 21
+    };
+
+    let student2 = 
+    Object.assign({}, student1);
+
+    console.log(student2);
+}
+
+
+// ====== Modify =========>>>>
+
+{
+    let student1 = {
+        name: "saif",
+        age: 21
+    };
+
+    let student2 = {
+        ...student1
+    };
+    
+    student2.age = 25;
+
+    console.log(student1);
+
+    console.log(student2);
+
+}
+
+
+// ========== >>>>> Object Comparison = ====>>>>
+
+
+{
+    let student1 = {
+        name: "Saif"
+    };
+
+    let student2 = student1;
+
+    console.log(student1 === student2);
+}
+
+
+//================ Same Data Different Objects ==========>>>>
+
+{
+    let student1 = {
+        name: "saif"
+    };
+
+    let student2 = {
+        name: "saif"
+    };
+
+    console.log(student1 === student2);
+
+    // Note-->> Data same hai but Memory ALAG HAI
+}
+
+
+// =============>>>>> using JSON.stringify() ========>>>>
+
+{
+    let student1 = {
+        name: "adil",
+        age: 21
+    };
+
+    let student2 = {
+        name: "saif",
+        age: 21
+    };
+
+    console.log(JSON.stringify(student1) === JSON.stringify(student2));
+}
+
+
+// ============ -->> Nested Object =========>>>>
+
+{
+    let student1 = {
+        name: "saif",
+        address: {
+            city: "patna"
+        }
+    };
+
+    let student2 = structuredClone(student1);
+
+    console.log(JSON.stringify(student1) === JSON.stringify(student2));
+}
+
+
+// =======>>>> Real Project Example ========>>>>
+
+{
+    let student = {
+        id: 101,
+        name: "saif",
+        age: 21,
+        course: "BBA",
+        city: "Patna"
+    };
+
+    console.log(student.name);
+    console.log(student.course);
+}
+
+
+// ====== Shopping Cart =========>>>
+
+{
+    let cart = {
+        totalItems: 2,
+        totalPrice: 700000,
+
+        products: [ 
+            {
+                name: "Laptop",
+                price: 60000
+            },
+
+            {
+                name: "Mouse",
+                price: 5000
+            }
+        ]
+    };
+
+    console.log(cart.products[0].name);
+
+    console.log(cart.totalPrice);
+
+}
+
+
+
+
+// ============ 0API Response =======>>>
+
+{
+    let response = {
+        success: true,
+        message: "Data Found",
+
+        data: {
+            id: 1,
+            name: "saif",
+            email: "saif123@gmail.com"
+        }
+    };
+
+    console.log(response.data.name);
+    console.log(response.message);
+}
 

@@ -398,3 +398,378 @@ Real Project Uses
 • React Props
 
 • JSON Data
+
+
+
+=========================================================================================
+==================================================================>>>>>>>>>>>>>>=
+
+
+=========================================
+JavaScript Advanced Objects Notes
+=========================================
+
+1. Nested Objects
+-----------------
+Definition:
+An object inside another object.
+
+Example:
+let student = {
+    name: "Saif",
+    address: {
+        city: "Patna"
+    }
+};
+
+Access:
+student.address.city
+
+-----------------------------------------
+
+2. Array Inside Object
+----------------------
+Definition:
+An object property contains an array.
+
+Example:
+let student = {
+    skills: ["HTML", "CSS", "JavaScript"]
+};
+
+Access:
+student.skills[0]
+
+-----------------------------------------
+
+3. Object Inside Array
+----------------------
+Definition:
+An array contains one or more objects.
+
+Example:
+let students = [
+    {name:"Saif"},
+    {name:"Ali"}
+];
+
+Access:
+students[0].name
+
+-----------------------------------------
+
+4. Deep Copy vs Shallow Copy
+----------------------------
+
+Shallow Copy
+• Copies only first level.
+• Nested objects share reference.
+
+Example:
+let copy = {
+    ...student
+};
+
+Deep Copy
+• Completely independent copy.
+
+Example:
+let copy = structuredClone(student);
+
+-----------------------------------------
+
+5. Object Reference
+-------------------
+
+Objects are stored by reference.
+
+Example:
+
+let obj2 = obj1;
+
+obj1 === obj2
+
+true
+
+-----------------------------------------
+
+6. Object.hasOwn()
+------------------
+
+Checks whether object owns a property.
+
+Syntax
+
+Object.hasOwn(object,"name");
+
+Returns
+
+true / false
+
+-----------------------------------------
+
+7. hasOwnProperty()
+-------------------
+
+Checks own property.
+
+Syntax
+
+object.hasOwnProperty("name");
+
+-----------------------------------------
+
+8. Object.create()
+------------------
+
+Creates a new object using another object as prototype.
+
+Example
+
+let student = Object.create(person);
+
+-----------------------------------------
+
+9. Object.fromEntries()
+-----------------------
+
+Converts array into object.
+
+Example
+
+Object.fromEntries(array);
+
+-----------------------------------------
+
+10. Object.getOwnPropertyNames()
+--------------------------------
+
+Returns all own property names.
+
+Example
+
+Object.getOwnPropertyNames(object);
+
+-----------------------------------------
+
+11. Object.defineProperty()
+---------------------------
+
+Creates or modifies property.
+
+Options
+
+value
+
+writable
+
+enumerable
+
+configurable
+
+Example
+
+Object.defineProperty(obj,"name",{
+
+value:"Saif",
+
+writable:false
+
+});
+
+-----------------------------------------
+
+12. JSON.stringify()
+--------------------
+
+Object
+
+↓
+
+JSON String
+
+Syntax
+
+JSON.stringify(object);
+
+Used In
+
+API
+
+React
+
+Node.js
+
+LocalStorage
+
+-----------------------------------------
+
+13. JSON.parse()
+----------------
+
+JSON String
+
+↓
+
+Object
+
+Syntax
+
+JSON.parse(jsonString);
+
+-----------------------------------------
+
+14. Object Cloning
+------------------
+
+Method 1
+
+Spread (...)
+
+Method 2
+
+Object.assign()
+
+Method 3
+
+structuredClone()
+
+-----------------------------------------
+
+15. Object Comparison
+---------------------
+
+Reference Compare
+
+obj1===obj2
+
+Value Compare
+
+JSON.stringify(obj1)===JSON.stringify(obj2)
+
+-----------------------------------------
+
+16. Real Project Uses
+---------------------
+
+✔ User Profile
+
+✔ Student Management
+
+✔ Employee Management
+
+✔ E-Commerce
+
+✔ Shopping Cart
+
+✔ Banking
+
+✔ Authentication
+
+✔ API Response
+
+✔ React Props
+
+✔ React State
+
+✔ MongoDB Documents
+
+-----------------------------------------
+
+Most Important Interview Topics
+-------------------------------
+
+★★★★★ Nested Objects
+
+★★★★★ Object Inside Array
+
+★★★★★ Array Inside Object
+
+★★★★★ Deep Copy vs Shallow Copy
+
+★★★★★ Object Reference
+
+★★★★★ JSON.stringify()
+
+★★★★★ JSON.parse()
+
+★★★★★ Object Cloning
+
+★★★★★ Object Comparison
+
+★★★★★ Object.create()
+
+★★★★★ Object.defineProperty()
+
+★★★★★ Object.hasOwn()
+
+-----------------------------------------
+
+Interview Differences
+---------------------
+
+Object.keys()
+
+↓
+
+Keys
+
+----------------------
+
+Object.values()
+
+↓
+
+Values
+
+----------------------
+
+Object.entries()
+
+↓
+
+Key + Value
+
+----------------------
+
+Object.fromEntries()
+
+↓
+
+Array → Object
+
+----------------------
+
+JSON.stringify()
+
+↓
+
+Object → JSON String
+
+----------------------
+
+JSON.parse()
+
+↓
+
+JSON String → Object
+
+----------------------
+
+Spread(...)
+
+↓
+
+Shallow Copy
+
+----------------------
+
+structuredClone()
+
+↓
+
+Deep Copy
+
+=========================================
+JavaScript Advanced Objects Complete ✅
+=========================================
