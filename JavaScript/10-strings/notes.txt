@@ -1,0 +1,313 @@
+# JavaScript Strings (Basic + Advanced)
+
+## What is String?
+A String is a sequence of characters used to store text.
+
+(Hinglish)
+String text (characters) ko store karta hai.
+
+--------------------------------------------------
+
+## String Creation
+
+let a = "Hello";
+let b = 'Hello';
+let c = `Hello`;
+
+--------------------------------------------------
+
+## String Properties
+
+length
+- Returns total number of characters.
+
+Example:
+text.length
+
+--------------------------------------------------
+
+## Access Characters
+
+text[0]
+text.charAt(0)
+text.at(-1)
+
+[]              -> Character by Index
+charAt()        -> Character by Index
+at()            -> Supports Negative Index
+
+--------------------------------------------------
+
+## Case Methods
+
+toUpperCase()
+toLowerCase()
+trim()
+
+Use:
+- Login
+- Email
+- Search
+- Form Validation
+
+--------------------------------------------------
+
+## Search Methods
+
+includes()
+startsWith()
+endsWith()
+
+Return:
+true / false
+
+--------------------------------------------------
+
+## Search Index Methods
+
+indexOf()
+lastIndexOf()
+search()
+
+Return:
+Index Number
+or
+-1 (Not Found)
+
+--------------------------------------------------
+
+## Extract Method
+
+slice(start,end)
+
+Rules:
+Start Index -> Included
+End Index -> Not Included
+Supports Negative Index
+
+--------------------------------------------------
+
+## Replace Methods
+
+replace()
+replaceAll()
+
+replace()     -> Replace First Match
+replaceAll()  -> Replace All Matches
+
+--------------------------------------------------
+
+## Convert String
+
+split(",")
+
+String
+↓
+
+Array
+
+--------------------------------------------------
+
+## Join Strings
+
+concat()
+
+Used to Join Two or More Strings.
+
+--------------------------------------------------
+
+## Repeat String
+
+repeat()
+
+Repeat String Multiple Times.
+
+--------------------------------------------------
+
+## Template Literals
+
+`Hello ${name}`
+
+Use:
+- Dynamic Text
+- HTML
+- Messages
+
+--------------------------------------------------
+
+## Advanced Topics
+
+String Immutability
+- Original String Never Changes.
+
+Escape Characters
+
+\n   -> New Line
+\t   -> Tab Space
+\"   -> Double Quote
+\\   -> Backslash
+
+Method Chaining
+
+text.trim().toUpperCase().slice(0,4)
+
+match()
+
+Returns:
+- Matched Value
+- Index
+- Input
+- Groups
+
+search()
+
+Returns First Matching Index.
+
+Regular Expression (RegExp)
+
+/Java/
+
+Use:
+- Email Validation
+- Password Validation
+- Search
+
+--------------------------------------------------
+
+## String Comparison
+
+===
+!==
+localeCompare()
+
+localeCompare()
+
+0  -> Same
+-1 -> Before
+1  -> After
+
+--------------------------------------------------
+
+## Unicode & Emoji
+
+❤️
+😊
+🚀
+
+JavaScript Supports Unicode & Emoji.
+
+--------------------------------------------------
+
+## Real Project Uses
+
+trim()          -> Login Input
+toLowerCase()   -> Email
+includes()      -> Search Feature
+replaceAll()    -> Chat Filter
+split()         -> CSV/API Data
+slice()         -> Preview Text
+match()         -> Validation
+RegExp          -> Email & Password Validation
+
+--------------------------------------------------
+
+## Important String Methods
+
+length
+[]
+charAt()
+at()
+toUpperCase()
+toLowerCase()
+trim()
+includes()
+startsWith()
+endsWith()
+indexOf()
+lastIndexOf()
+slice()
+replace()
+replaceAll()
+split()
+concat()
+repeat()
+match()
+search()
+localeCompare()
+
+--------------------------------------------------
+
+## Interview Questions
+
+Q1. Are Strings Mutable?
+Answer: No, Strings are Immutable.
+
+Q2. replace() vs replaceAll()?
+replace()    -> First Match
+replaceAll() -> All Matches
+
+Q3. slice() vs split()?
+slice() -> Returns String
+split() -> Returns Array
+
+Q4. trim() Used For?
+Remove Extra Spaces.
+
+Q5. includes() Returns?
+true / false
+
+Q6. match() Returns?
+Match Object
+
+Q7. search() Returns?
+First Matching Index
+
+--------------------------------------------------
+
+## Learning Flow
+
+Create
+↓
+Access
+↓
+Case Methods
+↓
+Search Methods
+↓
+Index Methods
+↓
+slice()
+↓
+replace()
+↓
+replaceAll()
+↓
+split()
+↓
+concat()
+↓
+repeat()
+↓
+Template Literals
+↓
+Immutability
+↓
+Escape Characters
+↓
+Method Chaining
+↓
+match()
+↓
+search()
+↓
+RegExp
+↓
+Comparison
+↓
+Unicode
+↓
+localeCompare()
+↓
+Real Projects
+↓
+Interview Ready ✅
