@@ -1,0 +1,2990 @@
+# 📂 ES6 (ECMAScript 2015) - Basic Notes
+
+=====================================================
+01. What is ES6?
+=====================================================
+
+Definition (English)
+ES6 (ECMAScript 2015) is the 6th version of JavaScript. It introduced modern features that make code cleaner, shorter, and easier to maintain.
+
+Definition (Hinglish)
+ES6 JavaScript ka modern version hai jo 2015 me release hua. Isme naye features aaye jisse code readable, short aur powerful ho gaya.
+
+Why do we use ES6?
+
+• Clean Code
+• Less Code
+• Easy to Read
+• Better Performance
+• Modern JavaScript
+• React & Node.js use ES6
+
+Real Project Use
+
+✔ React
+✔ Next.js
+✔ Node.js
+✔ Express.js
+✔ APIs
+
+Interview Answer
+
+Q. What is ES6?
+
+Answer:
+ES6 (ECMAScript 2015) is the modern version of JavaScript released in 2015. It introduced features like let, const, arrow functions, classes, promises, template literals and modules.
+
+=====================================================
+02. let
+=====================================================
+
+Definition (English)
+
+let is used to declare variables whose value can be changed later.
+
+Definition (Hinglish)
+
+let se variable banate hain jiska value baad me change kar sakte hain.
+
+Syntax
+
+let variableName = value;
+
+Example
+
+let age = 20;
+
+age = 21;
+
+console.log(age);
+
+Output
+
+21
+
+Explanation
+
+Step 1
+
+let age = 20;
+
+Variable create hua.
+
+Step 2
+
+age = 21;
+
+Value update ho gayi.
+
+Step 3
+
+console.log(age);
+
+Output = 21
+
+Real Project Use
+
+✔ Counter
+✔ Score
+✔ User Input
+✔ Shopping Cart
+
+Advantages
+
+• Value change ho sakti hai.
+• Block Scope.
+• Better than var.
+
+Common Mistake
+
+❌
+
+let age = 20;
+
+let age = 25;
+
+Error
+
+✅
+
+let age = 20;
+
+age = 25;
+
+Interview Question
+
+Q. Difference between var and let?
+
+Answer
+
+var
+
+• Function Scope
+• Re-declare Allowed
+• Old JavaScript
+
+let
+
+• Block Scope
+• Re-declare Not Allowed
+• Modern JavaScript
+
+=====================================================
+03. const
+=====================================================
+
+Definition (English)
+
+const declares a variable that cannot be reassigned.
+
+Definition (Hinglish)
+
+const se variable banate hain jise dobara assign nahi kar sakte.
+
+Syntax
+
+const PI = 3.14;
+
+Example
+
+const country = "India";
+
+console.log(country);
+
+Output
+
+India
+
+Wrong Example
+
+const country = "India";
+
+country = "USA";
+
+Output
+
+TypeError
+
+Explanation
+
+const ki value ko dobara assign nahi kar sakte.
+
+Real Project Use
+
+✔ API URL
+✔ Company Name
+✔ Configuration
+✔ Fixed Values
+
+Advantages
+
+• Safe
+• Readable
+• Prevents Accidental Changes
+
+Interview Question
+
+Q. Difference between let and const?
+
+Answer
+
+let
+
+Value Change ✔
+
+const
+
+Value Change ❌
+
+=====================================================
+04. Template Literals
+=====================================================
+
+Definition (English)
+
+Template Literals allow variables inside strings using backticks (` `) and ${}.
+
+Definition (Hinglish)
+
+Backticks aur ${} ki help se string ke andar variable use kar sakte hain.
+
+Syntax
+
+`Hello ${name}`
+
+Example
+
+const name = "Saif";
+
+console.log(`Welcome ${name}`);
+
+Output
+
+Welcome Saif
+
+Without Template Literal
+
+"Welcome " + name
+
+With Template Literal
+
+`Welcome ${name}`
+
+Real Project Use
+
+✔ Welcome Message
+✔ Invoice
+✔ Email
+✔ HTML Template
+
+Advantages
+
+• Easy to Read
+• Dynamic String
+• Modern Syntax
+
+Interview Question
+
+Q. Why use Template Literals?
+
+Answer
+
+They make string interpolation easier and improve readability.
+
+=====================================================
+05. Default Parameters
+=====================================================
+
+Definition (English)
+
+Default Parameters provide default values when arguments are missing.
+
+Definition (Hinglish)
+
+Agar function call karte waqt value na do to default value use hoti hai.
+
+Syntax
+
+function show(name = "Guest"){}
+
+Example
+
+function greet(user = "Guest"){
+
+console.log(`Hello ${user}`);
+
+}
+
+greet("Ali");
+
+greet();
+
+Output
+
+Hello Ali
+
+Hello Guest
+
+Explanation
+
+greet("Ali")
+
+↓
+
+user = "Ali"
+
+Output
+
+Hello Ali
+
+greet()
+
+↓
+
+No Value
+
+↓
+
+Guest
+
+Output
+
+Hello Guest
+
+Real Project Use
+
+✔ Login
+✔ Forms
+✔ APIs
+✔ User Profile
+
+Interview Question
+
+Q. Why use Default Parameters?
+
+Answer
+
+To avoid undefined values and provide default data.
+
+
+==========/////..???????????????????????
+
+
+=====================================================
+06. Arrow Functions
+=====================================================
+
+Definition (English)
+
+Arrow Function is a shorter and modern way to write functions.
+
+Definition (Hinglish)
+
+Arrow Function function likhne ka short aur modern tarika hai.
+
+Syntax
+
+const functionName = () => { }
+
+Example
+
+const multiply = (a, b) => {
+    return a * b;
+};
+
+console.log(multiply(5, 4));
+
+Output
+
+20
+
+Short Form
+
+const multiply = (a, b) => a * b;
+
+console.log(multiply(5, 4));
+
+Output
+
+20
+
+Explanation
+
+Step 1
+
+const multiply = (a,b)=>{ }
+
+Arrow Function create hua.
+
+Step 2
+
+return a*b
+
+5 × 4
+
+↓
+
+20
+
+Real Project Use
+
+✔ React Components
+✔ API Callback
+✔ Array Methods
+✔ Event Handling
+
+Advantages
+
+• Short Code
+• Easy to Read
+• Modern Syntax
+
+Common Mistake
+
+❌
+
+const sum = (a,b)=>{
+a+b
+}
+
+Output
+
+undefined
+
+✅
+
+const sum=(a,b)=>{
+return a+b;
+}
+
+OR
+
+const sum=(a,b)=>a+b;
+
+Interview Question
+
+Q. Difference between Normal Function and Arrow Function?
+
+Answer
+
+Normal Function
+
+• function keyword use karta hai.
+
+Arrow Function
+
+• => use karta hai.
+• Short Syntax.
+• Mostly React me use hota hai.
+
+=====================================================
+07. Destructuring
+=====================================================
+
+Definition (English)
+
+Destructuring extracts values from Arrays or Objects into separate variables.
+
+Definition (Hinglish)
+
+Array ya Object ki values ko alag variables me store karna Destructuring kehlata hai.
+
+Array Example
+
+const colors = ["Red", "Blue", "Green"];
+
+const [first, second] = colors;
+
+console.log(first);
+
+console.log(second);
+
+Output
+
+Red
+
+Blue
+
+Object Example
+
+const laptop = {
+
+brand: "HP",
+
+price: 65000
+
+};
+
+const {brand, price} = laptop;
+
+console.log(brand);
+
+console.log(price);
+
+Output
+
+HP
+
+65000
+
+Explanation
+
+Array
+
+Index 0
+
+↓
+
+first
+
+Index 1
+
+↓
+
+second
+
+Object
+
+brand
+
+↓
+
+brand Variable
+
+price
+
+↓
+
+price Variable
+
+Real Project Use
+
+✔ API Response
+
+✔ React Props
+
+✔ Objects
+
+✔ Arrays
+
+Advantages
+
+• Less Code
+
+• Clean Code
+
+• Easy to Read
+
+Interview Question
+
+Q. What is Destructuring?
+
+Answer
+
+Destructuring is an ES6 feature used to extract values from arrays or objects into separate variables.
+
+=====================================================
+08. Spread Operator (...)
+=====================================================
+
+Definition (English)
+
+Spread Operator expands Arrays or Objects.
+
+Definition (Hinglish)
+
+Spread Operator Array ya Object ko copy ya expand karta hai.
+
+Syntax
+
+...
+
+Array Example
+
+const numbers = [10,20,30];
+
+const copy = [...numbers];
+
+console.log(copy);
+
+Output
+
+[10,20,30]
+
+Object Example
+
+const employee = {
+
+name:"Amit",
+
+salary:50000
+
+};
+
+const employeeCopy={
+
+...employee
+
+};
+
+console.log(employeeCopy);
+
+Output
+
+{
+
+name:'Amit',
+
+salary:50000
+
+}
+
+Explanation
+
+Original
+
+↓
+
+Copy
+
+Original Change
+
+↓
+
+Copy Safe
+
+Real Project Use
+
+✔ React State
+
+✔ Copy Object
+
+✔ Merge Arrays
+
+✔ Merge Objects
+
+Advantages
+
+• Fast
+
+• Short
+
+• Safe Copy
+
+Interview Question
+
+Q. What is Spread Operator?
+
+Answer
+
+Spread Operator expands or copies arrays and objects.
+
+=====================================================
+09. Rest Operator (...)
+=====================================================
+
+Definition (English)
+
+Rest Operator collects multiple values into one array.
+
+Definition (Hinglish)
+
+Rest Operator multiple values ko ek array me collect karta hai.
+
+Syntax
+
+function demo(...data){}
+
+Example
+
+function marks(...score){
+
+console.log(score);
+
+}
+
+marks(80,85,90,95);
+
+Output
+
+[80,85,90,95]
+
+Explanation
+
+80
+
+85
+
+90
+
+95
+
+↓
+
+One Array
+
+↓
+
+score
+
+Real Project Use
+
+✔ Shopping Cart
+
+✔ Dynamic Arguments
+
+✔ API Data
+
+Interview Question
+
+Q. Difference between Spread and Rest?
+
+Answer
+
+Spread
+
+↓
+
+Expand
+
+Rest
+
+↓
+
+Collect
+
+=====================================================
+10. for...of
+=====================================================
+
+Definition (English)
+
+for...of loops through values of Arrays, Strings and other iterables.
+
+Definition (Hinglish)
+
+for...of Array aur String ki values ko ek-ek karke access karta hai.
+
+Syntax
+
+for(const value of array){}
+
+Example
+
+const cities=["Delhi","Patna","Mumbai"];
+
+for(const city of cities){
+
+console.log(city);
+
+}
+
+Output
+
+Delhi
+
+Patna
+
+Mumbai
+
+Explanation
+
+Loop
+
+↓
+
+Delhi
+
+↓
+
+Patna
+
+↓
+
+Mumbai
+
+Real Project Use
+
+✔ Arrays
+
+✔ Strings
+
+✔ API Data
+
+Interview Question
+
+Q. What does for...of iterate?
+
+Answer
+
+It iterates over values.
+
+=====================================================
+11. for...in
+=====================================================
+
+Definition (English)
+
+for...in loops through object keys.
+
+Definition (Hinglish)
+
+for...in Object ki keys ko iterate karta hai.
+
+Syntax
+
+for(const key in object){}
+
+Example
+
+const phone={
+
+brand:"Samsung",
+
+price:25000
+
+};
+
+for(const key in phone){
+
+console.log(key,phone[key]);
+
+}
+
+Output
+
+brand Samsung
+
+price 25000
+
+Explanation
+
+brand
+
+↓
+
+Samsung
+
+price
+
+↓
+
+25000
+
+Real Project Use
+
+✔ Objects
+
+✔ API Response
+
+✔ JSON
+
+Interview Question
+
+Q. Difference between for...of and for...in?
+
+Answer
+
+for...of
+
+↓
+
+Values
+
+(Array, String)
+
+for...in
+
+↓
+
+Keys
+
+(Object)
+
+=====================================================
+ES6 Basic Revision
+=====================================================
+
+ES6
+
+↓
+
+let
+
+↓
+
+const
+
+↓
+
+Template Literals
+
+↓
+
+Default Parameters
+
+↓
+
+Arrow Functions
+
+↓
+
+Destructuring
+
+↓
+
+Spread Operator
+
+↓
+
+Rest Operator
+
+↓
+
+for...of
+
+↓
+
+for...in
+
+Basic ES6 Complete ✅
+
+
+
+# ===============================================
+# ES6 Intermediate Notes
+# ===============================================
+
+=====================================================
+01. Modules (import / export)
+=====================================================
+
+Definition (English)
+
+Modules allow us to split JavaScript code into multiple files and reuse it.
+
+Definition (Hinglish)
+
+Modules ki help se hum code ko alag-alag files me divide kar sakte hain aur zarurat padne par use kar sakte hain.
+
+Why Use Modules?
+
+• Code Reuse
+• Clean Project Structure
+• Easy Maintenance
+• Large Applications
+
+Syntax
+
+Export File
+
+export const company = "OpenAI";
+
+Import File
+
+import { company } from "./file.js";
+
+Example
+
+math.js
+
+export function add(a,b){
+    return a+b;
+}
+
+app.js
+
+import { add } from "./math.js";
+
+console.log(add(10,20));
+
+Output
+
+30
+
+Real Project Use
+
+✔ React Components
+✔ Utility Functions
+✔ API Files
+
+Interview Question
+
+Q. Why do we use Modules?
+
+Answer
+
+Modules help organize code into separate files, making it reusable and easier to maintain.
+
+=====================================================
+02. Classes
+=====================================================
+
+Definition (English)
+
+A Class is a blueprint for creating objects.
+
+Definition (Hinglish)
+
+Class ek blueprint (naksha) hota hai jisse objects banaye jate hain.
+
+Syntax
+
+class Student{
+
+}
+
+Example
+
+class Student{
+
+constructor(name){
+
+this.name=name;
+
+}
+
+show(){
+
+console.log(this.name);
+
+}
+
+}
+
+const s1=new Student("Rahul");
+
+s1.show();
+
+Output
+
+Rahul
+
+Explanation
+
+Class
+
+↓
+
+Object
+
+↓
+
+Method Call
+
+↓
+
+Output
+
+Rahul
+
+Real Project Use
+
+✔ OOP
+✔ React
+✔ Backend
+✔ Game Development
+
+Interview Question
+
+Q. What is a Class?
+
+Answer
+
+A Class is a blueprint used to create objects.
+
+=====================================================
+03. Constructor
+=====================================================
+
+Definition (English)
+
+A Constructor is a special method that runs automatically when an object is created.
+
+Definition (Hinglish)
+
+Constructor ek special method hai jo object bante hi automatically call hota hai.
+
+Syntax
+
+constructor(){}
+
+Example
+
+class Car{
+
+constructor(brand){
+
+this.brand=brand;
+
+}
+
+}
+
+const car1=new Car("BMW");
+
+console.log(car1.brand);
+
+Output
+
+BMW
+
+Real Project Use
+
+✔ Initialize Objects
+✔ Default Values
+✔ API Models
+
+Interview Question
+
+Q. What is Constructor?
+
+Answer
+
+A Constructor initializes object data automatically when an object is created.
+
+=====================================================
+04. Getter
+=====================================================
+
+Definition (English)
+
+Getter is used to read object properties.
+
+Definition (Hinglish)
+
+Getter object ki value read karne ke liye use hota hai.
+
+Syntax
+
+get name(){}
+
+Example
+
+class Product{
+
+constructor(price){
+
+this.price=price;
+
+}
+
+get amount(){
+
+return this.price;
+
+}
+
+}
+
+const p1=new Product(500);
+
+console.log(p1.amount);
+
+Output
+
+500
+
+Real Project Use
+
+✔ Read Data
+✔ Validation
+✔ OOP
+
+=====================================================
+05. Setter
+=====================================================
+
+Definition (English)
+
+Setter is used to update object properties.
+
+Definition (Hinglish)
+
+Setter object ki value update karne ke liye use hota hai.
+
+Syntax
+
+set name(value){}
+
+Example
+
+class Product{
+
+constructor(price){
+
+this.price=price;
+
+}
+
+set amount(value){
+
+this.price=value;
+
+}
+
+}
+
+const p1=new Product(500);
+
+p1.amount=800;
+
+console.log(p1.price);
+
+Output
+
+800
+
+Real Project Use
+
+✔ Update Data
+✔ Validation
+✔ OOP
+
+Interview Question
+
+Q. Difference between Getter and Setter?
+
+Answer
+
+Getter
+
+↓
+
+Read Value
+
+Setter
+
+↓
+
+Update Value
+
+=====================================================
+06. Static Methods
+=====================================================
+
+Definition (English)
+
+Static methods belong to the class, not the object.
+
+Definition (Hinglish)
+
+Static Method object ka nahi, Class ka hota hai.
+
+Syntax
+
+static demo(){}
+
+Example
+
+class Calculator{
+
+static square(num){
+
+return num*num;
+
+}
+
+}
+
+console.log(Calculator.square(6));
+
+Output
+
+36
+
+Real Project Use
+
+✔ Utility Functions
+✔ Helper Methods
+
+Interview Question
+
+Q. How do you call a Static Method?
+
+Answer
+
+Using the Class Name.
+
+Example
+
+Calculator.square()
+
+=====================================================
+07. Enhanced Object Literals
+=====================================================
+
+Definition (English)
+
+Enhanced Object Literals provide a shorter syntax for creating objects.
+
+Definition (Hinglish)
+
+Object banane ka short aur modern tarika.
+
+Example
+
+const username="Arjun";
+const age=22;
+
+const user={
+username,
+age
+};
+
+console.log(user);
+
+Output
+
+{
+username:'Arjun',
+age:22
+}
+
+=====================================================
+08. Property Shorthand
+=====================================================
+
+Definition (English)
+
+If variable name and property name are same, write only one name.
+
+Definition (Hinglish)
+
+Agar variable aur property ka naam same ho to ek hi naam likho.
+
+Example
+
+const city="Patna";
+
+const address={
+
+city
+
+};
+
+console.log(address);
+
+Output
+
+{
+
+city:'Patna'
+
+}
+
+=====================================================
+Intermediate Revision
+=====================================================
+
+Modules
+
+↓
+
+Classes
+
+↓
+
+Constructor
+
+↓
+
+Getter
+
+↓
+
+Setter
+
+↓
+
+Static
+
+↓
+
+Enhanced Object Literals
+
+↓
+
+Property Shorthand
+
+Intermediate Part-1 Complete ✅
+
+
++++++++==============
+
+
+
+
+=====================================================
+09. Computed Property Names
+=====================================================
+
+Definition (English)
+
+Computed Property Names allow dynamic property names in an object.
+
+Definition (Hinglish)
+
+Object ki property ka naam variable ya expression ki help se banana Computed Property Name kehlata hai.
+
+Syntax
+
+const key = "name";
+
+const obj = {
+
+[key]: "Rahul"
+
+};
+
+Example
+
+const field = "course";
+
+const student = {
+
+[field]: "JavaScript",
+
+fees: 5000
+
+};
+
+console.log(student);
+
+Output
+
+{
+
+course: "JavaScript",
+
+fees: 5000
+
+}
+
+Explanation
+
+field
+
+↓
+
+course
+
+↓
+
+Object Property
+
+↓
+
+course:"JavaScript"
+
+Real Project Use
+
+✔ Dynamic Forms
+
+✔ API Response
+
+✔ Dynamic Objects
+
+Interview Question
+
+Q. What is Computed Property Name?
+
+Answer
+
+It allows property names to be created dynamically using variables or expressions.
+
+=====================================================
+10. Optional Chaining (?.)
+=====================================================
+
+Definition (English)
+
+Optional Chaining safely accesses nested object properties without throwing an error.
+
+Definition (Hinglish)
+
+Agar object ke andar property exist na kare to error nahi aata, undefined return hota hai.
+
+Syntax
+
+object?.property
+
+Example
+
+const employee = {
+
+name: "Rohit"
+
+};
+
+console.log(employee.company?.name);
+
+Output
+
+undefined
+
+Explanation
+
+employee
+
+↓
+
+company
+
+↓
+
+Not Available
+
+↓
+
+undefined
+
+(No Error)
+
+Without Optional Chaining
+
+employee.company.name
+
+Output
+
+TypeError
+
+Real Project Use
+
+✔ API Response
+
+✔ React
+
+✔ Nested Objects
+
+Interview Question
+
+Q. Why use Optional Chaining?
+
+Answer
+
+To avoid errors when nested properties do not exist.
+
+=====================================================
+11. Nullish Coalescing (??)
+=====================================================
+
+Definition (English)
+
+Returns the right-side value only if the left-side value is null or undefined.
+
+Definition (Hinglish)
+
+Agar left side null ya undefined ho tabhi right side ki value return hoti hai.
+
+Syntax
+
+value ?? defaultValue
+
+Example
+
+let username = null;
+
+console.log(username ?? "Guest");
+
+Output
+
+Guest
+
+Another Example
+
+let username = "Aman";
+
+console.log(username ?? "Guest");
+
+Output
+
+Aman
+
+Real Project Use
+
+✔ Login
+
+✔ Forms
+
+✔ Default Values
+
+Interview Question
+
+Q. Difference between || and ??
+
+Answer
+
+||
+
+Checks all falsy values
+
+(false,0,"",null,undefined)
+
+??
+
+Checks only
+
+null
+
+undefined
+
+=====================================================
+12. Object.entries()
+=====================================================
+
+Definition (English)
+
+Object.entries() converts an object into an array of key-value pairs.
+
+Definition (Hinglish)
+
+Object ko key-value pair wale array me convert karta hai.
+
+Syntax
+
+Object.entries(object)
+
+Example
+
+const mobile = {
+
+brand: "Samsung",
+
+price: 25000
+
+};
+
+console.log(Object.entries(mobile));
+
+Output
+
+[
+
+["brand","Samsung"],
+
+["price",25000]
+
+]
+
+Explanation
+
+Object
+
+↓
+
+Array
+
+↓
+
+Key-Value Pair
+
+Real Project Use
+
+✔ Tables
+
+✔ Loops
+
+✔ API Data
+
+Interview Question
+
+Q. What does Object.entries() return?
+
+Answer
+
+It returns an array of key-value pairs.
+
+=====================================================
+13. Object.fromEntries()
+=====================================================
+
+Definition (English)
+
+Converts key-value arrays back into an object.
+
+Definition (Hinglish)
+
+Key-value pair wale array ko object me convert karta hai.
+
+Syntax
+
+Object.fromEntries(array)
+
+Example
+
+const details=[
+
+["city","Delhi"],
+
+["pin",110001]
+
+];
+
+console.log(Object.fromEntries(details));
+
+Output
+
+{
+
+city:"Delhi",
+
+pin:110001
+
+}
+
+Explanation
+
+Array
+
+↓
+
+Object
+
+Real Project Use
+
+✔ API
+
+✔ JSON
+
+✔ Data Conversion
+
+Interview Question
+
+Q. Difference between Object.entries() and Object.fromEntries()?
+
+Answer
+
+Object.entries()
+
+↓
+
+Object → Array
+
+Object.fromEntries()
+
+↓
+
+Array → Object
+
+=====================================================
+14. BigInt
+=====================================================
+
+Definition (English)
+
+BigInt stores integers larger than the Number limit.
+
+Definition (Hinglish)
+
+BigInt bahut bade integer numbers store karta hai.
+
+Syntax
+
+123456789n
+
+Example
+
+const amount = 999999999999999999999999n;
+
+console.log(amount);
+
+Output
+
+999999999999999999999999n
+
+Real Project Use
+
+✔ Banking
+
+✔ Finance
+
+✔ Scientific Applications
+
+Interview Question
+
+Q. Why use BigInt?
+
+Answer
+
+To store very large integer values safely.
+
+=====================================================
+15. Dynamic Import
+=====================================================
+
+Definition (English)
+
+Dynamic Import loads a module only when it is needed.
+
+Definition (Hinglish)
+
+Module ko zarurat padne par load karta hai.
+
+Syntax
+
+import("./math.js")
+
+Real Project Use
+
+✔ Lazy Loading
+
+✔ React
+
+✔ Performance Optimization
+
+=====================================================
+16. globalThis
+=====================================================
+
+Definition (English)
+
+globalThis provides access to the global object.
+
+Definition (Hinglish)
+
+globalThis global object ko access karne ka standard tarika hai.
+
+Example
+
+globalThis.company="OpenAI";
+
+console.log(globalThis.company);
+
+Output
+
+OpenAI
+
+Real Project Use
+
+✔ Browser
+
+✔ Node.js
+
+✔ Global Variables
+
+Interview Question
+
+Q. What is globalThis?
+
+Answer
+
+globalThis provides a standard way to access the global object in any JavaScript environment.
+
+=====================================================
+Intermediate Revision
+=====================================================
+
+Modules
+
+↓
+
+Classes
+
+↓
+
+Constructor
+
+↓
+
+Getter
+
+↓
+
+Setter
+
+↓
+
+Static
+
+↓
+
+Enhanced Object Literals
+
+↓
+
+Property Shorthand
+
+↓
+
+Computed Property Names
+
+↓
+
+Optional Chaining
+
+↓
+
+Nullish Coalescing
+
+↓
+
+Object.entries()
+
+↓
+
+Object.fromEntries()
+
+↓
+
+BigInt
+
+↓
+
+Dynamic Import
+
+↓
+
+globalThis
+
+ES6 Intermediate Complete ✅
+
+
+
+========= = = = == = = = = = =
+
+
+ = == =
+
+ # ===============================================
+# ES6 Advanced Notes
+# ===============================================
+
+=====================================================
+01. Promise
+=====================================================
+
+Definition (English)
+
+A Promise is an object that represents the future result of an asynchronous operation.
+
+Definition (Hinglish)
+
+Promise future me milne wale result ka promise karta hai. Result Success ya Failure ho sakta hai.
+
+Promise States
+
+Pending
+↓
+
+Fulfilled (Resolved)
+
+OR
+
+Rejected
+
+Syntax
+
+const promise = new Promise((resolve, reject) => {
+
+});
+
+Example
+
+const order = new Promise((resolve, reject)=>{
+
+resolve("Order Delivered");
+
+});
+
+order.then((result)=>{
+
+console.log(result);
+
+});
+
+Output
+
+Order Delivered
+
+Explanation
+
+Step-1
+
+Promise Create
+
+↓
+
+Pending
+
+Step-2
+
+resolve()
+
+↓
+
+Fulfilled
+
+Step-3
+
+.then()
+
+↓
+
+Receive Result
+
+↓
+
+Order Delivered
+
+Real Project Use
+
+✔ API Calling
+
+✔ Login
+
+✔ Payment Gateway
+
+✔ Database
+
+Advantages
+
+• Cleaner Async Code
+
+• Better Error Handling
+
+Interview Question
+
+Q. What is Promise?
+
+Answer
+
+Promise represents the eventual result of an asynchronous operation.
+
+=====================================================
+02. async
+=====================================================
+
+Definition (English)
+
+async makes a function return a Promise.
+
+Definition (Hinglish)
+
+async function hamesha Promise return karta hai.
+
+Syntax
+
+async function demo(){}
+
+Example
+
+async function welcome(){
+
+return "Hello";
+
+}
+
+welcome().then(console.log);
+
+Output
+
+Hello
+
+Explanation
+
+async
+
+↓
+
+Promise Return
+
+↓
+
+then()
+
+↓
+
+Output
+
+Real Project Use
+
+✔ API
+
+✔ Fetch
+
+✔ Database
+
+Interview Question
+
+Q. What does async return?
+
+Answer
+
+A Promise.
+
+=====================================================
+03. await
+=====================================================
+
+Definition (English)
+
+await waits until a Promise is completed.
+
+Definition (Hinglish)
+
+await Promise complete hone ka wait karta hai.
+
+Syntax
+
+await promise
+
+Example
+
+async function demo(){
+
+let result=await Promise.resolve("Success");
+
+console.log(result);
+
+}
+
+demo();
+
+Output
+
+Success
+
+Explanation
+
+Promise
+
+↓
+
+Wait
+
+↓
+
+Complete
+
+↓
+
+Print Result
+
+Real Project Use
+
+✔ API Calling
+
+✔ Fetch API
+
+✔ Database
+
+Interview Question
+
+Q. Where can await be used?
+
+Answer
+
+Inside an async function.
+
+=====================================================
+04. Map
+=====================================================
+
+Definition (English)
+
+Map stores key-value pairs and allows any data type as keys.
+
+Definition (Hinglish)
+
+Map key-value pair store karta hai aur key me kisi bhi data type ka use kar sakte hain.
+
+Syntax
+
+new Map()
+
+Example
+
+const employee=new Map();
+
+employee.set("id",101);
+
+employee.set("name","Rahul");
+
+console.log(employee.get("name"));
+
+Output
+
+Rahul
+
+Explanation
+
+Map
+
+↓
+
+set()
+
+↓
+
+Store Data
+
+↓
+
+get()
+
+↓
+
+Read Data
+
+Real Project Use
+
+✔ User Data
+
+✔ Product Data
+
+✔ API
+
+Advantages
+
+• Ordered Data
+
+• Fast Search
+
+• Any Data Type Key
+
+Interview Question
+
+Q. Difference between Object and Map?
+
+Answer
+
+Object
+
+↓
+
+String Keys
+
+Map
+
+↓
+
+Any Data Type Key
+
+=====================================================
+05. Set
+=====================================================
+
+Definition (English)
+
+Set stores only unique values.
+
+Definition (Hinglish)
+
+Set duplicate values ko automatically remove karta hai.
+
+Syntax
+
+new Set()
+
+Example
+
+const marks=new Set([80,90,90,95,80]);
+
+console.log(marks);
+
+Output
+
+Set(3){80,90,95}
+
+Explanation
+
+80
+
+90
+
+90
+
+95
+
+80
+
+↓
+
+Duplicate Removed
+
+↓
+
+80
+
+90
+
+95
+
+Real Project Use
+
+✔ Remove Duplicate Values
+
+✔ Unique IDs
+
+✔ Tags
+
+Interview Question
+
+Q. Difference between Array and Set?
+
+Answer
+
+Array
+
+↓
+
+Duplicates Allowed
+
+Set
+
+↓
+
+Duplicates Not Allowed
+
+=====================================================
+06. WeakMap
+=====================================================
+
+Definition (English)
+
+WeakMap stores key-value pairs where keys must be objects.
+
+Definition (Hinglish)
+
+WeakMap me sirf Object hi key ban sakta hai.
+
+Syntax
+
+new WeakMap()
+
+Example
+
+const user={};
+
+const wm=new WeakMap();
+
+wm.set(user,"Online");
+
+console.log(wm.get(user));
+
+Output
+
+Online
+
+Real Project Use
+
+✔ Cache
+
+✔ Private Data
+
+✔ Memory Management
+
+Interview Question
+
+Q. Can WeakMap use string as key?
+
+Answer
+
+No.
+
+Only Objects.
+
+=====================================================
+07. WeakSet
+=====================================================
+
+Definition (English)
+
+WeakSet stores only unique objects.
+
+Definition (Hinglish)
+
+WeakSet sirf unique Objects store karta hai.
+
+Syntax
+
+new WeakSet()
+
+Example
+
+const student={};
+
+const ws=new WeakSet();
+
+ws.add(student);
+
+console.log(ws.has(student));
+
+Output
+
+true
+
+Real Project Use
+
+✔ Cache
+
+✔ Object Tracking
+
+Interview Question
+
+Q. Can WeakSet store numbers?
+
+Answer
+
+No.
+
+Only Objects.
+
+=====================================================
+Advanced Revision (Part-1)
+
+Promise
+
+↓
+
+async
+
+↓
+
+await
+
+↓
+
+Map
+
+↓
+
+Set
+
+↓
+
+WeakMap
+
+↓
+
+WeakSet
+
+Advanced Part-1 Complete ✅
+
+
+=====================
+
+===========
+
+=====================================================
+08. Symbol
+=====================================================
+
+Definition (English)
+
+Symbol is a primitive data type that creates unique values.
+
+Definition (Hinglish)
+
+Symbol ek unique value banata hai. Do Symbols kabhi equal nahi hote.
+
+Syntax
+
+Symbol()
+
+Example
+
+const id1 = Symbol("id");
+
+const id2 = Symbol("id");
+
+console.log(id1 == id2);
+
+Output
+
+false
+
+Explanation
+
+Symbol("id")
+
+↓
+
+Unique Value
+
+↓
+
+Har Symbol Alag Hai
+
+↓
+
+false
+
+Real Project Use
+
+✔ Unique Object Property
+
+✔ Library Development
+
+✔ Hidden Properties
+
+Advantages
+
+• Unique Values
+
+• No Duplicate
+
+Interview Question
+
+Q. Why use Symbol?
+
+Answer
+
+To create unique property keys and avoid conflicts.
+
+=====================================================
+09. Iterator
+=====================================================
+
+Definition (English)
+
+An Iterator returns one value at a time.
+
+Definition (Hinglish)
+
+Iterator ek-ek karke values return karta hai.
+
+Syntax
+
+iterator.next()
+
+Example
+
+const fruits = ["Apple","Mango"];
+
+const iterator = fruits[Symbol.iterator]();
+
+console.log(iterator.next());
+
+console.log(iterator.next());
+
+console.log(iterator.next());
+
+Output
+
+{ value: 'Apple', done: false }
+
+{ value: 'Mango', done: false }
+
+{ value: undefined, done: true }
+
+Explanation
+
+Apple
+
+↓
+
+Mango
+
+↓
+
+End
+
+↓
+
+done = true
+
+Real Project Use
+
+✔ Custom Loops
+
+✔ Data Processing
+
+✔ Collections
+
+Interview Question
+
+Q. What does iterator.next() return?
+
+Answer
+
+An object with
+
+value
+
+done
+
+=====================================================
+10. Generator Function
+=====================================================
+
+Definition (English)
+
+Generator Functions pause and resume execution using yield.
+
+Definition (Hinglish)
+
+Generator Function 'yield' ki help se beech me ruk sakta hai aur baad me wahi se continue hota hai.
+
+Syntax
+
+function* demo(){}
+
+Example
+
+function* numbers(){
+
+yield 100;
+
+yield 200;
+
+yield 300;
+
+}
+
+const gen = numbers();
+
+console.log(gen.next());
+
+console.log(gen.next());
+
+console.log(gen.next());
+
+Output
+
+{ value:100, done:false }
+
+{ value:200, done:false }
+
+{ value:300, done:false }
+
+Explanation
+
+yield 100
+
+↓
+
+Pause
+
+↓
+
+yield 200
+
+↓
+
+Pause
+
+↓
+
+yield 300
+
+Real Project Use
+
+✔ Large Data
+
+✔ Async Flow
+
+✔ Iteration
+
+Interview Question
+
+Q. What keyword is used in Generator Function?
+
+Answer
+
+yield
+
+=====================================================
+11. Proxy
+=====================================================
+
+Definition (English)
+
+Proxy intercepts operations performed on an object.
+
+Definition (Hinglish)
+
+Proxy object ke access aur update ko control karta hai.
+
+Syntax
+
+new Proxy(object, handler)
+
+Example
+
+const account = {
+
+balance:5000
+
+};
+
+const proxy = new Proxy(account,{});
+
+console.log(proxy.balance);
+
+Output
+
+5000
+
+Explanation
+
+Object
+
+↓
+
+Proxy
+
+↓
+
+Read Data
+
+↓
+
+Output
+
+Real Project Use
+
+✔ Validation
+
+✔ Logging
+
+✔ Security
+
+✔ React
+
+Interview Question
+
+Q. What is Proxy?
+
+Answer
+
+Proxy is used to intercept object operations.
+
+=====================================================
+12. Reflect
+=====================================================
+
+Definition (English)
+
+Reflect provides built-in methods to work with objects.
+
+Definition (Hinglish)
+
+Reflect object ke saath kaam karne ke helper methods deta hai.
+
+Syntax
+
+Reflect.get()
+
+Reflect.set()
+
+Example
+
+const student = {
+
+name:"Karan"
+
+};
+
+console.log(Reflect.get(student,"name"));
+
+Output
+
+Karan
+
+Explanation
+
+Reflect
+
+↓
+
+get()
+
+↓
+
+Read Property
+
+↓
+
+Output
+
+Real Project Use
+
+✔ Proxy
+
+✔ Object Operations
+
+✔ Framework Development
+
+Interview Question
+
+Q. Why use Reflect?
+
+Answer
+
+Reflect provides standard methods for object operations.
+
+=====================================================
+ES6 Advanced Revision
+=====================================================
+
+Promise
+
+↓
+
+async
+
+↓
+
+await
+
+↓
+
+Map
+
+↓
+
+Set
+
+↓
+
+WeakMap
+
+↓
+
+WeakSet
+
+↓
+
+Symbol
+
+↓
+
+Iterator
+
+↓
+
+Generator
+
+↓
+
+Proxy
+
+↓
+
+Reflect
+
+=====================================================
+Complete ES6 Revision
+=====================================================
+
+ES6
+
+↓
+
+let
+
+↓
+
+const
+
+↓
+
+Template Literals
+
+↓
+
+Default Parameters
+
+↓
+
+Arrow Functions
+
+↓
+
+Destructuring
+
+↓
+
+Spread Operator
+
+↓
+
+Rest Operator
+
+↓
+
+for...of
+
+↓
+
+for...in
+
+↓
+
+Modules
+
+↓
+
+Classes
+
+↓
+
+Constructor
+
+↓
+
+Getter
+
+↓
+
+Setter
+
+↓
+
+Static
+
+↓
+
+Enhanced Object Literals
+
+↓
+
+Property Shorthand
+
+↓
+
+Computed Property Names
+
+↓
+
+Optional Chaining
+
+↓
+
+Nullish Coalescing
+
+↓
+
+Object.entries()
+
+↓
+
+Object.fromEntries()
+
+↓
+
+BigInt
+
+↓
+
+Dynamic Import
+
+↓
+
+globalThis
+
+↓
+
+Promise
+
+↓
+
+async
+
+↓
+
+await
+
+↓
+
+Map
+
+↓
+
+Set
+
+↓
+
+WeakMap
+
+↓
+
+WeakSet
+
+↓
+
+Symbol
+
+↓
+
+Iterator
+
+↓
+
+Generator
+
+↓
+
+Proxy
+
+↓
+
+Reflect
+
+🎉 ES6 Complete ✅
+
+
+
+
