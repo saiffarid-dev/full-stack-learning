@@ -1,0 +1,199 @@
+==========================================
+02. DOM Tree
+==========================================
+
+Definition (English)
+
+DOM Tree is a hierarchical (tree-like) representation of an HTML document created automatically by the browser.
+
+------------------------------------------
+
+Definition (Hinglish)
+
+Jab browser HTML file ko load karta hai to usko Tree Structure me convert kar deta hai. Isi ko DOM Tree kehte hain.
+
+------------------------------------------
+
+Why DOM Tree?
+
+JavaScript directly HTML file ko read nahi karti.
+
+JavaScript
+
+↓
+
+DOM Tree
+
+↓
+
+HTML Elements
+
+Isliye JavaScript pehle DOM Tree ko access karti hai.
+
+------------------------------------------
+
+DOM Tree Structure
+
+<html>
+
+│
+
+├── <head>
+
+│      └── <title>
+
+│
+
+└── <body>
+
+       ├── <h1>
+
+       ├── <p>
+
+       └── <button>
+
+------------------------------------------
+
+Parent & Child
+
+<html>
+
+↓
+
+Parent
+
+<body>
+
+↓
+
+Child
+
+<h1>
+
+↓
+
+Child of Body
+
+------------------------------------------
+
+Root Node
+
+The <html> element is called the Root Node of the DOM Tree.
+
+------------------------------------------
+
+Advantages
+
+✔ Easy Navigation
+
+✔ Fast Access
+
+✔ Dynamic Changes
+
+✔ Parent-Child Relationship
+
+✔ Used in Every Website
+
+------------------------------------------
+
+Real Project Use
+
+✔ Login Form
+
+✔ Dashboard
+
+✔ Portfolio
+
+✔ Shopping Website
+
+✔ Admin Panel
+
+------------------------------------------
+
+Syntax
+
+document.documentElement
+
+------------------------------------------
+
+Common Mistakes
+
+❌ Thinking HTML and DOM are same.
+
+HTML
+
+↓
+
+Source Code
+
+DOM
+
+↓
+
+Browser Generated Tree
+
+------------------------------------------
+
+Best Practices
+
+✔ Learn Parent, Child and Sibling relationship.
+
+✔ Always inspect DOM using Browser Developer Tools.
+
+------------------------------------------
+
+Interview Questions
+
+Q1. What is DOM Tree?
+
+Answer
+
+DOM Tree is the hierarchical structure of an HTML document created by the browser.
+
+------------------------------------------
+
+Q2. Who creates the DOM Tree?
+
+Answer
+
+Browser.
+
+------------------------------------------
+
+Q3. What is the Root Node?
+
+Answer
+
+<html>
+
+------------------------------------------
+
+Q4. Is DOM Tree automatically created?
+
+Answer
+
+Yes.
+
+Browser automatically creates it.
+
+------------------------------------------
+
+Quick Revision
+
+HTML
+
+↓
+
+Browser
+
+↓
+
+DOM Tree
+
+↓
+
+JavaScript
+
+↓
+
+Access Elements

@@ -1,0 +1,216 @@
+==========================================
+01. DOM Introduction
+==========================================
+
+Definition (English)
+
+DOM (Document Object Model) is a programming interface that represents an HTML document as a tree structure. It allows JavaScript to access, modify and manipulate HTML elements dynamically.
+
+------------------------------------------
+
+Definition (Hinglish)
+
+DOM (Document Object Model) Browser dwara banaya gaya ek Tree Structure hota hai. JavaScript isi Tree ki help se HTML elements ko access, update aur modify karti hai.
+
+------------------------------------------
+
+History
+
+• DOM is created automatically by the Browser.
+• JavaScript uses the DOM to interact with HTML.
+• Every modern browser supports the DOM.
+
+------------------------------------------
+
+Why Do We Need DOM?
+
+Without DOM
+
+• HTML page is static.
+• JavaScript cannot change HTML.
+
+With DOM
+
+• Change Text
+• Change Color
+• Hide/Show Elements
+• Create New Elements
+• Delete Elements
+• Handle User Events
+
+------------------------------------------
+
+How DOM Works?
+
+HTML File
+
+↓
+
+Browser Reads HTML
+
+↓
+
+Creates DOM Tree
+
+↓
+
+JavaScript Accesses DOM
+
+↓
+
+HTML Changes
+
+------------------------------------------
+
+Syntax
+
+document
+
+Example
+
+console.log(document);
+
+------------------------------------------
+
+Output (Browser Console)
+
+#document
+
+or
+
+<html>
+<head>...</head>
+<body>...</body>
+</html>
+
+------------------------------------------
+
+Real Life Example
+
+User clicks "Add to Cart"
+
+↓
+
+JavaScript Runs
+
+↓
+
+DOM Updates Cart Count
+
+↓
+
+User Sees Updated Cart
+
+------------------------------------------
+
+Advantages
+
+✔ Makes Website Dynamic
+✔ Interactive User Interface
+✔ Fast HTML Updates
+✔ Easy User Interaction
+✔ Real-Time Changes
+
+------------------------------------------
+
+Real Project Uses
+
+✔ Login Form
+✔ Registration Form
+✔ Portfolio Website
+✔ Dashboard
+✔ Calculator
+✔ To-Do App
+✔ Weather App
+✔ E-Commerce Website
+
+------------------------------------------
+
+Common Mistakes
+
+❌ Running DOM with
+
+node script.js
+
+Reason
+
+Node.js does not have document and window objects.
+
+Correct
+
+Run index.html using Live Server or Browser.
+
+------------------------------------------
+
+Best Practices
+
+✔ Use Live Server.
+✔ Check output in Browser Console.
+✔ Keep HTML, CSS and JavaScript in separate files.
+✔ Use meaningful id and class names.
+
+------------------------------------------
+
+Interview Questions
+
+Q1. What is DOM?
+
+Answer
+
+DOM (Document Object Model) is a programming interface that represents an HTML document as a tree structure and allows JavaScript to access and manipulate HTML elements.
+
+------------------------------------------
+
+Q2. Who creates the DOM?
+
+Answer
+
+The Browser creates the DOM after loading the HTML page.
+
+------------------------------------------
+
+Q3. Does DOM work in Node.js?
+
+Answer
+
+No.
+
+DOM works only inside a Web Browser.
+
+------------------------------------------
+
+Q4. What is the full form of DOM?
+
+Answer
+
+Document Object Model.
+
+------------------------------------------
+
+Quick Revision
+
+DOM
+
+↓
+
+Browser
+
+↓
+
+DOM Tree
+
+↓
+
+JavaScript
+
+↓
+
+Access HTML
+
+↓
+
+Modify HTML
+
+==========================================
+End of Topic
+==========================================

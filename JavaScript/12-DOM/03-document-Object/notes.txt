@@ -1,0 +1,165 @@
+==========================================
+03. document Object
+==========================================
+
+Definition (English)
+
+The document object represents the entire HTML document. It is the main object of the DOM used to access and manipulate HTML elements.
+
+------------------------------------------
+
+Definition (Hinglish)
+
+document object poori HTML page ko represent karta hai. JavaScript isi object ki help se HTML ko access aur modify karti hai.
+
+------------------------------------------
+
+Why Use document Object?
+
+JavaScript ko HTML ke saath kaam karna hota hai.
+
+JavaScript
+
+↓
+
+document
+
+↓
+
+HTML
+
+------------------------------------------
+
+Common Properties
+
+document
+
+↓
+
+Complete HTML Document
+
+document.title
+
+↓
+
+Page Title
+
+document.body
+
+↓
+
+<body>
+
+document.head
+
+↓
+
+<head>
+
+document.documentElement
+
+↓
+
+<html>
+
+------------------------------------------
+
+Advantages
+
+✔ Access Entire HTML
+
+✔ Read HTML Elements
+
+✔ Modify HTML
+
+✔ Dynamic Web Pages
+
+✔ DOM Manipulation
+
+------------------------------------------
+
+Real Project Uses
+
+✔ Change Page Title
+
+✔ Access Body
+
+✔ Form Validation
+
+✔ Theme Change
+
+✔ Dynamic Websites
+
+------------------------------------------
+
+Common Mistakes
+
+❌ Running DOM using
+
+node script.js
+
+Reason
+
+Node.js does not support document object.
+
+Correct
+
+Run using Browser + Live Server.
+
+------------------------------------------
+
+Best Practices
+
+✔ Always use document inside Browser.
+
+✔ Use document methods to access HTML elements.
+
+------------------------------------------
+
+Interview Questions
+
+Q1. What is document object?
+
+Answer
+
+The document object represents the complete HTML document.
+
+------------------------------------------
+
+Q2. Who creates the document object?
+
+Answer
+
+Browser.
+
+------------------------------------------
+
+Q3. Can document object work in Node.js?
+
+Answer
+
+No.
+
+Only Browser supports document object.
+
+------------------------------------------
+
+Quick Revision
+
+Browser
+
+↓
+
+document
+
+↓
+
+HTML
+
+↓
+
+JavaScript Access
+
+==========================================
+End
+==========================================

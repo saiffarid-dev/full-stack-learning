@@ -1,0 +1,43 @@
+/* ====================== >>>> DOM Selectors Practice =================>>> */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+#heading {
+    color: blue;
+}
+
+#btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course {
+    color:  green;
+    font-size: 22px;
+}
+
+.title {
+    color: purple;
+}
+
+.btn {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border:  none;
+    border-radius: 5px;
+}
+
+.language {
+    color: teal;
+    font-size: 20px;
+}
