@@ -1,0 +1,399 @@
+=========================================================
+                 DOM ATTRIBUTES
+=========================================================
+
+Topics Covered
+
+1. getAttribute()
+
+2. setAttribute()
+
+3. removeAttribute()
+
+4. hasAttribute()
+
+=========================================================
+1. getAttribute()
+=========================================================
+
+Definition
+
+getAttribute() is used to get the value of an HTML attribute.
+
+Syntax
+
+element.getAttribute("attributeName");
+
+Example
+
+const link = document.getElementById("link");
+
+console.log(link.getAttribute("href"));
+
+Return Type
+
+Attribute Value
+
+or
+
+null
+
+Used
+
+✔ Read href
+
+✔ Read src
+
+✔ Read alt
+
+✔ Read target
+
+✔ Read placeholder
+
+Advantages
+
+✔ Easy to use
+
+✔ Read any attribute
+
+✔ Useful in forms
+
+Important Points
+
+✔ Returns attribute value.
+
+✔ Returns null if attribute does not exist.
+
+=========================================================
+2. setAttribute()
+=========================================================
+
+Definition
+
+setAttribute() is used to add a new attribute or update an existing attribute.
+
+Syntax
+
+element.setAttribute("attributeName","value");
+
+Example
+
+image.setAttribute("width","250");
+
+image.setAttribute("alt","JavaScript Image");
+
+Return Type
+
+No Return Value
+
+Used
+
+✔ Add class
+
+✔ Add id
+
+✔ Change image
+
+✔ Change link
+
+✔ Change placeholder
+
+Advantages
+
+✔ Add new attribute
+
+✔ Update existing attribute
+
+✔ Easy to use
+
+Important Points
+
+✔ Creates new attribute if not present.
+
+✔ Updates existing attribute if present.
+
+=========================================================
+3. removeAttribute()
+=========================================================
+
+Definition
+
+removeAttribute() removes an HTML attribute from an element.
+
+Syntax
+
+element.removeAttribute("attributeName");
+
+Example
+
+button.removeAttribute("disabled");
+
+Return Type
+
+No Return Value
+
+Used
+
+✔ Enable button
+
+✔ Remove disabled
+
+✔ Remove class
+
+✔ Remove id
+
+Advantages
+
+✔ Clean code
+
+✔ Easy to remove attributes
+
+✔ Useful in forms
+
+Important Points
+
+✔ Removes attribute permanently.
+
+✔ No error if attribute is missing.
+
+=========================================================
+4. hasAttribute()
+=========================================================
+
+Definition
+
+hasAttribute() checks whether an element has a specific attribute.
+
+Syntax
+
+element.hasAttribute("attributeName");
+
+Example
+
+input.hasAttribute("placeholder");
+
+input.hasAttribute("required");
+
+Return Type
+
+Boolean
+
+true
+
+or
+
+false
+
+Used
+
+✔ Form Validation
+
+✔ Check placeholder
+
+✔ Check required
+
+✔ Check disabled
+
+Advantages
+
+✔ Fast
+
+✔ Easy
+
+✔ Returns Boolean
+
+Important Points
+
+✔ Returns true if attribute exists.
+
+✔ Returns false if attribute does not exist.
+
+=========================================================
+Difference Table
+=========================================================
+
+Method
+
+getAttribute()
+
+Work
+
+Read Attribute
+
+Return
+
+Attribute Value
+
+-----------------------------------------
+
+Method
+
+setAttribute()
+
+Work
+
+Add / Update Attribute
+
+Return
+
+No Return Value
+
+-----------------------------------------
+
+Method
+
+removeAttribute()
+
+Work
+
+Delete Attribute
+
+Return
+
+No Return Value
+
+-----------------------------------------
+
+Method
+
+hasAttribute()
+
+Work
+
+Check Attribute
+
+Return
+
+true / false
+
+=========================================================
+Real Project Examples
+=========================================================
+
+Read Link
+
+link.getAttribute("href");
+
+-----------------------------------------
+
+Change Image
+
+image.setAttribute("src","image.jpg");
+
+-----------------------------------------
+
+Enable Button
+
+button.removeAttribute("disabled");
+
+-----------------------------------------
+
+Check Placeholder
+
+input.hasAttribute("placeholder");
+
+=========================================================
+Common Mistakes
+=========================================================
+
+❌ Wrong
+
+element.getAttribute(href);
+
+✔ Correct
+
+element.getAttribute("href");
+
+-----------------------------------------
+
+❌ Wrong
+
+element.setAttribute(width,250);
+
+✔ Correct
+
+element.setAttribute("width","250");
+
+-----------------------------------------
+
+❌ Wrong
+
+console.log(hasAttribute);
+
+✔ Correct
+
+console.log(input.hasAttribute("required"));
+
+=========================================================
+Best Practices
+=========================================================
+
+✔ Use getAttribute() to read values.
+
+✔ Use setAttribute() to add or update attributes.
+
+✔ Use removeAttribute() to remove unnecessary attributes.
+
+✔ Use hasAttribute() before accessing optional attributes.
+
+=========================================================
+Most Important Interview Questions
+=========================================================
+
+1. What is getAttribute()?
+
+2. What does getAttribute() return?
+
+3. What is setAttribute()?
+
+4. Can setAttribute() update an existing attribute?
+
+5. What is removeAttribute()?
+
+6. What is hasAttribute()?
+
+7. Which method returns true or false?
+
+8. Which method removes an attribute?
+
+9. Which method reads an attribute value?
+
+10. Which method adds a new attribute?
+
+=========================================================
+Quick Revision
+=========================================================
+
+getAttribute()
+
+↓
+
+Read
+
+-----------------------------------------
+
+setAttribute()
+
+↓
+
+Add / Update
+
+-----------------------------------------
+
+removeAttribute()
+
+↓
+
+Delete
+
+-----------------------------------------
+
+hasAttribute()
+
+↓
+
+Check
+
+=========================================================
+End of DOM Attributes Notes
+=========================================================

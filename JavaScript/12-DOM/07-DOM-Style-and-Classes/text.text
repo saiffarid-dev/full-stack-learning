@@ -1,0 +1,304 @@
+=========================================================
+              DOM STYLES AND CLASSES
+=========================================================
+
+Topics Covered
+
+1. style
+2. className
+3. classList
+4. add()
+5. remove()
+6. toggle()
+7. contains()
+8. replace()
+
+=========================================================
+1. style
+=========================================================
+
+Definition
+
+The style property is used to change CSS properties of an HTML element using JavaScript.
+
+Syntax
+
+element.style.property = "value";
+
+Example
+
+heading.style.color = "red";
+
+heading.style.backgroundColor = "yellow";
+
+heading.style.padding = "10px";
+
+Used
+
+✔ Change text color
+
+✔ Change background
+
+✔ Change width
+
+✔ Change height
+
+✔ Dynamic UI
+
+Advantages
+
+✔ Easy to use
+
+✔ Instant styling
+
+✔ No need to edit CSS file
+
+Important Points
+
+✔ Changes only inline CSS.
+
+✔ Property names use camelCase.
+
+Example
+
+background-color
+
+↓
+
+backgroundColor
+
+=========================================================
+2. className
+=========================================================
+
+Definition
+
+className is used to get or set the class name of an HTML element.
+
+Syntax
+
+element.className
+
+element.className = "red";
+
+Example
+
+console.log(title.className);
+
+title.className = "red";
+
+Used
+
+✔ Change theme
+
+✔ Change class
+
+✔ Dynamic styling
+
+Advantages
+
+✔ Easy to update class
+
+✔ Read and Write
+
+Important Points
+
+✔ Replaces old class with new class.
+
+=========================================================
+3. classList
+=========================================================
+
+Definition
+
+classList is used to manage CSS classes of an HTML element.
+
+Syntax
+
+element.classList
+
+Example
+
+console.log(box.classList);
+
+Return Type
+
+DOMTokenList
+
+Used
+
+✔ Manage classes
+
+✔ Dynamic styling
+
+Advantages
+
+✔ Easy to use
+
+✔ Multiple methods available
+
+=========================================================
+4. add()
+=========================================================
+
+Definition
+
+Adds one or more CSS classes.
+
+Syntax
+
+element.classList.add("className");
+
+Example
+
+box.classList.add("round");
+
+box.classList.add("shadow");
+
+Used
+
+✔ Add new class
+
+✔ Styling
+
+Advantages
+
+✔ Multiple classes can be added.
+
+=========================================================
+5. remove()
+=========================================================
+
+Definition
+
+Removes a CSS class.
+
+Syntax
+
+element.classList.remove("className");
+
+Example
+
+box.classList.remove("shadow");
+
+Used
+
+✔ Remove styling
+
+✔ Remove effects
+
+Advantages
+
+✔ Easy to remove classes
+
+=========================================================
+6. toggle()
+=========================================================
+
+Definition
+
+Adds a class if it does not exist and removes it if it already exists.
+
+Syntax
+
+element.classList.toggle("className");
+
+Example
+
+box.classList.toggle("round");
+
+Used
+
+✔ Dark Mode
+
+✔ Sidebar
+
+✔ Menu
+
+Advantages
+
+✔ One method for add and remove.
+
+=========================================================
+7. contains()
+=========================================================
+
+Definition
+
+Checks whether a class exists.
+
+Syntax
+
+element.classList.contains("className");
+
+Example
+
+box.classList.contains("box");
+
+Returns
+
+true / false
+
+Used
+
+✔ Validation
+
+✔ Checking class
+
+Advantages
+
+✔ Boolean return value
+
+=========================================================
+8. replace()
+=========================================================
+
+Definition
+
+Replaces an existing class with another class.
+
+Syntax
+
+element.classList.replace("oldClass","newClass");
+
+Example
+
+box.classList.replace("box","shadow");
+
+Used
+
+✔ Replace themes
+
+✔ Dynamic UI
+
+Advantages
+
+✔ Replace class in one line
+
+=========================================================
+Difference
+=========================================================
+
+style
+
+↓
+
+Change inline CSS
+
+-----------------------------------------
+
+className
+
+↓
+
+Replace complete class
+
+-----------------------------------------
+
+classList
+
+↓
+
+Manage classes
+
+================================================

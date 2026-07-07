@@ -1,0 +1,326 @@
+=========================================================
+                  DOM CONTENT
+=========================================================
+
+Topics Covered
+
+1. innerHTML
+2. innerText
+3. textContent
+4. Difference
+
+=========================================================
+1. innerHTML
+=========================================================
+
+Definition
+
+innerHTML is used to get or set the HTML content inside an element.
+
+Syntax
+
+element.innerHTML
+
+element.innerHTML = "<h1>Hello</h1>";
+
+Example
+
+const heading = document.getElementById("heading");
+
+console.log(heading.innerHTML);
+
+heading.innerHTML = "<b>Learning JavaScript</b>";
+
+Return Type
+
+HTML Content (String)
+
+Used
+
+✔ Change HTML Content
+
+✔ Add HTML Tags
+
+✔ Dynamic UI
+
+✔ Cards
+
+✔ Tables
+
+Advantages
+
+✔ Supports HTML Tags
+
+✔ Read and Write
+
+✔ Easy to Use
+
+Important Points
+
+✔ HTML Tags are rendered.
+
+✔ Can read HTML.
+
+✔ Can update HTML.
+
+=========================================================
+2. innerText
+=========================================================
+
+Definition
+
+innerText is used to get or set only the visible text of an element.
+
+Syntax
+
+element.innerText
+
+element.innerText = "Hello";
+
+Example
+
+const title = document.getElementById("title");
+
+console.log(title.innerText);
+
+title.innerText = "DOM Practice";
+
+Return Type
+
+Visible Text
+
+Used
+
+✔ Heading
+
+✔ Paragraph
+
+✔ Button Text
+
+✔ Labels
+
+Advantages
+
+✔ Returns only visible text.
+
+✔ Easy to understand.
+
+✔ Read and Write.
+
+Important Points
+
+✔ Hidden text is ignored.
+
+✔ HTML Tags are not returned.
+
+=========================================================
+3. textContent
+=========================================================
+
+Definition
+
+textContent is used to get or set all text inside an element including hidden text.
+
+Syntax
+
+element.textContent
+
+element.textContent = "Learning DOM";
+
+Example
+
+const message = document.getElementById("message");
+
+console.log(message.textContent);
+
+message.textContent = "Content Updated";
+
+Return Type
+
+Complete Text
+
+Used
+
+✔ Read complete text
+
+✔ Hidden text
+
+✔ Update content
+
+Advantages
+
+✔ Fast
+
+✔ Includes hidden text
+
+✔ Read and Write
+
+Important Points
+
+✔ HTML tags are not returned.
+
+✔ Hidden text is included.
+
+=========================================================
+4. Difference
+=========================================================
+
+innerHTML
+
+✔ Returns HTML with tags.
+
+✔ Supports HTML Tags.
+
+✔ Hidden HTML is included.
+
+-----------------------------------------
+
+innerText
+
+✔ Returns only visible text.
+
+✔ Hidden text is ignored.
+
+✔ HTML Tags are removed.
+
+-----------------------------------------
+
+textContent
+
+✔ Returns all text.
+
+✔ Hidden text is included.
+
+✔ HTML Tags are removed.
+
+=========================================================
+Difference Table
+=========================================================
+
+Property          HTML Tags   Hidden Text   Visible Text
+
+innerHTML         Yes         Yes           Yes
+
+innerText         No          No            Yes
+
+textContent       No          Yes           Yes
+
+=========================================================
+Real Project Examples
+=========================================================
+
+Change Heading
+
+heading.innerHTML = "<h1>Welcome</h1>";
+
+-----------------------------------------
+
+Change Button Text
+
+button.innerText = "Login";
+
+-----------------------------------------
+
+Update Paragraph
+
+message.textContent = "Learning JavaScript";
+
+=========================================================
+Common Mistakes
+=========================================================
+
+❌ Wrong
+
+console.log("heading.innerHTML");
+
+✔ Correct
+
+console.log(heading.innerHTML);
+
+-----------------------------------------
+
+❌ Wrong
+
+console.log(textContent);
+
+✔ Correct
+
+console.log(demo.textContent);
+
+-----------------------------------------
+
+❌ Wrong
+
+element.innerHTML = "Hello";
+
+When HTML is required use tags.
+
+✔ Correct
+
+element.innerHTML = "<b>Hello</b>";
+
+=========================================================
+Best Practices
+=========================================================
+
+✔ Use innerHTML only when HTML tags are required.
+
+✔ Use innerText for visible text.
+
+✔ Use textContent for reading complete text.
+
+✔ Avoid unnecessary use of innerHTML for security reasons.
+
+=========================================================
+Most Important Interview Questions
+=========================================================
+
+1. What is innerHTML?
+
+2. What is innerText?
+
+3. What is textContent?
+
+4. Difference between innerHTML and innerText?
+
+5. Difference between innerText and textContent?
+
+6. Which property supports HTML tags?
+
+7. Which property returns visible text only?
+
+8. Which property returns hidden text?
+
+9. Which property is best for updating HTML?
+
+10. Which property is faster?
+
+=========================================================
+Quick Revision
+=========================================================
+
+innerHTML
+
+↓
+
+HTML + Tags
+
+-----------------------------------------
+
+innerText
+
+↓
+
+Only Visible Text
+
+-----------------------------------------
+
+textContent
+
+↓
+
+All Text (Visible + Hidden)
+
+=========================================================
+End of DOM Content Notes
+=========================================================
