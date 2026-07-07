@@ -1,0 +1,506 @@
+=========================================================
+                 DOM SELECTORS
+=========================================================
+
+Topics Covered
+
+1. getElementById()
+
+2. getElementsByClassName()
+
+3. getElementsByTagName()
+
+4. querySelector()
+
+5. querySelectorAll()
+
+=========================================================
+1. getElementById()
+=========================================================
+
+Definition
+
+Selects one HTML element using its unique id.
+
+Syntax
+
+document.getElementById("idName");
+
+Example
+
+const heading = document.getElementById("heading");
+
+Return Type
+
+HTML Element
+
+Used
+
+✔ Select one element
+✔ Change Text
+✔ Change CSS
+✔ Form Validation
+✔ Button Events
+
+Advantages
+
+✔ Fast
+✔ Beginner Friendly
+✔ Returns One Element
+
+Important Points
+
+✔ Uses id
+✔ id must be unique
+✔ Returns null if not found
+
+=========================================================
+2. getElementsByClassName()
+=========================================================
+
+Definition
+
+Selects all HTML elements having the same class name.
+
+Syntax
+
+document.getElementsByClassName("className");
+
+Example
+
+const courses = document.getElementsByClassName("course");
+
+Return Type
+
+HTMLCollection
+
+Used
+
+✔ Product Cards
+✔ Menu
+✔ Gallery
+✔ Navigation
+
+Advantages
+
+✔ Select Multiple Elements
+✔ Fast
+✔ Easy
+
+Important Points
+
+✔ Uses class
+✔ Returns HTMLCollection
+✔ Access using index
+
+=========================================================
+3. getElementsByTagName()
+=========================================================
+
+Definition
+
+Selects all HTML elements having the same tag name.
+
+Syntax
+
+document.getElementsByTagName("p");
+
+Example
+
+const paragraphs = document.getElementsByTagName("p");
+
+Return Type
+
+HTMLCollection
+
+Used
+
+✔ Paragraphs
+✔ Headings
+✔ Images
+✔ Buttons
+
+Advantages
+
+✔ Select Multiple Elements
+✔ Fast
+✔ Easy
+
+Important Points
+
+✔ Uses tag name
+✔ Returns HTMLCollection
+✔ Access using index
+
+=========================================================
+4. querySelector()
+=========================================================
+
+Definition
+
+Selects the first HTML element that matches a CSS selector.
+
+Syntax
+
+document.querySelector("selector");
+
+Examples
+
+document.querySelector("#heading");
+
+document.querySelector(".title");
+
+document.querySelector("p");
+
+Return Type
+
+HTML Element
+
+Used
+
+✔ Modern JavaScript
+✔ React
+✔ Dynamic UI
+✔ Event Handling
+
+Advantages
+
+✔ CSS Selector Support
+✔ Modern
+✔ Easy
+
+Important Points
+
+✔ Returns first matching element
+✔ Returns null if not found
+
+=========================================================
+5. querySelectorAll()
+=========================================================
+
+Definition
+
+Selects all HTML elements matching a CSS selector.
+
+Syntax
+
+document.querySelectorAll("selector");
+
+Example
+
+const languages =
+document.querySelectorAll(".language");
+
+Return Type
+
+NodeList
+
+Used
+
+✔ Cards
+✔ Products
+✔ Navigation
+✔ Images
+
+Advantages
+
+✔ CSS Selector Support
+✔ Modern
+✔ Select Multiple Elements
+
+Important Points
+
+✔ Returns NodeList
+✔ Access using index
+
+=========================================================
+Difference Table
+=========================================================
+
+Method
+
+getElementById()
+
+Uses
+
+id
+
+Returns
+
+HTML Element
+
+Elements
+
+One
+
+-----------------------------------------
+
+Method
+
+getElementsByClassName()
+
+Uses
+
+Class
+
+Returns
+
+HTMLCollection
+
+Elements
+
+Multiple
+
+-----------------------------------------
+
+Method
+
+getElementsByTagName()
+
+Uses
+
+Tag
+
+Returns
+
+HTMLCollection
+
+Elements
+
+Multiple
+
+-----------------------------------------
+
+Method
+
+querySelector()
+
+Uses
+
+CSS Selector
+
+Returns
+
+HTML Element
+
+Elements
+
+First Matching Element
+
+-----------------------------------------
+
+Method
+
+querySelectorAll()
+
+Uses
+
+CSS Selector
+
+Returns
+
+NodeList
+
+Elements
+
+All Matching Elements
+
+=========================================================
+HTMLCollection vs NodeList
+=========================================================
+
+HTMLCollection
+
+✔ Returned by
+
+getElementsByClassName()
+
+getElementsByTagName()
+
+-----------------------------------------
+
+NodeList
+
+✔ Returned by
+
+querySelectorAll()
+
+=========================================================
+Common Mistakes
+=========================================================
+
+❌ Wrong id
+
+document.getElementById("Heading")
+
+Correct
+
+document.getElementById("heading")
+
+-----------------------------------------
+
+❌ Forgetting
+
+#
+
+for id
+
+Correct
+
+document.querySelector("#heading")
+
+-----------------------------------------
+
+❌ Forgetting
+
+.
+
+for class
+
+Correct
+
+document.querySelector(".course")
+
+=========================================================
+Best Practices
+=========================================================
+
+✔ Use meaningful ids
+
+✔ Use meaningful class names
+
+✔ Prefer querySelector() for modern projects
+
+✔ Prefer querySelectorAll() for multiple elements
+
+✔ Keep ids unique
+
+=========================================================
+30 Most Important Interview Questions
+=========================================================
+
+1. What is DOM?
+
+2. What is document object?
+
+3. What is getElementById()?
+
+4. What does getElementById() return?
+
+5. What happens if id is not found?
+
+6. What is getElementsByClassName()?
+
+7. What does it return?
+
+8. What is HTMLCollection?
+
+9. What is getElementsByTagName()?
+
+10. Can it select multiple elements?
+
+11. What is querySelector()?
+
+12. What does querySelector() return?
+
+13. What is querySelectorAll()?
+
+14. What does querySelectorAll() return?
+
+15. What is NodeList?
+
+16. Difference between HTMLCollection and NodeList?
+
+17. Difference between id and class?
+
+18. Difference between querySelector() and querySelectorAll()?
+
+19. Difference between getElementById() and querySelector()?
+
+20. Difference between class and tag selector?
+
+21. What is CSS Selector?
+
+22. What is null?
+
+23. What is undefined?
+
+24. Which selector is most used today?
+
+25. Which selector is fastest?
+
+26. Can id repeat?
+
+27. Can class repeat?
+
+28. Can querySelector() select id?
+
+29. Can querySelector() select class?
+
+30. Can querySelector() select tag?
+
+=========================================================
+Quick Revision
+=========================================================
+
+getElementById()
+
+↓
+
+One Element
+
+↓
+
+HTML Element
+
+-----------------------------------------
+
+getElementsByClassName()
+
+↓
+
+Multiple Elements
+
+↓
+
+HTMLCollection
+
+-----------------------------------------
+
+getElementsByTagName()
+
+↓
+
+Multiple Elements
+
+↓
+
+HTMLCollection
+
+-----------------------------------------
+
+querySelector()
+
+↓
+
+First Matching Element
+
+↓
+
+HTML Element
+
+-----------------------------------------
+
+querySelectorAll()
+
+↓
+
+All Matching Elements
+
+↓
+
+NodeList
+
+=========================================================
+End of DOM Selectors Notes
+=========================================================
