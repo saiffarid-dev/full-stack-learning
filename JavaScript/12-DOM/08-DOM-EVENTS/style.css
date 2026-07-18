@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    padding: 30px;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#box{
+    width: 200px;
+    height: 120px;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input,select {
+    padding: 10px;
+    width: 220px;
+}
