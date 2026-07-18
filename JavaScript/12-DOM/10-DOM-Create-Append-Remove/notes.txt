@@ -1,0 +1,430 @@
+=========================================================
+         DOM CREATE, APPEND & REMOVE ELEMENTS
+=========================================================
+
+Definition
+
+DOM Manipulation is the process of creating, inserting,
+replacing and removing HTML elements dynamically using JavaScript.
+
+=========================================================
+Why Use DOM Manipulation?
+=========================================================
+
+✔ Dynamic UI
+
+✔ Todo App
+
+✔ Shopping Cart
+
+✔ Chat Application
+
+✔ Blog Comments
+
+✔ Product Cards
+
+✔ Notifications
+
+=========================================================
+1. createElement()
+=========================================================
+
+Definition
+
+Creates a new HTML element.
+
+Syntax
+
+document.createElement("tagName");
+
+Example
+
+const h1 = document.createElement("h1");
+
+Used
+
+✔ Heading
+
+✔ Paragraph
+
+✔ Button
+
+✔ Image
+
+✔ Div
+
+Advantages
+
+✔ Creates elements dynamically.
+
+=========================================================
+2. append()
+=========================================================
+
+Definition
+
+Adds element at the end of the parent.
+
+Syntax
+
+parent.append(child);
+
+Example
+
+container.append(h1);
+
+Used
+
+✔ Add elements
+
+✔ Add text
+
+Advantages
+
+✔ Can append multiple nodes and text.
+
+=========================================================
+3. appendChild()
+=========================================================
+
+Definition
+
+Adds one child node at the end.
+
+Syntax
+
+parent.appendChild(child);
+
+Example
+
+container.appendChild(button);
+
+Used
+
+✔ Todo App
+
+✔ Dynamic Cards
+
+Advantages
+
+✔ Fast and widely supported.
+
+=========================================================
+4. prepend()
+=========================================================
+
+Definition
+
+Adds an element at the beginning of the parent.
+
+Syntax
+
+parent.prepend(child);
+
+Example
+
+container.prepend(h1);
+
+Used
+
+✔ Add first item
+
+✔ Add heading
+
+=========================================================
+5. before()
+=========================================================
+
+Definition
+
+Inserts an element before the selected element.
+
+Syntax
+
+element.before(newElement);
+
+Example
+
+heading.before(paragraph);
+
+Used
+
+✔ Insert content before an element.
+
+=========================================================
+6. after()
+=========================================================
+
+Definition
+
+Inserts an element after the selected element.
+
+Syntax
+
+element.after(newElement);
+
+Example
+
+heading.after(paragraph);
+
+Used
+
+✔ Insert content after an element.
+
+=========================================================
+7. remove()
+=========================================================
+
+Definition
+
+Removes the selected element.
+
+Syntax
+
+element.remove();
+
+Example
+
+button.remove();
+
+Used
+
+✔ Delete element
+
+✔ Remove cards
+
+Advantages
+
+✔ Easy to remove elements.
+
+=========================================================
+8. removeChild()
+=========================================================
+
+Definition
+
+Removes a child element from its parent.
+
+Syntax
+
+parent.removeChild(child);
+
+Example
+
+container.removeChild(paragraph);
+
+Used
+
+✔ Remove child node
+
+✔ Dynamic deletion
+
+=========================================================
+9. replaceChild()
+=========================================================
+
+Definition
+
+Replaces an existing child with a new child.
+
+Syntax
+
+parent.replaceChild(newChild, oldChild);
+
+Example
+
+container.replaceChild(newHeading, heading);
+
+Used
+
+✔ Replace heading
+
+✔ Update UI
+
+Advantages
+
+✔ Replaces element in one step.
+
+=========================================================
+Difference
+=========================================================
+
+createElement()
+
+↓
+
+Creates new element
+
+-----------------------------------------
+
+append()
+
+↓
+
+Adds element at end
+
+-----------------------------------------
+
+appendChild()
+
+↓
+
+Adds one child node
+
+-----------------------------------------
+
+prepend()
+
+↓
+
+Adds element at beginning
+
+-----------------------------------------
+
+before()
+
+↓
+
+Insert before element
+
+-----------------------------------------
+
+after()
+
+↓
+
+Insert after element
+
+-----------------------------------------
+
+remove()
+
+↓
+
+Remove selected element
+
+-----------------------------------------
+
+removeChild()
+
+↓
+
+Parent removes child
+
+-----------------------------------------
+
+replaceChild()
+
+↓
+
+Replace old child
+
+=========================================================
+Common Mistakes
+=========================================================
+
+❌ Using appendChild() with text
+
+✔ Use append() for text.
+
+-----------------------------------------
+
+❌ removeChild() without parent
+
+✔ parent.removeChild(child);
+
+-----------------------------------------
+
+❌ Wrong order in replaceChild()
+
+✔ replaceChild(newChild, oldChild);
+
+=========================================================
+Best Practices
+=========================================================
+
+✔ Create elements only when needed.
+
+✔ Use append() for text and multiple nodes.
+
+✔ Use appendChild() for single node.
+
+✔ Remove unused elements.
+
+✔ Keep DOM manipulation clean.
+
+=========================================================
+Most Important Interview Questions
+=========================================================
+
+1. What is createElement()?
+
+2. Difference between append() and appendChild()?
+
+3. Difference between remove() and removeChild()?
+
+4. What is prepend()?
+
+5. What is before()?
+
+6. What is after()?
+
+7. What is replaceChild()?
+
+8. How do you create an HTML element using JavaScript?
+
+9. Which method replaces an old child?
+
+10. Which method removes the selected element?
+
+=========================================================
+Quick Revision
+=========================================================
+
+createElement()
+↓
+
+Create Element
+
+append()
+↓
+
+Add at End
+
+appendChild()
+↓
+
+Add One Child
+
+prepend()
+↓
+
+Add at Beginning
+
+before()
+↓
+
+Insert Before
+
+after()
+↓
+
+Insert After
+
+remove()
+↓
+
+Remove Element
+
+removeChild()
+↓
+
+Remove Child
+
+replaceChild()
+↓
+
+Replace Child
+
+End of DOM Create, Append & Remove Notes
+

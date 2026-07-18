@@ -1,0 +1,359 @@
+=========================================================
+                DOM TRAVERSING
+=========================================================
+
+Definition
+
+DOM Traversing means navigating from one HTML element
+to another using JavaScript.
+
+Examples
+
+✔ Parent
+✔ Child
+✔ Sibling
+
+=========================================================
+Why DOM Traversing?
+=========================================================
+
+✔ Access Parent
+
+✔ Access Children
+
+✔ Access Siblings
+
+✔ Dynamic UI
+
+✔ DOM Navigation
+
+=========================================================
+1. parentElement
+=========================================================
+
+Definition
+
+Returns the parent element of the selected element.
+
+Syntax
+
+element.parentElement
+
+Example
+
+const child = document.getElementById("item1");
+
+console.log(child.parentElement);
+
+Used
+
+✔ Parent Div
+
+✔ Parent Styling
+
+Advantages
+
+✔ Easy Parent Access
+
+=========================================================
+2. children
+=========================================================
+
+Definition
+
+Returns all child elements.
+
+Syntax
+
+element.children
+
+Example
+
+console.log(list.children);
+
+Return Type
+
+HTMLCollection
+
+Used
+
+✔ Loop Through Children
+
+✔ Access Child Elements
+
+Advantages
+
+✔ Fast
+
+✔ Easy
+
+=========================================================
+3. firstElementChild
+=========================================================
+
+Definition
+
+Returns the first child element.
+
+Syntax
+
+element.firstElementChild
+
+Example
+
+console.log(list.firstElementChild);
+
+Used
+
+✔ First Item
+
+✔ First Card
+
+=========================================================
+4. lastElementChild
+=========================================================
+
+Definition
+
+Returns the last child element.
+
+Syntax
+
+element.lastElementChild
+
+Example
+
+console.log(list.lastElementChild);
+
+Used
+
+✔ Last Item
+
+✔ Last Card
+
+=========================================================
+5. nextElementSibling
+=========================================================
+
+Definition
+
+Returns the next sibling element.
+
+Syntax
+
+element.nextElementSibling
+
+Example
+
+console.log(item1.nextElementSibling);
+
+Used
+
+✔ Next Item
+
+✔ Navigation
+
+=========================================================
+6. previousElementSibling
+=========================================================
+
+Definition
+
+Returns the previous sibling element.
+
+Syntax
+
+element.previousElementSibling
+
+Example
+
+console.log(item2.previousElementSibling);
+
+Used
+
+✔ Previous Item
+
+✔ Previous Card
+
+=========================================================
+7. closest()
+=========================================================
+
+Definition
+
+Returns the nearest parent element that matches a selector.
+
+Syntax
+
+element.closest("selector");
+
+Example
+
+console.log(item2.closest(".container"));
+
+Used
+
+✔ Parent Container
+
+✔ Event Delegation
+
+Advantages
+
+✔ Finds nearest matching parent
+
+=========================================================
+Difference
+=========================================================
+
+parentElement
+
+↓
+
+Returns Parent
+
+-----------------------------------------
+
+children
+
+↓
+
+Returns All Children
+
+-----------------------------------------
+
+firstElementChild
+
+↓
+
+Returns First Child
+
+-----------------------------------------
+
+lastElementChild
+
+↓
+
+Returns Last Child
+
+-----------------------------------------
+
+nextElementSibling
+
+↓
+
+Returns Next Sibling
+
+-----------------------------------------
+
+previousElementSibling
+
+↓
+
+Returns Previous Sibling
+
+-----------------------------------------
+
+closest()
+
+↓
+
+Returns Matching Parent
+
+=========================================================
+Common Mistakes
+=========================================================
+
+❌ previousElementSiblir
+
+✔ previousElementSibling
+
+-----------------------------------------
+
+❌ closest(",container")
+
+✔ closest(".container")
+
+-----------------------------------------
+
+❌ Same id for multiple elements
+
+✔ Use unique IDs
+
+=========================================================
+Best Practices
+=========================================================
+
+✔ Use unique IDs.
+
+✔ Use closest() for parent lookup.
+
+✔ Use children instead of childNodes when only element nodes are needed.
+
+✔ Use meaningful variable names.
+
+=========================================================
+Most Important Interview Questions
+=========================================================
+
+1. What is DOM Traversing?
+
+2. What is parentElement?
+
+3. Difference between children and childNodes?
+
+4. Difference between firstElementChild and lastElementChild?
+
+5. Difference between nextElementSibling and previousElementSibling?
+
+6. What is closest()?
+
+7. What is HTMLCollection?
+
+8. What is the use of closest() in JavaScript?
+
+9. What does parentElement return?
+
+10. How do you access child elements?
+
+=========================================================
+Quick Revision
+=========================================================
+
+parentElement
+↓
+
+Parent
+
+children
+↓
+
+All Children
+
+firstElementChild
+↓
+
+First Child
+
+lastElementChild
+↓
+
+Last Child
+
+nextElementSibling
+↓
+
+Next Sibling
+
+previousElementSibling
+↓
+
+Previous Sibling
+
+closest()
+↓
+
+Nearest Matching Parent
+
+=========================================================
+End of DOM Traversing Notes
+=========================================================
