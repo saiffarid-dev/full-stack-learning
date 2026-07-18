@@ -69,6 +69,21 @@ focusBox.addEventListener("blur", function (){
     console.log("Input Blur");
 });
 
+// ========================= 13. Change Event ============== 
+
+const  course = document.getElementById("course");
+course.addEventListener("change", function() {
+    console.log(course.value);
+});
+
+// ============================= Submit =================>>>>
+
+const myForm = document.getElementById("myForm");
+myForm.addEventListener("submit", function (event){
+    event.preventDefault();
+    console.log("Form Submitted");
+});
+
 
 
 

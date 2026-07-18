@@ -1,0 +1,456 @@
+=========================================================
+                 DOM EVENTS
+=========================================================
+
+Definition
+
+A DOM Event is an action performed by the user or browser.
+JavaScript listens to these events and executes a function.
+
+Examples:
+✔ Click
+✔ Double Click
+✔ Mouse Hover
+✔ Keyboard Press
+✔ Form Submit
+✔ Input Change
+
+=========================================================
+Syntax
+=========================================================
+
+Method 1
+
+element.onclick = function () {
+
+}
+
+-----------------------------------------
+
+Method 2 (Recommended)
+
+element.addEventListener("click", function () {
+
+});
+
+=========================================================
+Why Use Events?
+=========================================================
+
+✔ User Interaction
+
+✔ Dynamic UI
+
+✔ Form Validation
+
+✔ Dark Mode
+
+✔ Navigation Menu
+
+✔ Popup
+
+✔ Image Slider
+
+✔ Games
+
+=========================================================
+Mouse Events
+=========================================================
+
+1. click
+
+Description
+
+Runs when the user clicks an element.
+
+Example
+
+button.addEventListener("click", function () {
+
+});
+
+-----------------------------------------
+
+2. dblclick
+
+Runs when the user double-clicks.
+
+Example
+
+button.addEventListener("dblclick", function () {
+
+});
+
+-----------------------------------------
+
+3. mouseover
+
+Runs when the mouse enters an element.
+
+Example
+
+box.addEventListener("mouseover", function () {
+
+});
+
+-----------------------------------------
+
+4. mouseout
+
+Runs when the mouse leaves an element.
+
+Example
+
+box.addEventListener("mouseout", function () {
+
+});
+
+-----------------------------------------
+
+5. mousemove
+
+Runs continuously while moving the mouse.
+
+Example
+
+box.addEventListener("mousemove", function () {
+
+});
+
+-----------------------------------------
+
+6. mousedown
+
+Runs when mouse button is pressed.
+
+-----------------------------------------
+
+7. mouseup
+
+Runs when mouse button is released.
+
+=========================================================
+Keyboard Events
+=========================================================
+
+1. keydown
+
+Runs when a key is pressed.
+
+-----------------------------------------
+
+2. keyup
+
+Runs when a key is released.
+
+-----------------------------------------
+
+3. input
+
+Runs whenever the input value changes.
+
+Example
+
+input.addEventListener("input", function(){
+
+});
+
+=========================================================
+Form Events
+=========================================================
+
+1. focus
+
+Runs when input gets focus.
+
+-----------------------------------------
+
+2. blur
+
+Runs when input loses focus.
+
+-----------------------------------------
+
+3. change
+
+Runs after changing the value.
+
+-----------------------------------------
+
+4. submit
+
+Runs when the form is submitted.
+
+Example
+
+form.addEventListener("submit", function(event){
+
+event.preventDefault();
+
+});
+
+=========================================================
+preventDefault()
+=========================================================
+
+Definition
+
+Stops the browser's default behavior.
+
+Mostly Used In
+
+✔ Form
+
+✔ Link
+
+✔ Button
+
+Example
+
+event.preventDefault();
+
+=========================================================
+Common Events
+=========================================================
+
+click
+
+↓
+
+Button Click
+
+-----------------------------------------
+
+dblclick
+
+↓
+
+Double Click
+
+-----------------------------------------
+
+mouseover
+
+↓
+
+Mouse Enter
+
+-----------------------------------------
+
+mouseout
+
+↓
+
+Mouse Leave
+
+-----------------------------------------
+
+mousemove
+
+↓
+
+Mouse Moving
+
+-----------------------------------------
+
+mousedown
+
+↓
+
+Mouse Press
+
+-----------------------------------------
+
+mouseup
+
+↓
+
+Mouse Release
+
+-----------------------------------------
+
+keydown
+
+↓
+
+Key Press
+
+-----------------------------------------
+
+keyup
+
+↓
+
+Key Release
+
+-----------------------------------------
+
+input
+
+↓
+
+Typing
+
+-----------------------------------------
+
+focus
+
+↓
+
+Input Selected
+
+-----------------------------------------
+
+blur
+
+↓
+
+Input Left
+
+-----------------------------------------
+
+change
+
+↓
+
+Value Changed
+
+-----------------------------------------
+
+submit
+
+↓
+
+Form Submit
+
+=========================================================
+Advantages
+=========================================================
+
+✔ Makes websites interactive.
+
+✔ Improves user experience.
+
+✔ Handles user actions.
+
+✔ Dynamic UI.
+
+✔ Essential for JavaScript Projects.
+
+✔ Used in React, Angular and Vue.
+
+=========================================================
+Best Practices
+=========================================================
+
+✔ Always use addEventListener().
+
+✔ Use preventDefault() in forms.
+
+✔ Keep event functions small.
+
+✔ Remove unused event listeners.
+
+✔ Use meaningful function names.
+
+=========================================================
+Common Mistakes
+=========================================================
+
+❌ Forgetting preventDefault()
+
+↓
+
+Page Reloads
+
+-----------------------------------------
+
+❌ Wrong ID
+
+↓
+
+getElementById() returns null
+
+-----------------------------------------
+
+❌ Wrong Event Name
+
+↓
+
+Code will not work
+
+=========================================================
+Most Important Interview Questions
+=========================================================
+
+1. What is an Event?
+
+2. What is Event Handling?
+
+3. What is addEventListener()?
+
+4. Difference between click and dblclick?
+
+5. Difference between keydown and keyup?
+
+6. Difference between mouseover and mouseout?
+
+7. What is input event?
+
+8. What is focus event?
+
+9. What is blur event?
+
+10. What is change event?
+
+11. What is submit event?
+
+12. What is preventDefault()?
+
+13. Why use addEventListener() instead of onclick?
+
+=========================================================
+Quick Revision
+=========================================================
+
+Event
+
+↓
+
+User Action
+
+↓
+
+JavaScript Detects
+
+↓
+
+Runs Function
+
+=========================================================
+
+Most Used Events
+
+click
+
+dblclick
+
+mouseover
+
+mouseout
+
+mousemove
+
+keydown
+
+keyup
+
+input
+
+focus
+
+blur
+
+change
+
+submit
