@@ -1,1 +1,500 @@
-!
+=========================================================
+         DOM - BROWSER OBJECT MODEL (BOM)
+=========================================================
+
+Definition
+
+Browser Object Model (BOM) allows JavaScript to interact
+with the browser and its features.
+
+Examples
+
+✔ Window
+✔ Alert
+✔ Prompt
+✔ Confirm
+✔ Location
+✔ History
+✔ Navigator
+✔ Screen
+✔ Timers
+
+=========================================================
+Why Use BOM?
+=========================================================
+
+✔ Browser Control
+
+✔ User Interaction
+
+✔ Navigation
+
+✔ Timers
+
+✔ Browser Information
+
+✔ Page Reload
+
+✔ Redirect
+
+=========================================================
+1. window
+=========================================================
+
+Definition
+
+The window object is the top-level object of the browser.
+
+Syntax
+
+window
+
+Example
+
+console.log(window);
+
+Used
+
+✔ Global Object
+
+✔ Browser Control
+
+Advantages
+
+✔ Access all browser objects.
+
+=========================================================
+2. alert()
+=========================================================
+
+Definition
+
+Displays a message box.
+
+Syntax
+
+alert("Message");
+
+Example
+
+alert("Welcome");
+
+Used
+
+✔ Warning
+
+✔ Success Message
+
+✔ Error Message
+
+Advantages
+
+✔ Easy user notification.
+
+=========================================================
+3. prompt()
+=========================================================
+
+Definition
+
+Takes input from the user.
+
+Syntax
+
+prompt("Enter Name");
+
+Example
+
+const name = prompt("Enter Name");
+
+Used
+
+✔ Username
+
+✔ Age
+
+✔ Input
+
+Returns
+
+String or null
+
+=========================================================
+4. confirm()
+=========================================================
+
+Definition
+
+Displays a confirmation dialog.
+
+Syntax
+
+confirm("Are you sure?");
+
+Example
+
+const result = confirm("Delete?");
+
+Returns
+
+true
+
+false
+
+Used
+
+✔ Delete Confirmation
+
+✔ Logout Confirmation
+
+=========================================================
+5. location
+=========================================================
+
+Definition
+
+Provides information about the current URL.
+
+Syntax
+
+location
+
+Common Properties
+
+location.href
+
+location.hostname
+
+location.pathname
+
+Common Methods
+
+location.reload()
+
+location.assign(url)
+
+Used
+
+✔ Redirect
+
+✔ Reload
+
+✔ Current URL
+
+=========================================================
+6. history
+=========================================================
+
+Definition
+
+Represents browser history.
+
+Syntax
+
+history
+
+Methods
+
+history.back()
+
+history.forward()
+
+history.go()
+
+Used
+
+✔ Previous Page
+
+✔ Next Page
+
+=========================================================
+7. navigator
+=========================================================
+
+Definition
+
+Provides browser and device information.
+
+Syntax
+
+navigator
+
+Properties
+
+navigator.userAgent
+
+navigator.language
+
+navigator.onLine
+
+Used
+
+✔ Browser Info
+
+✔ Language
+
+✔ Internet Status
+
+=========================================================
+8. screen
+=========================================================
+
+Definition
+
+Provides screen information.
+
+Syntax
+
+screen
+
+Properties
+
+screen.width
+
+screen.height
+
+Used
+
+✔ Responsive Design
+
+✔ Screen Detection
+
+=========================================================
+9. setTimeout()
+=========================================================
+
+Definition
+
+Runs a function only once after a specified time.
+
+Syntax
+
+setTimeout(function(){
+
+},2000);
+
+Example
+
+setTimeout(function(){
+
+alert("Hello");
+
+},2000);
+
+Used
+
+✔ Delay
+
+✔ Redirect
+
+✔ Popup
+
+Advantages
+
+✔ Executes only one time.
+
+=========================================================
+10. setInterval()
+=========================================================
+
+Definition
+
+Runs a function repeatedly after a specified time.
+
+Syntax
+
+setInterval(function(){
+
+},1000);
+
+Example
+
+setInterval(function(){
+
+console.log("Running");
+
+},1000);
+
+Used
+
+✔ Clock
+
+✔ Timer
+
+✔ Counter
+
+Advantages
+
+✔ Repeats automatically.
+
+=========================================================
+Difference
+=========================================================
+
+alert()
+
+↓
+
+Shows Message
+
+-----------------------------------------
+
+prompt()
+
+↓
+
+Takes Input
+
+-----------------------------------------
+
+confirm()
+
+↓
+
+Returns true / false
+
+-----------------------------------------
+
+setTimeout()
+
+↓
+
+Runs Once
+
+-----------------------------------------
+
+setInterval()
+
+↓
+
+Runs Repeatedly
+
+=========================================================
+Common Mistakes
+=========================================================
+
+❌ Forgetting clearInterval()
+
+↓
+
+Interval keeps running.
+
+-----------------------------------------
+
+❌ Wrong location property
+
+✔ Use
+
+location.href
+
+location.hostname
+
+location.pathname
+
+-----------------------------------------
+
+❌ Using alert() repeatedly
+
+↓
+
+Poor User Experience
+
+=========================================================
+Best Practices
+=========================================================
+
+✔ Use alert() only when necessary.
+
+✔ Use confirm() before delete actions.
+
+✔ Use prompt() only for simple input.
+
+✔ Stop intervals using clearInterval().
+
+✔ Use location methods carefully.
+
+=========================================================
+Most Important Interview Questions
+=========================================================
+
+1. What is BOM?
+
+2. Difference between DOM and BOM?
+
+3. What is window object?
+
+4. Difference between alert(), prompt() and confirm()?
+
+5. What is location object?
+
+6. Difference between location.reload() and location.assign()?
+
+7. What is history object?
+
+8. What is navigator object?
+
+9. Difference between setTimeout() and setInterval()?
+
+10. Which method runs only once?
+
+11. Which method runs repeatedly?
+
+12. How do you stop setInterval()?
+
+=========================================================
+Quick Revision
+=========================================================
+
+window
+↓
+
+Global Browser Object
+
+alert()
+↓
+
+Show Message
+
+prompt()
+↓
+
+Take Input
+
+confirm()
+↓
+
+Confirmation
+
+location
+↓
+
+Current URL
+
+history
+↓
+
+Browser History
+
+navigator
+↓
+
+Browser Information
+
+screen
+↓
+
+Screen Size
+
+setTimeout()
+↓
+
+Run Once
+
+setInterval()
+↓
+
+Run Repeatedly
+
+=========================================================
+End of DOM - Browser Object Model (BOM) Notes
+=========================================================

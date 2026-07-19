@@ -1,0 +1,166 @@
+
+=========================================
+12. Event Bubbling & Event Capturing
+=========================================
+
+📌 What is Event Bubbling?
+
+Event Bubbling is the default behavior of JavaScript events.
+
+When an event occurs on a child element, it first runs on the target element and then moves upward to its parent, grandparent, body, html, document, and window.
+
+Direction:
+Child → Parent → Body → HTML → Document → Window
+
+
+Syntax:
+
+element.addEventListener("click", function () {
+
+});
+
+
+Example:
+
+child.addEventListener("click", function () {
+
+    console.log("Child Clicked");
+
+});
+
+parent.addEventListener("click", function () {
+
+    console.log("Parent Clicked");
+
+});
+
+
+Output:
+
+Child Clicked
+Parent Clicked
+
+
+=========================================
+
+📌 What is Event Capturing?
+
+Event Capturing is the opposite of Bubbling.
+
+The event starts from the top of the DOM tree and travels down to the target element.
+
+Direction:
+Window → Document → HTML → Body → Parent → Child
+
+
+Syntax:
+
+element.addEventListener("click", function () {
+
+}, true);
+
+
+Example:
+
+parent.addEventListener("click", function () {
+
+    console.log("Parent Capture");
+
+}, true);
+
+
+Output:
+
+Parent Capture
+Child Capture
+
+
+=========================================
+
+📌 Difference
+
+Event Bubbling
+--------------
+• Bottom → Top
+• Default Behavior
+• Mostly Used
+• Third parameter is false (default)
+
+Event Capturing
+---------------
+• Top → Bottom
+• Enabled using true
+• Less Frequently Used
+• Third parameter is true
+
+
+=========================================
+
+📌 Real Life Uses
+
+• Navigation Menu
+• Dropdown Menu
+• Modal
+• Sidebar
+• Todo App
+• Event Delegation
+
+
+=========================================
+
+📌 Important Interview Questions
+
+1. What is Event Bubbling?
+→ Event travels from child to parent.
+
+2. What is Event Capturing?
+→ Event travels from parent to child.
+
+3. Which is the default event flow?
+→ Event Bubbling.
+
+4. How do you enable Event Capturing?
+→ Pass true as the third argument in addEventListener().
+
+5. Which phase is used more in real projects?
+→ Event Bubbling.
+
+
+=========================================
+
+📌 Best Practices
+
+✔ Use addEventListener() instead of onclick.
+✔ Use Event Bubbling unless Capturing is specifically needed.
+✔ Keep event handlers small and readable.
+✔ Use meaningful variable names.
+✔ Test event flow using browser DevTools.
+
+
+=========================================
+
+📌 Common Mistakes
+
+❌ Forgetting the third parameter true for Capturing.
+❌ Confusing Bubbling with Capturing.
+❌ Adding multiple unnecessary event listeners.
+❌ Not understanding event propagation.
+
+
+=========================================
+
+📌 Quick Revision
+
+Event Bubbling
+Child → Parent → Body → HTML → Document → Window
+
+Event Capturing
+Window → Document → HTML → Body → Parent → Child
+
+Default Event Flow:
+✔ Event Bubbling
+
+Capturing Enabled:
+✔ addEventListener(..., true)
+
+=========================================
