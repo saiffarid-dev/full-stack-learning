@@ -1,0 +1,159 @@
+=========================================
+15. DOM Storage
+(LocalStorage & SessionStorage)
+=========================================
+
+📌 What is DOM Storage?
+
+DOM Storage is a Web API that allows JavaScript to store data in the browser without using cookies.
+
+Types:
+1. localStorage
+2. sessionStorage
+
+=========================================
+
+📌 localStorage
+
+• Stores data permanently.
+• Data remains after page refresh.
+• Data remains after browser restart.
+• Data is removed only manually.
+
+Methods:
+
+✔ setItem(key, value)
+→ Store data.
+
+✔ getItem(key)
+→ Retrieve data.
+
+✔ removeItem(key)
+→ Remove a specific item.
+
+✔ clear()
+→ Remove all stored data.
+
+Example:
+
+localStorage.setItem("username", "Saif");
+localStorage.getItem("username");
+localStorage.removeItem("username");
+localStorage.clear();
+
+=========================================
+
+📌 sessionStorage
+
+• Stores data temporarily.
+• Data is available only while the current browser tab is open.
+• Closing the tab automatically removes the data.
+
+Methods:
+
+✔ setItem()
+✔ getItem()
+✔ removeItem()
+✔ clear()
+
+Example:
+
+sessionStorage.setItem("username", "Saif");
+sessionStorage.getItem("username");
+sessionStorage.removeItem("username");
+sessionStorage.clear();
+
+=========================================
+
+📌 Difference
+
+localStorage
+-------------
+✔ Permanent storage
+✔ Survives browser restart
+✔ Best for long-term data
+
+sessionStorage
+--------------
+✔ Temporary storage
+✔ Cleared when the tab closes
+✔ Best for session-based data
+
+=========================================
+
+📌 Real-Life Applications
+
+• Dark / Light Theme
+• Remember Me Login
+• Shopping Cart
+• Todo App
+• User Preferences
+• Language Selection
+• Recently Viewed Items
+
+=========================================
+
+📌 Interview Questions
+
+Q1. What is DOM Storage?
+→ A browser feature used to store data locally.
+
+Q2. How many types of DOM Storage are there?
+→ Two (localStorage & sessionStorage).
+
+Q3. What is the difference between localStorage and sessionStorage?
+→ localStorage is permanent, sessionStorage is temporary.
+
+Q4. Which method stores data?
+→ setItem()
+
+Q5. Which method retrieves data?
+→ getItem()
+
+Q6. Which method removes one item?
+→ removeItem()
+
+Q7. Which method removes all items?
+→ clear()
+
+Q8. Which storage is used for theme preference?
+→ localStorage.
+
+=========================================
+
+📌 Best Practices
+
+✔ Store only necessary data.
+✔ Use meaningful key names.
+✔ Convert objects using JSON.stringify().
+✔ Convert back using JSON.parse().
+✔ Remove unused data regularly.
+
+=========================================
+
+📌 Common Mistakes
+
+❌ Assuming Storage can store objects directly.
+❌ Forgetting JSON.stringify().
+❌ Using incorrect key names.
+❌ Confusing localStorage with sessionStorage.
+
+=========================================
+
+📌 Quick Revision
+
+DOM Storage
+│
+├── localStorage
+│   ├── setItem()
+│   ├── getItem()
+│   ├── removeItem()
+│   └── clear()
+│
+└── sessionStorage
+    ├── setItem()
+    ├── getItem()
+    ├── removeItem()
+    └── clear()
+
+=========================================

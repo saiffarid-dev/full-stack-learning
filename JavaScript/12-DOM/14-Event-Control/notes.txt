@@ -1,0 +1,182 @@
+=========================================
+14. preventDefault() & stopPropagation()
+=========================================
+
+📌 What is preventDefault()?
+
+preventDefault() is an Event Object method that stops the browser's default behavior for an event.
+
+It does NOT stop Event Bubbling or Event Capturing.
+
+=========================================
+
+📌 Syntax
+
+event.preventDefault();
+
+=========================================
+
+📌 Uses of preventDefault()
+
+• Prevent form submission.
+• Prevent page reload.
+• Prevent opening links.
+• Prevent default browser actions.
+
+=========================================
+
+📌 Example
+
+link.addEventListener("click", function(event){
+
+    event.preventDefault();
+
+    console.log("Link Opening Prevented");
+
+});
+
+=========================================
+
+📌 What is stopPropagation()?
+
+stopPropagation() is an Event Object method that stops an event from propagating (traveling) to parent elements.
+
+It does NOT stop the browser's default behavior.
+
+=========================================
+
+📌 Syntax
+
+event.stopPropagation();
+
+=========================================
+
+📌 Uses of stopPropagation()
+
+• Stop Event Bubbling.
+• Stop Event Capturing.
+• Prevent parent event execution.
+• Control event flow.
+
+=========================================
+
+📌 Example
+
+parent.addEventListener("click", function(){
+
+    console.log("Parent Clicked");
+
+});
+
+button.addEventListener("click", function(event){
+
+    event.stopPropagation();
+
+    console.log("Button Clicked");
+
+});
+
+Output
+
+Button Clicked
+
+=========================================
+
+📌 Difference
+
+preventDefault()
+----------------
+• Stops browser default action.
+• Used with forms, links, submit buttons.
+• Does NOT stop event propagation.
+
+stopPropagation()
+-----------------
+• Stops event propagation.
+• Used with parent-child events.
+• Does NOT stop browser default behavior.
+
+=========================================
+
+📌 Real-Life Uses
+
+• Login Form
+• Registration Form
+• Contact Form
+• Navigation Menu
+• Dropdown Menu
+• Modal Popup
+• Shopping Cart
+• Todo App
+
+=========================================
+
+📌 Important Interview Questions
+
+1. What is preventDefault()?
+→ Stops the browser's default action.
+
+2. What is stopPropagation()?
+→ Stops event propagation to parent elements.
+
+3. Can both methods be used together?
+→ Yes.
+
+4. Does preventDefault() stop Event Bubbling?
+→ No.
+
+5. Does stopPropagation() stop browser default action?
+→ No.
+
+6. Which object provides these methods?
+→ Event Object.
+
+=========================================
+
+📌 Best Practices
+
+✔ Use preventDefault() for forms and links.
+✔ Use stopPropagation() only when required.
+✔ Understand the difference between browser behavior and event flow.
+✔ Keep event handlers clean and readable.
+✔ Test event flow using browser DevTools.
+
+=========================================
+
+📌 Common Mistakes
+
+❌ Confusing preventDefault() with stopPropagation().
+❌ Forgetting to pass the event parameter.
+❌ Using stopPropagation() unnecessarily.
+❌ Assuming preventDefault() stops Event Bubbling.
+
+=========================================
+
+📌 Quick Revision
+
+preventDefault()
+
+↓
+
+Stops Browser Default Action
+
+Examples:
+• Form Submit
+• Link Open
+• Page Reload
+
+-----------------------------------------
+
+stopPropagation()
+
+↓
+
+Stops Event Flow
+
+Examples:
+• Parent-Child Events
+• Nested Elements
+• Event Bubbling
+
+=========================================
+
