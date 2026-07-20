@@ -1,0 +1,178 @@
+=========================================
+13. Event Delegation
+=========================================
+
+📌 What is Event Delegation?
+
+Event Delegation is a JavaScript technique in which a single event listener is attached to a parent element instead of adding separate event listeners to each child element.
+
+It works because of Event Bubbling.
+
+=========================================
+
+📌 Why Use Event Delegation?
+
+• Reduces the number of event listeners.
+• Improves performance.
+• Uses less memory.
+• Supports dynamically added elements.
+• Makes code cleaner and easier to maintain.
+
+=========================================
+
+📌 How It Works
+
+Instead of attaching an event to every child element, attach one event listener to the parent element.
+
+When a child element is clicked, the event bubbles up to the parent, where it is handled using event.target.
+
+=========================================
+
+📌 Syntax
+
+parent.addEventListener("click", function(event){
+
+    if(event.target.tagName === "LI"){
+
+        console.log(event.target.innerText);
+
+    }
+
+});
+
+=========================================
+
+📌 event.target
+
+Returns the actual element on which the event occurred.
+
+Example:
+
+event.target
+
+Output:
+
+<li>JavaScript</li>
+
+=========================================
+
+📌 event.currentTarget
+
+Returns the element on which the event listener is attached.
+
+Example:
+
+event.currentTarget
+
+Output:
+
+<ul id="list"></ul>
+
+=========================================
+
+📌 Difference
+
+event.target
+------------
+• Actual clicked element.
+• Changes depending on where the click happens.
+
+event.currentTarget
+-------------------
+• Element on which the event listener is attached.
+• Remains the same during execution.
+
+=========================================
+
+📌 Normal Event vs Event Delegation
+
+Normal Event
+------------
+• Event listener on every child.
+• Uses more memory.
+• Poor performance with many elements.
+• Doesn't automatically work for dynamic elements.
+
+Event Delegation
+----------------
+• One event listener on the parent.
+• Uses less memory.
+• Better performance.
+• Automatically works for dynamic elements.
+
+=========================================
+
+📌 Real-Life Uses
+
+• Todo List
+• Navigation Menu
+• Product Cards
+• Dynamic Table Rows
+• Chat Application
+• File Manager
+• Shopping Cart
+
+=========================================
+
+📌 Important Interview Questions
+
+1. What is Event Delegation?
+→ A technique where one parent event listener handles events from child elements.
+
+2. Why is Event Delegation used?
+→ To improve performance and support dynamic elements.
+
+3. Which event phase is used in Event Delegation?
+→ Event Bubbling.
+
+4. Which property returns the clicked element?
+→ event.target
+
+5. Which property returns the element that has the event listener?
+→ event.currentTarget
+
+=========================================
+
+📌 Best Practices
+
+✔ Use Event Delegation for large lists.
+✔ Use event.target to identify the clicked element.
+✔ Use meaningful IDs and class names.
+✔ Keep event handlers short and readable.
+✔ Use Event Delegation when elements are created dynamically.
+
+=========================================
+
+📌 Common Mistakes
+
+❌ Adding event listeners to every child unnecessarily.
+❌ Confusing event.target with event.currentTarget.
+❌ Forgetting to check the clicked element.
+❌ Not understanding Event Bubbling.
+
+=========================================
+
+📌 Quick Revision
+
+Event Delegation
+
+Parent
+│
+├── Child 1
+├── Child 2
+├── Child 3
+└── Child 4
+
+↓
+
+One Event Listener
+
+↓
+
+event.target
+
+↓
+
+Clicked Child
+
+=========================================
