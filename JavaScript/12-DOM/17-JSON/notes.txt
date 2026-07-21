@@ -1,0 +1,175 @@
+=========================================
+17. JSON (JavaScript Object Notation)
+=========================================
+
+📌 What is JSON?
+
+JSON (JavaScript Object Notation) is a lightweight data-interchange format used to store and exchange data between a client and a server.
+
+It is easy to read, write, and supported by most programming languages.
+
+=========================================
+
+📌 Features of JSON
+
+• Lightweight
+• Human Readable
+• Language Independent
+• Easy to Parse
+• Commonly Used in APIs
+
+=========================================
+
+📌 JSON Rules
+
+✔ Keys must be enclosed in double quotes ("").
+✔ Values can be:
+   • String
+   • Number
+   • Boolean
+   • Array
+   • Object
+   • null
+
+Example
+
+{
+    "name": "Saif",
+    "age": 30,
+    "city": "Delhi"
+}
+
+=========================================
+
+📌 JavaScript Object vs JSON
+
+JavaScript Object
+
+const user = {
+    name: "Saif",
+    age: 30
+};
+
+• Used inside JavaScript.
+• Keys do not require double quotes.
+
+-----------------------------------------
+
+JSON
+
+{
+    "name": "Saif",
+    "age": 30
+}
+
+• Used for storing and transferring data.
+• Keys must use double quotes.
+
+=========================================
+
+📌 JSON.stringify()
+
+Converts a JavaScript Object into a JSON String.
+
+Syntax
+
+JSON.stringify(object)
+
+Example
+
+const jsonData = JSON.stringify(user);
+
+Output
+
+{"name":"Saif","age":30}
+
+=========================================
+
+📌 JSON.parse()
+
+Converts a JSON String into a JavaScript Object.
+
+Syntax
+
+JSON.parse(jsonString)
+
+Example
+
+const objectData = JSON.parse(jsonData);
+
+=========================================
+
+📌 Real-Life Applications
+
+• REST APIs
+• Fetch API
+• User Profile Data
+• Login Systems
+• Product Information
+• Database Communication
+• Configuration Files
+
+=========================================
+
+📌 Interview Questions
+
+1. What is JSON?
+→ JavaScript Object Notation.
+
+2. What is JSON used for?
+→ Storing and exchanging data.
+
+3. What does JSON.stringify() do?
+→ Converts a JavaScript Object into a JSON String.
+
+4. What does JSON.parse() do?
+→ Converts a JSON String into a JavaScript Object.
+
+5. Can JSON store functions?
+→ No.
+
+6. Which quotation marks are used in JSON?
+→ Double quotes ("").
+
+=========================================
+
+📌 Best Practices
+
+✔ Use valid JSON syntax.
+✔ Always use double quotes for keys.
+✔ Use JSON.stringify() before storing objects.
+✔ Use JSON.parse() after retrieving JSON data.
+✔ Validate JSON before using it.
+
+=========================================
+
+📌 Common Mistakes
+
+❌ Using single quotes in JSON.
+❌ Forgetting JSON.parse().
+❌ Forgetting JSON.stringify().
+❌ Adding functions or undefined values inside JSON.
+
+=========================================
+
+📌 Quick Revision
+
+JavaScript Object
+
+↓
+
+JSON.stringify()
+
+↓
+
+JSON String
+
+↓
+
+JSON.parse()
+
+↓
+
+JavaScript Object
+
+=========================================
