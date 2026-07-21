@@ -1,0 +1,191 @@
+=========================================
+18. Error Handling
+=========================================
+
+📌 What is Error Handling?
+
+Error Handling is a technique used to handle runtime errors without stopping the program.
+
+It prevents the application from crashing and improves user experience.
+
+=========================================
+
+📌 Why Use Error Handling?
+
+• Prevent application crashes
+• Handle unexpected errors
+• Improve debugging
+• Make applications more reliable
+
+=========================================
+
+📌 try
+
+The try block contains code that may produce an error.
+
+Syntax
+
+try{
+
+   // Code
+
+}
+
+=========================================
+
+📌 catch
+
+The catch block executes only when an error occurs in the try block.
+
+Syntax
+
+catch(error){
+
+   // Handle Error
+
+}
+
+=========================================
+
+📌 finally
+
+The finally block always executes, whether an error occurs or not.
+
+Syntax
+
+finally{
+
+   // Always Runs
+
+}
+
+=========================================
+
+📌 throw
+
+The throw keyword is used to create custom errors.
+
+Syntax
+
+throw "Error Message";
+
+Example
+
+if(age.value < 18){
+    throw "Age must be 18 or above";
+}
+
+=========================================
+
+📌 Error Handling Flow
+
+try
+
+↓
+
+Error?
+
+↓
+
+Yes
+↓
+
+catch
+
+↓
+
+finally
+
+-------------------------
+
+No
+↓
+
+finally
+
+=========================================
+
+📌 Error Object
+
+The catch block receives an Error Object.
+
+Example
+
+catch(error){
+    console.log(error);
+}
+
+=========================================
+
+📌 Real-Life Applications
+
+• Form Validation
+• Login System
+• API Requests
+• Payment Gateway
+• File Upload
+• Database Operations
+
+=========================================
+
+📌 Interview Questions
+
+1. What is Error Handling?
+→ A technique to handle runtime errors.
+
+2. Which keyword starts Error Handling?
+→ try
+
+3. Which block handles errors?
+→ catch
+
+4. Which block always executes?
+→ finally
+
+5. Which keyword creates custom errors?
+→ throw
+
+6. Why is Error Handling important?
+→ It prevents program crashes and improves reliability.
+
+=========================================
+
+📌 Best Practices
+
+✔ Use try-catch for risky code.
+✔ Write meaningful error messages.
+✔ Use finally for cleanup tasks.
+✔ Handle errors gracefully.
+
+=========================================
+
+📌 Common Mistakes
+
+❌ Ignoring runtime errors.
+❌ Leaving the catch block empty.
+❌ Forgetting finally when cleanup is needed.
+❌ Throwing unclear error messages.
+
+=========================================
+
+📌 Quick Revision
+
+Error Handling
+
+↓
+
+try
+
+↓
+
+catch
+
+↓
+
+finally
+
+↓
+
+throw
+
+=========================================
