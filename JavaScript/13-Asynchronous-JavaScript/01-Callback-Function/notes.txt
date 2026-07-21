@@ -1,0 +1,127 @@
+=========================================
+01 - Callback Function
+=========================================
+
+What is Callback Function?
+--------------------------
+A Callback Function is a function that is passed as an argument to another function and executed after a specific task is completed.
+
+Hindi:
+Callback Function ek aisa function hai jo kisi dusre function ko argument ke roop me diya jata hai aur baad me execute hota hai.
+
+-----------------------------------------
+Syntax
+-----------------------------------------
+
+function greet(callback){
+    console.log("Hello");
+    callback();
+}
+
+function sayBye(){
+    console.log("Bye");
+}
+
+greet(sayBye);
+
+Output:
+Hello
+Bye
+
+-----------------------------------------
+Why Callback?
+-----------------------------------------
+
+• Code Reusability
+• Execute function after another function
+• Handle Asynchronous Operations
+• Better Code Organization
+
+-----------------------------------------
+Where Callback is Used?
+-----------------------------------------
+
+• Event Listener
+• setTimeout()
+• setInterval()
+• Fetch API (Old Style)
+• Node.js
+• File Handling
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+✔ Reusable Code
+✔ Flexible Functions
+✔ Supports Asynchronous Programming
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+✘ Callback Hell
+✘ Difficult Debugging
+✘ Less Readable Code
+
+-----------------------------------------
+Real Life Example
+-----------------------------------------
+
+Pizza Order
+
+1. Order Pizza
+2. Pizza Prepared
+3. Delivery Boy Calls You
+
+Delivery Boy Call = Callback
+
+-----------------------------------------
+Interview Questions
+-----------------------------------------
+
+Q1. What is Callback Function?
+
+Answer:
+A Callback Function is a function passed as an argument to another function and executed later.
+
+-----------------------------------------
+
+Q2. Why Callback is used?
+
+Answer:
+To execute a function after another function completes its task.
+
+-----------------------------------------
+
+Q3. Where are Callback Functions commonly used?
+
+Answer:
+Event Listener, setTimeout(), setInterval(), Fetch API, Node.js.
+
+-----------------------------------------
+
+Q4. What is Callback Hell?
+
+Answer:
+Nested Callback Functions that make code difficult to read and maintain.
+
+-----------------------------------------
+
+Q5. Which modern JavaScript features solve Callback Hell?
+
+Answer:
+Promise
+Async/Await
+
+-----------------------------------------
+Summary
+-----------------------------------------
+
+✔ Callback = Function passed as Argument
+
+✔ Executes after another function
+
+✔ Used in Asynchronous JavaScript
+
+✔ Promise & Async/Await solve Callback Hell
