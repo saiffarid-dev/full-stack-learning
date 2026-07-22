@@ -1,0 +1,169 @@
+=========================================
+04 - Promise Chaining
+=========================================
+
+What is Promise Chaining?
+-------------------------
+Promise Chaining is a technique where multiple asynchronous tasks are executed one after another using multiple .then() methods.
+
+Hindi:
+Jab ek Promise complete hone ke baad uske result ke basis par agla Promise execute hota hai aur kai .then() methods ek ke baad ek use hote hain, use Promise Chaining kehte hain.
+
+-----------------------------------------
+Why Promise Chaining?
+-----------------------------------------
+
+• Avoids Callback Hell
+• Makes code clean and readable
+• Executes tasks in sequence
+• Better error handling
+
+-----------------------------------------
+Syntax
+-----------------------------------------
+
+promise
+.then(function(result){
+    return nextPromise();
+})
+.then(function(result){
+    return anotherPromise();
+})
+.then(function(result){
+    console.log(result);
+})
+.catch(function(error){
+    console.log(error);
+});
+
+-----------------------------------------
+How Promise Chaining Works?
+-----------------------------------------
+
+Promise
+   │
+   ▼
+.then()
+   │
+   ▼
+.then()
+   │
+   ▼
+.then()
+   │
+   ▼
+.catch()
+
+Each .then() waits for the previous Promise to complete.
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+placeOrder()
+
+.then(function(){
+    return prepareFood();
+})
+
+.then(function(){
+    return deliverFood();
+})
+
+.then(function(){
+    return orderCompleted();
+})
+
+.catch(function(){
+    console.log("Something Went Wrong");
+});
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+✔ Clean and readable code
+✔ Sequential execution
+✔ Easy to maintain
+✔ Better error handling
+✔ Avoids Callback Hell
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+✘ Long chains can become difficult to manage
+✘ Complex applications are better handled with Async/Await
+
+-----------------------------------------
+Real Life Example
+-----------------------------------------
+
+Online Food Order
+
+1. Place Order
+2. Prepare Food
+3. Deliver Food
+4. Order Completed
+
+Each step starts only after the previous step is completed.
+
+-----------------------------------------
+Interview Questions
+-----------------------------------------
+
+Q1. What is Promise Chaining?
+
+Answer:
+Promise Chaining is the process of executing multiple asynchronous operations one after another using multiple .then() methods.
+
+-----------------------------------------
+
+Q2. Why is Promise Chaining used?
+
+Answer:
+To execute asynchronous tasks sequentially and avoid Callback Hell.
+
+-----------------------------------------
+
+Q3. Which method is mainly used in Promise Chaining?
+
+Answer:
+.then()
+
+-----------------------------------------
+
+Q4. Which method handles errors in Promise Chaining?
+
+Answer:
+.catch()
+
+-----------------------------------------
+
+Q5. Why do we use return inside .then()?
+
+Answer:
+return passes the next Promise to the following .then(), allowing the chain to continue correctly.
+
+-----------------------------------------
+
+Q6. What is the benefit of Promise Chaining over Callback Hell?
+
+Answer:
+Promise Chaining produces cleaner, more readable, and easier-to-maintain code.
+
+-----------------------------------------
+Summary
+-----------------------------------------
+
+✔ Promise Chaining = Multiple .then()
+
+✔ Executes tasks one after another
+
+✔ Uses return to pass the next Promise
+
+✔ Handles errors using .catch()
+
+✔ Better than Callback Hell
+
+✔ Async/Await is an even cleaner modern approach.

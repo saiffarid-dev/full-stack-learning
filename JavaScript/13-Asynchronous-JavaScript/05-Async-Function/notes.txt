@@ -1,0 +1,171 @@
+=========================================
+05 - Async Function
+=========================================
+
+What is Async Function?
+-----------------------
+An Async Function is a special JavaScript function that always returns a Promise.
+
+Hindi:
+Async Function JavaScript ka ek special function hai jo hamesha Promise return karta hai.
+
+-----------------------------------------
+Why Async Function?
+-----------------------------------------
+
+• Makes asynchronous code simple
+• Cleaner than Promise Chaining
+• Easy to read and maintain
+• Works with Await
+• Modern JavaScript feature
+
+-----------------------------------------
+Syntax
+-----------------------------------------
+
+async function functionName(){
+
+}
+
+Example:
+
+async function greet(){
+
+    return "Hello World";
+
+}
+
+-----------------------------------------
+How Async Function Works?
+-----------------------------------------
+
+Async Function
+      │
+      ▼
+Returns Promise
+      │
+      ▼
+.then()
+      │
+      ▼
+.catch()
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+async function orderFood(){
+
+    return "Pizza Delivered Successfully";
+
+}
+
+orderFood()
+
+.then(function(message){
+    console.log(message);
+})
+
+.catch(function(error){
+    console.log(error);
+});
+
+Output:
+
+Pizza Delivered Successfully
+
+-----------------------------------------
+Important Points
+-----------------------------------------
+
+• async keyword is used before a function.
+• Async Function always returns a Promise.
+• Even if you return a normal value, JavaScript converts it into a Promise.
+• Await can only be used inside an Async Function.
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+✔ Clean and readable code
+✔ Automatically returns Promise
+✔ Easy asynchronous programming
+✔ Better than Callback Hell
+✔ Easy to maintain
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+✘ Beginners may find it confusing
+✘ Await cannot be used outside an Async Function
+
+-----------------------------------------
+Real Life Example
+-----------------------------------------
+
+Online Food Order
+
+1. Place Order
+2. Prepare Food
+3. Deliver Food
+
+Async Function manages these asynchronous tasks in a clean and readable way.
+
+-----------------------------------------
+Interview Questions
+-----------------------------------------
+
+Q1. What is an Async Function?
+
+Answer:
+An Async Function is a special JavaScript function that always returns a Promise.
+
+-----------------------------------------
+
+Q2. What does an Async Function return?
+
+Answer:
+A Promise.
+
+-----------------------------------------
+
+Q3. Which keyword is used to create an Async Function?
+
+Answer:
+async
+
+-----------------------------------------
+
+Q4. Can an Async Function return a normal value?
+
+Answer:
+Yes. JavaScript automatically converts the returned value into a Promise.
+
+-----------------------------------------
+
+Q5. Can Await be used outside an Async Function?
+
+Answer:
+No. Await can only be used inside an Async Function.
+
+-----------------------------------------
+
+Q6. Why do we use Async Function?
+
+Answer:
+To write clean, readable, and maintainable asynchronous code.
+
+-----------------------------------------
+Summary
+-----------------------------------------
+
+✔ async creates an Async Function.
+
+✔ Async Function always returns a Promise.
+
+✔ Works with .then() and .catch().
+
+✔ Await can only be used inside an Async Function.
+
+✔ Async/Await is the modern way to handle asynchronous programming.
