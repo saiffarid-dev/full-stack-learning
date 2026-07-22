@@ -1,0 +1,159 @@
+=========================================
+02 - Callback Hell
+=========================================
+
+What is Callback Hell?
+----------------------
+Callback Hell is a situation where multiple callback functions are nested inside one another, making the code difficult to read, understand, and maintain.
+
+Hindi:
+Jab ek callback ke andar dusra callback, uske andar teesra callback aur aise hi multiple callbacks likhe jate hain, to use Callback Hell kehte hain.
+
+-----------------------------------------
+Why Callback Hell Occurs?
+-----------------------------------------
+
+• Multiple Asynchronous Tasks
+• Nested Callback Functions
+• Poor Code Structure
+• Difficult to Manage Large Applications
+
+-----------------------------------------
+Example Structure
+-----------------------------------------
+
+Task 1
+   ↓
+Task 2
+   ↓
+Task 3
+   ↓
+Task 4
+   ↓
+Task 5
+
+Each task waits for the previous task to complete.
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+setTimeout(() => {
+
+    console.log("Task 1");
+
+    setTimeout(() => {
+
+        console.log("Task 2");
+
+        setTimeout(() => {
+
+            console.log("Task 3");
+
+        },1000);
+
+    },1000);
+
+},1000);
+
+-----------------------------------------
+Problems of Callback Hell
+-----------------------------------------
+
+✘ Difficult to Read
+✘ Difficult to Debug
+✘ Difficult to Maintain
+✘ Deeply Nested Code
+✘ Poor Code Quality
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+✔ Executes tasks in sequence
+✔ Useful for simple asynchronous operations
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+✘ Pyramid-shaped code
+✘ Low readability
+✘ Hard to maintain
+✘ Error handling becomes difficult
+
+-----------------------------------------
+How to Solve Callback Hell?
+-----------------------------------------
+
+Modern JavaScript provides:
+
+• Promise
+• Async / Await
+
+These make asynchronous code cleaner and easier to understand.
+
+-----------------------------------------
+Real Life Example
+-----------------------------------------
+
+Online Food Order
+
+1. Order Placed
+2. Restaurant Accepted
+3. Food Preparing
+4. Out For Delivery
+5. Food Delivered
+
+If every step is written inside the previous callback, it creates Callback Hell.
+
+-----------------------------------------
+Interview Questions
+-----------------------------------------
+
+Q1. What is Callback Hell?
+
+Answer:
+Callback Hell is a situation where callbacks are nested inside one another, making the code difficult to read and maintain.
+
+-----------------------------------------
+
+Q2. Why is Callback Hell a problem?
+
+Answer:
+Because it reduces code readability, increases complexity, and makes debugging difficult.
+
+-----------------------------------------
+
+Q3. How can Callback Hell be avoided?
+
+Answer:
+By using Promise and Async/Await.
+
+-----------------------------------------
+
+Q4. Which JavaScript feature was introduced to solve Callback Hell?
+
+Answer:
+Promise.
+
+-----------------------------------------
+
+Q5. Which is easier to read: Callback Hell or Async/Await?
+
+Answer:
+Async/Await is much easier to read and maintain.
+
+-----------------------------------------
+Summary
+-----------------------------------------
+
+✔ Callback Hell = Nested Callback Functions
+
+✔ Creates Pyramid-Shaped Code
+
+✔ Difficult to Read & Debug
+
+✔ Solved by Promise
+
+✔ Async/Await is the Best Modern Solution
