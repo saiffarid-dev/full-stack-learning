@@ -1,0 +1,196 @@
+=========================================
+03 - Promise
+=========================================
+
+What is Promise?
+----------------
+A Promise is a JavaScript object that represents the eventual result of an asynchronous operation. It may complete successfully or fail.
+
+Hindi:
+Promise ek JavaScript object hai jo future me milne wale result ko represent karta hai. Result Success ya Failure ho sakta hai.
+
+-----------------------------------------
+Why Promise?
+-----------------------------------------
+
+• Solves Callback Hell
+• Makes code clean and readable
+• Better error handling
+• Easy asynchronous programming
+
+-----------------------------------------
+Promise States
+-----------------------------------------
+
+1. Pending
+- Initial state
+- Waiting for the result
+
+2. Fulfilled
+- Operation completed successfully
+- resolve() is called
+
+3. Rejected
+- Operation failed
+- reject() is called
+
+-----------------------------------------
+Promise Syntax
+-----------------------------------------
+
+let promise = new Promise(function(resolve, reject){
+
+    // Asynchronous Task
+
+    if(success){
+        resolve("Success");
+    }else{
+        reject("Failed");
+    }
+
+});
+
+-----------------------------------------
+Promise Methods
+-----------------------------------------
+
+.then()
+- Executes when Promise is fulfilled.
+
+.catch()
+- Executes when Promise is rejected.
+
+.finally()
+- Executes after Promise is settled (Success or Failure).
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+let orderPizza = new Promise(function(resolve, reject){
+
+    let pizzaReady = true;
+
+    if(pizzaReady){
+        resolve("Pizza Delivered Successfully");
+    }else{
+        reject("Pizza Delivery Failed");
+    }
+
+});
+
+orderPizza
+.then(function(message){
+    console.log(message);
+})
+.catch(function(error){
+    console.log(error);
+})
+.finally(function(){
+    console.log("Process Completed");
+});
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+✔ Solves Callback Hell
+✔ Clean and readable code
+✔ Easy error handling
+✔ Better asynchronous programming
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+✘ Slightly difficult for beginners
+✘ Long Promise chains can become difficult to read
+
+-----------------------------------------
+Real Life Example
+-----------------------------------------
+
+Online Pizza Order
+
+1. Order Placed
+2. Pizza Prepared
+3. Pizza Delivered
+
+Success -> resolve()
+
+Failure -> reject()
+
+-----------------------------------------
+Interview Questions
+-----------------------------------------
+
+Q1. What is a Promise?
+
+Answer:
+A Promise is an object that represents the eventual success or failure of an asynchronous operation.
+
+-----------------------------------------
+
+Q2. How many states does a Promise have?
+
+Answer:
+Three
+
+• Pending
+• Fulfilled
+• Rejected
+
+-----------------------------------------
+
+Q3. What is resolve()?
+
+Answer:
+resolve() changes the Promise state to Fulfilled (Success).
+
+-----------------------------------------
+
+Q4. What is reject()?
+
+Answer:
+reject() changes the Promise state to Rejected (Failure).
+
+-----------------------------------------
+
+Q5. What is the use of .then()?
+
+Answer:
+.then() handles the successful result of a Promise.
+
+-----------------------------------------
+
+Q6. What is the use of .catch()?
+
+Answer:
+.catch() handles errors or rejected Promises.
+
+-----------------------------------------
+
+Q7. What is the use of .finally()?
+
+Answer:
+.finally() always executes after the Promise is completed, whether it succeeds or fails.
+
+-----------------------------------------
+Summary
+-----------------------------------------
+
+✔ Promise handles asynchronous operations.
+
+✔ States:
+Pending → Fulfilled / Rejected
+
+✔ resolve() = Success
+
+✔ reject() = Failure
+
+✔ Methods:
+.then()
+.catch()
+.finally()
+
+✔ Promise solves Callback Hell.
