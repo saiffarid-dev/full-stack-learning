@@ -1,0 +1,187 @@
+=========================================
+06 - Await
+=========================================
+
+What is Await?
+--------------
+Await is a JavaScript keyword that waits for a Promise to complete before continuing the execution of the code.
+
+Hindi:
+Await ek JavaScript keyword hai jo Promise ke complete hone ka wait karta hai. Iska use sirf Async Function ke andar hota hai.
+
+-----------------------------------------
+Why Await?
+-----------------------------------------
+
+• Makes asynchronous code simple
+• Removes long .then() chains
+• Improves code readability
+• Makes code look synchronous
+• Easy to maintain
+
+-----------------------------------------
+Syntax
+-----------------------------------------
+
+async function demo(){
+
+    let result = await promise;
+
+}
+
+-----------------------------------------
+How Await Works?
+-----------------------------------------
+
+Async Function
+      │
+      ▼
+await Promise
+      │
+      ▼
+Waits for Promise
+      │
+      ▼
+Returns Result
+      │
+      ▼
+Executes Next Line
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+function getPizza(){
+
+    return new Promise(function(resolve){
+
+        setTimeout(function(){
+
+            resolve("Pizza Delivered Successfully");
+
+        },2000);
+
+    });
+
+}
+
+async function orderPizza(){
+
+    console.log("Ordering Pizza...");
+
+    let result = await getPizza();
+
+    console.log(result);
+
+    console.log("Enjoy Your Meal!");
+
+}
+
+Output:
+
+Ordering Pizza...
+
+(after 2 seconds)
+
+Pizza Delivered Successfully
+
+Enjoy Your Meal!
+
+-----------------------------------------
+Important Points
+-----------------------------------------
+
+• await waits for a Promise.
+• await can only be used inside an Async Function.
+• await returns the resolved value of a Promise.
+• Makes asynchronous code easier to understand.
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+✔ Clean code
+✔ Easy to read
+✔ Better than long Promise chains
+✔ Easy error handling with try...catch
+✔ Modern JavaScript approach
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+✘ Can only be used inside Async Functions
+✘ Too many unnecessary awaits may reduce performance
+
+-----------------------------------------
+Real Life Example
+-----------------------------------------
+
+ATM Machine
+
+1. Insert Card
+2. Enter PIN
+3. Wait for PIN Verification
+4. Show Account Balance
+
+The system waits for PIN verification before showing the balance.
+
+-----------------------------------------
+Interview Questions
+-----------------------------------------
+
+Q1. What is Await?
+
+Answer:
+Await is a keyword that pauses an Async Function until a Promise is resolved.
+
+-----------------------------------------
+
+Q2. Where can Await be used?
+
+Answer:
+Only inside an Async Function.
+
+-----------------------------------------
+
+Q3. What does Await return?
+
+Answer:
+The resolved value of a Promise.
+
+-----------------------------------------
+
+Q4. Does Await block the entire JavaScript program?
+
+Answer:
+No. It pauses only the current Async Function.
+
+-----------------------------------------
+
+Q5. Why do we use Await?
+
+Answer:
+To write clean, readable, and easy-to-maintain asynchronous code.
+
+-----------------------------------------
+
+Q6. Which keyword is used with Await?
+
+Answer:
+async
+
+-----------------------------------------
+Summary
+-----------------------------------------
+
+✔ await waits for a Promise.
+
+✔ Used only inside Async Functions.
+
+✔ Returns the resolved value.
+
+✔ Makes asynchronous code look synchronous.
+
+✔ Commonly used with Async Functions.
+
+✔ Best modern approach for asynchronous programming.
