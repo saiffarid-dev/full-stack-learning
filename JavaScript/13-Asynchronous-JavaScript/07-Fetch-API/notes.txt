@@ -1,0 +1,173 @@
+=========================================
+07 - Fetch API
+=========================================
+
+What is Fetch API?
+------------------
+Fetch API is a built-in JavaScript API used to request and receive data from a server or an API.
+
+Hindi:
+Fetch API JavaScript ka built-in feature hai jo server ya API se data lane (fetch karne) ke liye use hota hai.
+
+-----------------------------------------
+Why Fetch API?
+-----------------------------------------
+
+• Get data from a server
+• Receive JSON data
+• Promise-based API
+• Modern replacement for XMLHttpRequest (XHR)
+• Works with Async/Await
+
+-----------------------------------------
+Syntax
+-----------------------------------------
+
+fetch("API_URL")
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    console.log(data);
+})
+.catch(function(error){
+    console.log(error);
+});
+
+-----------------------------------------
+How Fetch API Works?
+-----------------------------------------
+
+User
+   │
+   ▼
+fetch(URL)
+   │
+   ▼
+Server/API
+   │
+   ▼
+Response
+   │
+   ▼
+response.json()
+   │
+   ▼
+JavaScript Object
+
+-----------------------------------------
+Important Points
+-----------------------------------------
+
+• fetch() always returns a Promise.
+• response.json() converts JSON into a JavaScript Object.
+• Default request method is GET.
+• .catch() handles network errors.
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+fetch("https://jsonplaceholder.typicode.com/users/1")
+
+.then(function(response){
+    return response.json();
+})
+
+.then(function(data){
+    console.log(data);
+})
+
+.catch(function(error){
+    console.log(error);
+});
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+✔ Built-in API
+✔ Promise-based
+✔ Easy to use
+✔ Supports Async/Await
+✔ Clean and readable code
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+✘ Internet connection required
+✘ Server errors should be handled manually
+✘ Need response.json() to convert JSON
+
+-----------------------------------------
+Real Life Example
+-----------------------------------------
+
+Weather App
+
+1. User enters city name
+2. Fetch API sends request
+3. Weather API returns data
+4. Weather information is displayed
+
+-----------------------------------------
+Interview Questions
+-----------------------------------------
+
+Q1. What is Fetch API?
+
+Answer:
+Fetch API is a built-in JavaScript API used to request and receive data from a server.
+
+-----------------------------------------
+
+Q2. What does fetch() return?
+
+Answer:
+A Promise.
+
+-----------------------------------------
+
+Q3. What is response.json()?
+
+Answer:
+It converts the API response into a JavaScript Object.
+
+-----------------------------------------
+
+Q4. Which request method is used by default?
+
+Answer:
+GET
+
+-----------------------------------------
+
+Q5. Can Fetch API be used with Async/Await?
+
+Answer:
+Yes.
+
+-----------------------------------------
+
+Q6. Why do we use Fetch API?
+
+Answer:
+To communicate with servers and retrieve data in modern JavaScript applications.
+
+-----------------------------------------
+Summary
+-----------------------------------------
+
+✔ Fetch API is used to get data from servers.
+
+✔ fetch() returns a Promise.
+
+✔ response.json() converts JSON to JavaScript Object.
+
+✔ Default request method is GET.
+
+✔ Works with .then(), .catch(), async and await.
+
+✔ Used in Weather Apps, Movie Apps, GitHub Finder, E-Commerce, and many real-world projects.
+
