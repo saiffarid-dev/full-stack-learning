@@ -1,0 +1,270 @@
+DATABASE BASICS
+===============
+
+1. DATABASE
+------------
+
+Definition:
+A database is an organized collection of data that allows data
+to be stored, accessed, managed, and retrieved efficiently.
+
+Hinglish:
+Database ek organized collection of data hai jahan hum data ko
+store, access aur manage kar sakte hain.
+
+Example:
+A college database may store:
+- Student ID
+- Student Name
+- Email
+- Course
+- Marks
+
+
+2. DBMS
+-------
+
+Full Form:
+Database Management System
+
+Definition:
+DBMS is software used to create, store, manage, update,
+delete, and retrieve data from a database.
+
+Main operations:
+- Create
+- Read
+- Update
+- Delete
+
+These operations are commonly called CRUD.
+
+Examples:
+- MySQL
+- PostgreSQL
+- Oracle
+- Microsoft SQL Server
+
+
+3. RDBMS
+--------
+
+Full Form:
+Relational Database Management System
+
+Definition:
+RDBMS is a type of DBMS that stores data in tables and
+supports relationships between tables.
+
+Examples:
+- MySQL
+- PostgreSQL
+- Oracle
+- SQL Server
+
+Important:
+RDBMS uses rows and columns to organize data.
+
+
+4. TABLE
+--------
+
+A table is a structure inside a database used to store data
+in rows and columns.
+
+Example:
+
+students
+
++----+--------+-----+
+| id | name   | age |
++----+--------+-----+
+| 1  | Rahul  | 22  |
+| 2  | Aman   | 21  |
++----+--------+-----+
+
+
+5. ROW
+-------
+
+A row represents one complete record in a table.
+
+Example:
+1 | Rahul | 22
+
+This represents one student's complete record.
+
+
+6. COLUMN
+---------
+
+A column represents a specific attribute or field of data.
+
+Example:
+id   -> Student ID
+name -> Student Name
+age  -> Student Age
+
+
+7. DATABASE vs TABLE
+--------------------
+
+Database:
+A container that can contain multiple tables.
+
+Table:
+A structure inside a database that stores actual records.
+
+
+8. IMPORTANT TERMS
+------------------
+
+Database  -> Collection/container of organized data
+DBMS      -> Software used to manage databases
+RDBMS     -> DBMS based on relational tables
+Table     -> Stores data in rows and columns
+Row       -> One complete record
+Column    -> One attribute/field
+Record    -> Another name for a row
+Field     -> Another name for a column
+
+
+INTERVIEW QUESTIONS
+===================
+
+Q1. What is a database?
+A:
+A database is an organized collection of data that can be
+stored, accessed, managed, and retrieved efficiently.
+
+
+Q2. What is DBMS?
+A:
+DBMS is software that allows users to create, store, manage,
+update, delete, and retrieve data from a database.
+
+
+Q3. What is RDBMS?
+A:
+RDBMS is a type of DBMS that stores data in tables and
+supports relationships between tables.
+
+
+Q4. What is a table?
+A:
+A table is a database structure that stores data in rows
+and columns.
+
+
+Q5. What is a row?
+A:
+A row represents one complete record in a table.
+
+
+Q6. What is a column?
+A:
+A column represents a specific attribute or field of data.
+
+
+Q7. Give examples of RDBMS.
+A:
+MySQL, PostgreSQL, Oracle, and Microsoft SQL Server.
+
+
+Q8. What is the difference between DBMS and RDBMS?
+A:
+DBMS is a general database management system, while RDBMS
+stores data in related tables and supports relationships
+between those tables.
+
+DATABASE PRACTICAL
+==================
+
+1. CREATE DATABASE
+------------------
+Creates a new database.
+
+Syntax:
+CREATE DATABASE database_name;
+
+Example:
+CREATE DATABASE college_db;
+
+
+2. SHOW DATABASES
+-----------------
+Displays all available databases.
+
+Syntax:
+SHOW DATABASES;
+
+
+3. USE DATABASE
+---------------
+Selects a database for further operations.
+
+Syntax:
+USE database_name;
+
+Example:
+USE college_db;
+
+
+4. CREATE TABLE
+---------------
+Creates a new table inside the selected database.
+
+Example:
+
+CREATE TABLE students (
+    id INT,
+    name VARCHAR(50),
+    age INT
+);
+
+Table columns:
+
+id   -> INT
+name -> VARCHAR(50)
+age  -> INT
+
+
+5. SHOW TABLES
+--------------
+Displays all tables inside the currently selected database.
+
+Syntax:
+SHOW TABLES;
+
+Example result:
+students
+
+
+6. DESCRIBE TABLE
+-----------------
+Displays the structure/details of a table.
+
+Syntax:
+DESCRIBE table_name;
+
+Example:
+DESCRIBE students;
+
+Short form:
+DESC students;
+
+
+PRACTICAL FLOW
+==============
+
+CREATE DATABASE
+       ↓
+SHOW DATABASES
+       ↓
+USE DATABASE
+       ↓
+CREATE TABLE
+       ↓
+SHOW TABLES
+       ↓
+DESCRIBE TABLE
