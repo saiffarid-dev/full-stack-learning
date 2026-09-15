@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkblue;
+}
+
+p {
+    color: green;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
