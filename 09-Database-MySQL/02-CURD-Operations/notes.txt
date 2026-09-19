@@ -1,0 +1,294 @@
+==================================================
+MYSQL - 02 CRUD OPERATIONS
+==================================================
+
+CRUD = Create, Read, Update, Delete
+
+CRUD database ke basic operations hain.
+
+C = CREATE  → Data add karna
+R = READ    → Data dekhna
+U = UPDATE  → Existing data change karna
+D = DELETE  → Data remove karna
+
+
+==================================================
+1. INSERT - CREATE
+==================================================
+
+Definition:
+INSERT command ka use table mein new records/data add karne
+ke liye hota hai.
+
+Syntax:
+
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+
+
+Example:
+
+INSERT INTO students (id, name, age)
+VALUES (1, 'Rahul', 20);
+
+
+Multiple Records:
+
+INSERT INTO students (id, name, age)
+VALUES
+(1, 'Rahul', 20),
+(2, 'Aman', 21),
+(3, 'Priya', 22);
+
+
+Important:
+String values ko single quotes ' ' mein likhte hain.
+Numbers ko quotes ki zarurat nahi hoti.
+
+
+==================================================
+2. SELECT - READ
+==================================================
+
+Definition:
+SELECT command ka use database/table se data retrieve
+ya read karne ke liye hota hai.
+
+Syntax:
+
+SELECT column_name
+FROM table_name;
+
+
+All Columns:
+
+SELECT * FROM students;
+
+
+Specific Columns:
+
+SELECT name, age
+FROM students;
+
+
+==================================================
+3. UPDATE
+==================================================
+
+Definition:
+UPDATE command ka use existing record ke data ko modify
+ya change karne ke liye hota hai.
+
+Syntax:
+
+UPDATE table_name
+SET column_name = new_value
+WHERE condition;
+
+
+Example:
+
+UPDATE students
+SET age = 24
+WHERE id = 7;
+
+
+IMPORTANT:
+WHERE condition bahut important hai.
+
+WHERE ke bina:
+
+UPDATE students
+SET age = 24;
+
+Table ke ALL records ka age 24 ho sakta hai.
+
+
+LIMIT ke saath:
+
+UPDATE students
+SET age = 24
+WHERE id = 7
+LIMIT 1;
+
+
+==================================================
+4. DELETE
+==================================================
+
+Definition:
+DELETE command ka use table se existing records remove
+karne ke liye hota hai.
+
+Syntax:
+
+DELETE FROM table_name
+WHERE condition;
+
+
+Example:
+
+DELETE FROM students
+WHERE id = 10;
+
+
+LIMIT ke saath:
+
+DELETE FROM students
+WHERE id = 10
+LIMIT 1;
+
+
+IMPORTANT:
+DELETE mein bhi WHERE carefully use karna chahiye.
+
+WHERE ke bina:
+
+DELETE FROM students;
+
+Table ke ALL records delete ho sakte hain.
+
+
+==================================================
+5. CRUD QUICK REVISION
+==================================================
+
+CREATE → INSERT
+READ   → SELECT
+UPDATE → UPDATE
+DELETE → DELETE
+
+
+Example:
+
+-- Create/Add
+INSERT INTO students
+VALUES (11, 'Ravi', 23);
+
+-- Read
+SELECT * FROM students;
+
+-- Update
+UPDATE students
+SET age = 24
+WHERE id = 11;
+
+-- Delete
+DELETE FROM students
+WHERE id = 11;
+
+
+==================================================
+6. IMPORTANT TERMS
+==================================================
+
+Record:
+Table ki ek complete row ko record kehte hain.
+
+Column:
+Table ka ek field/attribute.
+
+WHERE:
+Specific records ko condition ke according select karta hai.
+
+SET:
+UPDATE mein new value assign karta hai.
+
+LIMIT:
+Kitne records affect/return karne hain, usko limit karta hai.
+
+
+==================================================
+7. INTERVIEW QUESTIONS & ANSWERS
+==================================================
+
+Q1. What is CRUD?
+
+A:
+CRUD stands for Create, Read, Update and Delete.
+These are the four basic operations performed on data.
+
+
+Q2. Which SQL command is used to insert data?
+
+A:
+INSERT INTO.
+
+
+Q3. Which SQL command is used to retrieve data?
+
+A:
+SELECT.
+
+
+Q4. Which SQL command is used to modify existing data?
+
+A:
+UPDATE.
+
+
+Q5. Which SQL command is used to remove data?
+
+A:
+DELETE.
+
+
+Q6. Why is WHERE important in UPDATE?
+
+A:
+WHERE specifies which records should be updated.
+Without WHERE, multiple/all records may be updated.
+
+
+Q7. What happens if DELETE is used without WHERE?
+
+A:
+All records from the table may be deleted.
+
+
+Q8. Difference between DELETE and UPDATE?
+
+A:
+DELETE removes records.
+UPDATE changes existing records.
+
+
+Q9. Can INSERT add multiple records?
+
+A:
+Yes. Multiple rows can be inserted using one INSERT statement.
+
+
+Q10. What is the purpose of LIMIT?
+
+A:
+LIMIT restricts the number of rows returned or affected,
+where supported.
+
+
+==================================================
+INTERVIEW ONE-LINE REVISION
+==================================================
+
+INSERT  → Add data
+SELECT  → Read data
+UPDATE  → Change data
+DELETE  → Remove data
+WHERE   → Apply condition
+SET     → Assign new value
+LIMIT   → Restrict rows
+
+
+==================================================
+PRACTICE ORDER
+==================================================
+
+1. INSERT data
+2. SELECT data
+3. UPDATE one record
+4. SELECT again and verify
+5. DELETE one record
+6. SELECT again and verify
+
+Always verify UPDATE/DELETE with SELECT.
+==================================================
