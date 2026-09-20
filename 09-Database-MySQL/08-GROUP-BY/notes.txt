@@ -1,0 +1,141 @@
+========================================
+SQL - GROUP BY
+========================================
+
+GROUP BY:
+GROUP BY is used to group rows having the same
+values into groups.
+
+It is commonly used with Aggregate Functions:
+
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
+
+
+----------------------------------------
+BASIC SYNTAX
+----------------------------------------
+
+SELECT column_name, AGGREGATE_FUNCTION(column_name)
+FROM table_name
+GROUP BY column_name;
+
+
+----------------------------------------
+EXAMPLE
+----------------------------------------
+
+SELECT age, COUNT(*) AS total_students
+FROM students
+GROUP BY age;
+
+
+Meaning:
+Students with the same age are grouped together
+and COUNT() tells how many students are in each
+age group.
+
+
+----------------------------------------
+GROUP BY + COUNT()
+----------------------------------------
+
+SELECT age, COUNT(*) AS total_students
+FROM students
+GROUP BY age;
+
+
+----------------------------------------
+GROUP BY + SUM()
+----------------------------------------
+
+SELECT age, SUM(age) AS total_age
+FROM students
+GROUP BY age;
+
+
+----------------------------------------
+GROUP BY + AVG()
+----------------------------------------
+
+SELECT age, AVG(age) AS average_age
+FROM students
+GROUP BY age;
+
+
+Note:
+Using AVG(age) with GROUP BY age gives the same
+age value, so this example is mainly for learning.
+
+
+----------------------------------------
+GROUP BY + ORDER BY
+----------------------------------------
+
+SELECT age, COUNT(*) AS total_students
+FROM students
+GROUP BY age
+ORDER BY total_students DESC;
+
+
+This shows age groups from highest student count
+to lowest.
+
+
+----------------------------------------
+GROUP BY vs ORDER BY
+----------------------------------------
+
+GROUP BY:
+Groups rows based on common values.
+
+ORDER BY:
+Sorts the result.
+
+
+----------------------------------------
+IMPORTANT
+----------------------------------------
+
+GROUP BY is very commonly used with aggregate
+functions for reports and data analysis.
+
+Real-world examples:
+
+Department-wise employee count
+City-wise customer count
+Category-wise product count
+Month-wise sales total
+
+
+========================================
+INTERVIEW QUESTIONS
+========================================
+
+Q1. What is GROUP BY?
+A: GROUP BY groups rows having the same values.
+
+Q2. Why is GROUP BY used?
+A: It is used to perform grouped calculations,
+usually with aggregate functions.
+
+Q3. Which functions are commonly used with
+GROUP BY?
+A: COUNT(), SUM(), AVG(), MIN(), MAX().
+
+Q4. Difference between GROUP BY and ORDER BY?
+A: GROUP BY creates groups, while ORDER BY sorts
+the result.
+
+Q5. Give an example of GROUP BY.
+A:
+SELECT age, COUNT(*)
+FROM students
+GROUP BY age;
+
+Q6. What is commonly used after GROUP BY to
+filter groups?
+A: HAVING.
