@@ -1,0 +1,130 @@
+========================================
+SQL - AGGREGATE FUNCTIONS
+========================================
+
+Aggregate Functions:
+Aggregate functions perform calculations on multiple
+rows and return a single result.
+
+Main Aggregate Functions:
+
+1. COUNT()
+   Counts rows/values.
+
+2. SUM()
+   Calculates the total of numeric values.
+
+3. AVG()
+   Calculates the average of numeric values.
+
+4. MIN()
+   Returns the smallest value.
+
+5. MAX()
+   Returns the largest value.
+
+
+----------------------------------------
+1. COUNT()
+----------------------------------------
+
+COUNT(*) counts the total number of rows.
+
+Syntax:
+SELECT COUNT(*)
+FROM table_name;
+
+Example:
+SELECT COUNT(*) AS total_students
+FROM students;
+
+
+----------------------------------------
+2. SUM()
+----------------------------------------
+
+SUM() calculates the total of a numeric column.
+
+Example:
+SELECT SUM(age) AS total_age
+FROM students;
+
+
+----------------------------------------
+3. AVG()
+----------------------------------------
+
+AVG() calculates the average of a numeric column.
+
+Example:
+SELECT AVG(age) AS average_age
+FROM students;
+
+
+----------------------------------------
+4. MIN()
+----------------------------------------
+
+MIN() returns the smallest value.
+
+Example:
+SELECT MIN(age) AS minimum_age
+FROM students;
+
+
+----------------------------------------
+5. MAX()
+----------------------------------------
+
+MAX() returns the largest value.
+
+Example:
+SELECT MAX(age) AS maximum_age
+FROM students;
+
+
+----------------------------------------
+ALIAS (AS)
+----------------------------------------
+
+AS gives a readable name to a result column.
+
+Example:
+SELECT COUNT(*) AS total_students
+FROM students;
+
+
+IMPORTANT:
+Aggregate functions are commonly used with
+GROUP BY for grouped calculations.
+
+
+========================================
+INTERVIEW QUESTIONS
+========================================
+
+Q1. What are aggregate functions?
+A: Aggregate functions perform calculations on
+multiple rows and return a single result.
+
+Q2. Name five aggregate functions.
+A: COUNT(), SUM(), AVG(), MIN(), MAX().
+
+Q3. What does COUNT(*) do?
+A: It counts the total number of rows.
+
+Q4. What does SUM() do?
+A: It calculates the total of numeric values.
+
+Q5. What does AVG() do?
+A: It calculates the average of numeric values.
+
+Q6. What does MIN() do?
+A: It returns the smallest value.
+
+Q7. What does MAX() do?
+A: It returns the largest value.
+
+Q8. What is an alias in SQL?
+A: An alias is a temporary readable name given
+to a column or result using AS.
