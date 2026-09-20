@@ -1,0 +1,46 @@
+========================================
+SQL - IS NULL & IS NOT NULL
+========================================
+
+NULL:
+NULL means a value is missing, unknown, or not available.
+
+IMPORTANT:
+NULL is not equal to 0.
+NULL is not an empty string.
+Do not use = NULL.
+
+Wrong:
+WHERE name = NULL;
+
+Correct:
+WHERE name IS NULL;
+
+IS NULL:
+Used to find rows where a column has NULL value.
+
+Example:
+SELECT * FROM students
+WHERE name IS NULL;
+
+
+IS NOT NULL:
+Used to find rows where a column contains a value.
+
+Example:
+SELECT * FROM students
+WHERE name IS NOT NULL;
+
+
+Interview:
+Q: What is NULL?
+A: NULL represents a missing or unknown value.
+
+Q: How do you check NULL?
+A: Use IS NULL.
+
+Q: How do you check non-NULL values?
+A: Use IS NOT NULL.
+
+Q: Can we use = NULL?
+A: No. Use IS NULL instead.

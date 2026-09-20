@@ -1,0 +1,65 @@
+========================================
+SQL - WHERE & OPERATORS
+========================================
+
+WHERE:
+WHERE is used to filter records according to a condition.
+
+Syntax:
+SELECT * FROM table_name
+WHERE condition;
+
+
+Comparison Operators:
+=       Equal
+>       Greater than
+<       Less than
+>=      Greater than or equal
+<=      Less than or equal
+!=      Not equal
+
+
+Examples:
+
+SELECT * FROM students
+WHERE age = 20;
+
+SELECT * FROM students
+WHERE age > 20;
+
+SELECT * FROM students
+WHERE age < 20;
+
+SELECT * FROM students
+WHERE age >= 20;
+
+SELECT * FROM students
+WHERE age <= 20;
+
+SELECT * FROM students
+WHERE age != 20;
+
+
+AND:
+Both conditions must be TRUE.
+
+Example:
+SELECT * FROM students
+WHERE age > 20 AND age < 25;
+
+
+OR:
+At least one condition must be TRUE.
+
+Example:
+SELECT * FROM students
+WHERE age = 20 OR age = 25;
+
+
+Interview:
+Q: What is WHERE?
+A: WHERE filters rows based on a condition.
+
+Q: Difference between AND and OR?
+A: AND requires all conditions to be TRUE.
+   OR requires at least one condition to be TRUE.

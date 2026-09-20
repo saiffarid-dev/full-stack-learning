@@ -1,0 +1,63 @@
+========================================
+SQL - ORDER BY, LIMIT & DISTINCT
+========================================
+
+ORDER BY:
+Used to sort records.
+
+Ascending:
+ORDER BY column ASC;
+
+Descending:
+ORDER BY column DESC;
+
+
+Examples:
+
+SELECT * FROM students
+ORDER BY age ASC;
+
+SELECT * FROM students
+ORDER BY age DESC;
+
+
+LIMIT:
+Used to restrict the number of records returned.
+
+Example:
+
+SELECT * FROM students
+LIMIT 5;
+
+
+DISTINCT:
+Used to return unique values and remove duplicates.
+
+Example:
+
+SELECT DISTINCT age
+FROM students;
+
+
+ORDER BY + LIMIT:
+
+SELECT * FROM students
+ORDER BY age DESC
+LIMIT 3;
+
+
+Interview:
+Q: What is ORDER BY?
+A: ORDER BY sorts query results.
+
+Q: What is ASC?
+A: Ascending order.
+
+Q: What is DESC?
+A: Descending order.
+
+Q: What is LIMIT?
+A: LIMIT restricts the number of rows returned.
+
+Q: What is DISTINCT?
+A: DISTINCT returns unique values.
