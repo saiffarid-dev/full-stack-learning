@@ -1,0 +1,152 @@
+========================================
+SQL - HAVING
+========================================
+
+HAVING:
+HAVING is used to filter grouped results.
+
+HAVING is commonly used with GROUP BY
+and Aggregate Functions.
+
+
+----------------------------------------
+WHERE vs HAVING
+----------------------------------------
+
+WHERE:
+Filters individual rows.
+
+HAVING:
+Filters groups after GROUP BY.
+
+
+Example:
+
+WHERE:
+SELECT *
+FROM students
+WHERE age >= 20;
+
+
+HAVING:
+SELECT age, COUNT(*) AS total_students
+FROM students
+GROUP BY age
+HAVING COUNT(*) > 1;
+
+
+Important Interview Line:
+
+WHERE filters rows.
+HAVING filters groups.
+
+
+----------------------------------------
+BASIC SYNTAX
+----------------------------------------
+
+SELECT column_name, AGGREGATE_FUNCTION(column_name)
+FROM table_name
+WHERE condition
+GROUP BY column_name
+HAVING aggregate_condition
+ORDER BY column_name;
+
+
+----------------------------------------
+EXAMPLES
+----------------------------------------
+
+1. Groups having more than 1 student:
+
+SELECT age, COUNT(*) AS total_students
+FROM students
+GROUP BY age
+HAVING COUNT(*) > 1;
+
+
+2. Groups having exactly 2 students:
+
+SELECT age, COUNT(*) AS total_students
+FROM students
+GROUP BY age
+HAVING COUNT(*) = 2;
+
+
+3. HAVING + ORDER BY:
+
+SELECT age, COUNT(*) AS total_students
+FROM students
+GROUP BY age
+HAVING COUNT(*) > 1
+ORDER BY total_students DESC;
+
+
+4. WHERE + GROUP BY + HAVING:
+
+SELECT age, COUNT(*) AS total_students
+FROM students
+WHERE age >= 20
+GROUP BY age
+HAVING COUNT(*) > 1;
+
+
+----------------------------------------
+SQL BASIC EXECUTION ORDER
+----------------------------------------
+
+FROM
+WHERE
+GROUP BY
+HAVING
+SELECT
+ORDER BY
+
+
+----------------------------------------
+IMPORTANT
+----------------------------------------
+
+WHERE filters rows before grouping.
+
+HAVING filters groups after grouping.
+
+HAVING can use aggregate functions such as:
+
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
+
+
+========================================
+INTERVIEW QUESTIONS
+========================================
+
+Q1. What is HAVING?
+A: HAVING is used to filter grouped results.
+
+Q2. Difference between WHERE and HAVING?
+A: WHERE filters individual rows, while HAVING
+filters groups.
+
+Q3. Can HAVING be used with GROUP BY?
+A: Yes. HAVING is commonly used with GROUP BY.
+
+Q4. Can aggregate functions be used with HAVING?
+A: Yes.
+
+Example:
+HAVING COUNT(*) > 1
+
+Q5. Give an example of HAVING.
+
+SELECT age, COUNT(*)
+FROM students
+GROUP BY age
+HAVING COUNT(*) > 1;
+
+Q6. What is the basic SQL execution order?
+A: FROM → WHERE → GROUP BY → HAVING → SELECT
+→ ORDER BY
