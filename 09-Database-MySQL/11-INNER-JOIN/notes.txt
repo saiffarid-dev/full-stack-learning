@@ -1,0 +1,105 @@
+==================================================
+11 - LEFT JOIN
+==================================================
+
+WHAT IS LEFT JOIN?
+------------------
+LEFT JOIN returns ALL records from the LEFT table
+and matching records from the RIGHT table.
+
+If there is no matching record in the RIGHT table,
+SQL returns NULL.
+
+SYNTAX
+------
+SELECT columns
+FROM table1
+LEFT JOIN table2
+ON table1.column = table2.column;
+
+
+EXAMPLE
+-------
+SELECT students.name,
+       departments.department_name
+FROM students
+LEFT JOIN departments
+ON students.department_id = departments.id;
+
+
+IMPORTANT
+---------
+LEFT table  = students
+RIGHT table = departments
+
+LEFT JOIN guarantees all students will appear.
+
+If a student has no matching department,
+department_name will be NULL.
+
+
+INNER JOIN vs LEFT JOIN
+-----------------------
+INNER JOIN:
+Only matching records.
+
+LEFT JOIN:
+All records from LEFT table +
+matching records from RIGHT table.
+
+
+REAL-WORLD USE
+--------------
+LEFT JOIN is useful when we want to see
+all records from the main table, even if
+related data is missing.
+
+Example:
+Show all customers and their orders.
+
+Customers without orders should also appear.
+
+
+ALIASES
+-------
+We can use aliases to make queries shorter:
+
+SELECT s.name,
+       d.department_name
+FROM students AS s
+LEFT JOIN departments AS d
+ON s.department_id = d.id;
+
+
+COMMON INTERVIEW QUESTIONS
+==========================
+
+Q1. What is LEFT JOIN?
+A:
+LEFT JOIN returns all records from the left table
+and matching records from the right table.
+
+Q2. What happens when there is no matching record?
+A:
+Columns from the right table contain NULL.
+
+Q3. Difference between INNER JOIN and LEFT JOIN?
+A:
+INNER JOIN returns only matching records.
+LEFT JOIN returns all left-table records and
+matching right-table records.
+
+Q4. Which table's records are guaranteed in LEFT JOIN?
+A:
+The LEFT table.
+
+Q5. Can LEFT JOIN return NULL?
+A:
+Yes. If no matching record exists in the right table,
+right-table columns contain NULL.
+
+KEY POINT
+---------
+LEFT JOIN = ALL LEFT + MATCHING RIGHT
+
+==================================================
