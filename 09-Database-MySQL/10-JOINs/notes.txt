@@ -1,0 +1,138 @@
+========================================
+SQL - JOINs / INNER JOIN
+========================================
+
+JOIN:
+JOIN is used to combine related data from
+two or more tables.
+
+JOIN is very important in backend development
+because related data is often stored in
+different tables.
+
+
+----------------------------------------
+TABLES USED IN PRACTICE
+----------------------------------------
+
+students:
+
+id
+name
+age
+department_id
+
+
+departments:
+
+id
+department_name
+
+
+Relationship:
+
+students.department_id
+        =
+departments.id
+
+
+----------------------------------------
+INNER JOIN
+----------------------------------------
+
+INNER JOIN returns only the records that
+have matching values in both tables.
+
+
+BASIC SYNTAX:
+
+SELECT columns
+FROM table1
+INNER JOIN table2
+ON table1.column = table2.column;
+
+
+----------------------------------------
+EXAMPLE
+----------------------------------------
+
+SELECT students.name,
+       departments.department_name
+FROM students
+INNER JOIN departments
+ON students.department_id = departments.id;
+
+
+This combines:
+
+students.name
++
+departments.department_name
+
+
+Example result:
+
+Rahul  → Computer
+Ana    → IT
+Priya  → Computer
+
+
+----------------------------------------
+ON CLAUSE
+----------------------------------------
+
+ON defines the condition used to match
+records between two tables.
+
+Example:
+
+ON students.department_id = departments.id
+
+
+----------------------------------------
+IMPORTANT JOIN TYPES
+----------------------------------------
+
+INNER JOIN
+Returns matching records from both tables.
+
+LEFT JOIN
+Returns all records from the left table
+and matching records from the right table.
+
+RIGHT JOIN
+Returns all records from the right table
+and matching records from the left table.
+
+
+----------------------------------------
+INTERVIEW QUESTIONS
+----------------------------------------
+
+Q1. What is JOIN?
+A: JOIN combines related data from two or
+more tables.
+
+Q2. What is INNER JOIN?
+A: INNER JOIN returns only matching records
+from both tables.
+
+Q3. What is the purpose of ON?
+A: ON defines the condition used to match
+records between tables.
+
+Q4. What is the difference between INNER JOIN
+and LEFT JOIN?
+A: INNER JOIN returns only matching records,
+while LEFT JOIN returns all records from the
+left table and matching records from the
+right table.
+
+Q5. Why are JOINs important in backend
+development?
+A: JOINs are used to retrieve related data
+stored in different database tables.
+
+Q6. What is the relationship in our example?
+A:
+students.department_id = departments.id
