@@ -1,0 +1,122 @@
+==================================================
+12 - RIGHT JOIN
+==================================================
+
+WHAT IS RIGHT JOIN?
+-------------------
+RIGHT JOIN returns ALL records from the RIGHT table
+and matching records from the LEFT table.
+
+If there is no matching record in the LEFT table,
+SQL returns NULL for the LEFT table columns.
+
+
+SYNTAX
+------
+SELECT columns
+FROM table1
+RIGHT JOIN table2
+ON table1.column = table2.column;
+
+
+EXAMPLE
+-------
+SELECT students.name,
+       departments.department_name
+FROM students
+RIGHT JOIN departments
+ON students.department_id = departments.id;
+
+
+IMPORTANT
+---------
+LEFT table  = students
+RIGHT table = departments
+
+RIGHT JOIN guarantees that all departments
+will appear.
+
+If a department has no matching student,
+student columns will contain NULL.
+
+
+INNER JOIN vs LEFT JOIN vs RIGHT JOIN
+-------------------------------------
+INNER JOIN:
+Only matching records.
+
+LEFT JOIN:
+All records from LEFT table +
+matching records from RIGHT table.
+
+RIGHT JOIN:
+All records from RIGHT table +
+matching records from LEFT table.
+
+
+ALIASES
+-------
+Aliases make JOIN queries shorter:
+
+SELECT s.name AS student_name,
+       d.department_name AS department
+FROM students AS s
+RIGHT JOIN departments AS d
+ON s.department_id = d.id;
+
+
+REAL-WORLD USE
+--------------
+RIGHT JOIN can be used when the RIGHT table
+is the main table and we want every record
+from that table.
+
+Example:
+Show all departments and their students,
+including departments with no students.
+
+
+IMPORTANT POINT
+---------------
+RIGHT JOIN can usually be rewritten as
+LEFT JOIN by changing the table order.
+
+Example:
+
+A RIGHT JOIN B
+
+is equivalent to:
+
+B LEFT JOIN A
+
+
+COMMON INTERVIEW QUESTIONS
+==========================
+
+Q1. What is RIGHT JOIN?
+A:
+RIGHT JOIN returns all records from the right table
+and matching records from the left table.
+
+Q2. What happens when there is no matching record?
+A:
+Columns from the left table contain NULL.
+
+Q3. Difference between LEFT JOIN and RIGHT JOIN?
+A:
+LEFT JOIN keeps all records from the left table.
+RIGHT JOIN keeps all records from the right table.
+
+Q4. Which table's records are guaranteed in RIGHT JOIN?
+A:
+The right table.
+
+Q5. Does MySQL support RIGHT JOIN?
+A:
+Yes, MySQL supports RIGHT JOIN.
+
+KEY POINT
+---------
+RIGHT JOIN = ALL RIGHT + MATCHING LEFT
+
+==================================================
