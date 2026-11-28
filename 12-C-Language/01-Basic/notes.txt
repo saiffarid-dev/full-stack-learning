@@ -1,0 +1,179 @@
+C PROGRAMMING – NOTES 01 Topic: First C Program
+========================================
+
+1.  BASIC PROGRAM STRUCTURE
+
+Example: #include <stdio.h>
+
+int main(void) { printf(“Hello, World!”); return 0; }
+
+Explanation: - #include <stdio.h> : Includes the Standard Input/Output
+header file. It gives us access to functions such as printf(). - int
+main(void) : The main function. Program execution starts from main() in
+a normal hosted C program. - { } : Curly braces mark the beginning and
+end of a block. - printf() : Displays output on the screen. - return 0;
+: Ends main() and indicates successful program completion. - ; :
+Semicolon ends a C statement.
+
+2.  SHOWING OUTPUT
+
+Use printf() to display text or values.
+
+Example: printf(“Hello Saif!”); printf(“%d”, 100);
+
+Common format specifiers: - %d : int - %f : float - %c : char - %s :
+string (character array) - %lf : double with scanf(); for printf(), %f
+is used for double.
+
+New line: printf(“Hello”);
+
+moves the cursor to the next line.
+
+3.  IMPORTANCE OF main()
+
+-   main() is the entry point of a normal hosted C program.
+-   Program execution begins from main().
+-   A common form is: int main(void)
+-   int means main() returns an integer value.
+-   return 0; usually indicates that the program finished successfully.
+-   In C, main is a function (not technically a method).
+
+4.  FILE EXTENSION
+
+-   C source-code files use the .c extension.
+-   Example: first_program.c
+-   Save your C code in a file ending with .c.
+-   A compiler can convert the source code into an executable program.
+
+5.  COMMENTS
+
+Comments are notes for programmers. The compiler ignores comments.
+
+Single-line comment: // This is a single-line comment
+
+Multi-line comment: / This is a multi-line comment /
+
+Important: - Use comments to explain code where needed. - Comments do
+not execute. - Do not put /* … / comments inside another / … */ comment.
+
+6.  CODING USING COMMAND LINE
+
+If GCC is installed and available in your terminal:
+
+Step 1: Save your code as first_program.c
+
+Step 2: Compile: gcc first_program.c -o first_program
+
+Step 3: Run on Windows: first_program.exe
+
+Step 3: Run on Linux/macOS: ./first_program
+
+Meaning: - gcc : C compiler command - first_program.c : source file - -o
+first_program : names the output executable - Compilation
+checks/translates the source code and creates an executable if
+successful.
+
+7.  WHAT IS A PROGRAMMING LANGUAGE?
+
+A programming language is a language used to write instructions that a
+computer can execute.
+
+Examples: - C - C++ - Java - Python - JavaScript
+
+C is a general-purpose, procedural programming language.
+
+8.  WHAT IS AN ALGORITHM?
+
+An algorithm is a finite, step-by-step set of clear instructions to
+solve a problem.
+
+Example: Algorithm to add two numbers 1. Start. 2. Read two numbers, A
+and B. 3. Calculate SUM = A + B. 4. Display SUM. 5. Stop.
+
+Important qualities: - Steps should be clear. - Steps should have a
+logical order. - The algorithm should finish after a finite number of
+steps.
+
+9.  WHAT IS SYNTAX?
+
+Syntax means the rules for writing valid statements in a programming
+language.
+
+Example of valid C statement: printf(“Hello”);
+
+Example of a syntax mistake: printf(“Hello”)
+
+The second example is missing a semicolon.
+
+Remember: - C statements commonly end with a semicolon. - C is
+case-sensitive: main and Main are different names. - Braces { } must be
+used correctly for blocks. - Text must be written inside quotation
+marks.
+
+10. WHAT IS A COMPILER?
+
+A compiler is a software tool that translates source code into a form
+the computer can run.
+
+Basic flow: C source code (.c) -> Compiler -> Executable program
+
+Examples of C compilers: - GCC - Clang - MSVC
+
+A compiler also reports errors it finds during compilation. Fix the
+errors and compile again.
+
+================================================== IMPORTANT POINTS –
+QUICK REVISION ==================================================
+
+1.  C source files use the .c extension.
+2.  Program execution starts from main() in a normal hosted C program.
+3.  printf() is used to display output.
+4.  #include <stdio.h> provides the declaration for printf().
+5.  A semicolon (;) ends a C statement.
+6.  Curly braces { } define a block.
+7.  return 0; indicates successful completion from main().
+8.  Comments are ignored by the compiler.
+9.  // is used for a single-line comment.
+10. /* … */ is used for a multi-line comment.
+11. C is case-sensitive.
+12. An algorithm is a step-by-step solution to a problem.
+13. Syntax means the rules of writing code.
+14. A compiler translates source code into an executable form.
+15. GCC can compile a C file from the command line.
+
+INTERVIEW PRACTICE – SHORT ANSWERS
+
+Q1. What is C? Ans. C is a general-purpose, procedural programming
+language.
+
+Q2. What is the purpose of main()? Ans. main() is the entry point where
+execution begins in a normal hosted C program.
+
+Q3. What is printf()? Ans. printf() is a standard library function used
+to display formatted output.
+
+Q4. Why do we write #include <stdio.h>? Ans. It includes the standard
+input/output header, which declares functions such as printf().
+
+Q5. What is a compiler? Ans. A compiler translates source code into
+executable or another lower-level form.
+
+Q6. What is an algorithm? Ans. An algorithm is a finite sequence of
+clear steps used to solve a problem.
+
+Q7. What is a comment? Ans. A comment is a note in source code that is
+ignored by the compiler.
+
+PRACTICE TASK
+
+Write a C program that: 1. Prints your name. 2. Prints your city on the
+next line. 3. Prints your age.
+
+Try to write the code yourself before checking the example:
+
+#include <stdio.h>
+
+int main(void) { printf(“Name: Saif”); printf(“City: Patna”);
+printf(“Age: 22”); return 0; }
+
+Note: Replace the sample name, city, and age with your own details.
