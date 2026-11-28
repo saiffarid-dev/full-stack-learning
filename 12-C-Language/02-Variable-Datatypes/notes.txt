@@ -1,0 +1,343 @@
+C PROGRAMMING – NOTES 02
+Topic: Variables, Data Types & Input/Output
+============================================
+
+1. VARIABLES
+A variable is a named memory location used to store a value that can change during program execution.
+
+Example:
+int age = 22;
+float price = 99.50f;
+
+- int is the data type.
+- age is the variable name.
+- 22 is the value.
+- = is the assignment operator.
+- ; ends the statement.
+
+Declaration and initialization:
+int marks;       // Declaration
+marks = 85;      // Assignment
+int age = 22;    // Declaration + initialization
+
+A variable's value can change:
+int score = 10;
+score = 20;
+
+
+2. DATA TYPES
+A data type tells the compiler what kind of value a variable can store.
+
+Common basic types:
+- int: whole numbers. Example: int age = 22;
+- float: floating-point numbers. Example: float price = 10.5f;
+- double: floating-point numbers with generally greater precision. Example: double pi = 3.141592;
+- char: one character. Example: char grade = 'A';
+- void: represents no value / no return value in contexts such as void display(void).
+
+Important:
+- A character uses single quotes: 'A'.
+- A C string is stored in a character array: char name[] = "Saif";
+- Exact type sizes depend on the compiler and system.
+- Use sizeof(type) to check size in bytes: printf("%zu", sizeof(int));
+
+Common format specifiers:
+- %d or %i: int
+- %f: float or double in printf()
+- %f: float in scanf()
+- %lf: double in scanf()
+- %c: char
+- %s: character array/string
+- %zu: sizeof result
+
+
+3. NAMING CONVENTIONS
+Rules:
+1. A name can contain letters, digits and underscore (_).
+2. It must not start with a digit.
+3. Spaces are not allowed.
+4. C keywords cannot be used as variable names.
+5. C is case-sensitive: age and Age are different.
+6. Use meaningful names.
+
+Valid: age, studentAge, total_marks, number1
+Invalid: 2age (starts with digit), student age (space), float (keyword)
+
+Good practice: use clear and consistent names, such as camelCase: studentAge.
+
+
+4. LITERALS
+A literal is a fixed value written directly in source code.
+
+Examples:
+int age = 22;              // 22 is an integer literal
+float rate = 5.5f;         // 5.5f is a floating-point literal
+char grade = 'A';          // 'A' is a character literal
+char name[] = "Saif";      // "Saif" is a string literal
+
+Types:
+- Integer: 10, 100, -5
+- Floating-point: 3.14, 2.5f
+- Character: 'A', '7'
+- String: "Hello"
+
+Character literals use single quotes; string literals use double quotes.
+
+
+5. CONSTANTS
+A constant is a value intended not to change.
+
+Using const:
+const float PI = 3.14159f;
+
+Using #define:
+#define MAX_MARKS 100
+
+Example:
+#include <stdio.h>
+#define MAX_MARKS 100
+
+int main(void)
+{
+    const float PI = 3.14159f;
+    printf("Maximum marks: %d\n", MAX_MARKS);
+    printf("PI: %f\n", PI);
+    return 0;
+}
+
+Difference:
+- const declares a typed object that cannot be modified through that name.
+- #define creates a preprocessor macro and performs text substitution; it does not declare a typed variable.
+
+
+6. KEYWORDS
+Keywords are reserved words in C with predefined meanings. They cannot be used as variable or function names.
+
+Examples:
+int, char, float, double, if, else, for, while, do,
+switch, case, break, continue, return, void, const,
+static, struct, union, enum, sizeof, typedef
+
+The exact keyword set depends on the C language standard/version.
+
+
+7. ESCAPE SEQUENCES
+Escape sequences begin with a backslash (\\) and represent special characters.
+
+Common sequences:
+- \\n: new line
+- \\t: horizontal tab
+- \\\\: backslash
+- \\" : double quotation mark
+- \\' : single quotation mark
+- \\0: null character (string terminator)
+
+Example:
+printf("Hello\\nWorld\\n");
+printf("Name:\\tSaif\\n");
+printf("He said, \\"Hello!\\"\\n");
+
+
+8. USER INPUT USING scanf()
+scanf() is a standard input function used to read formatted input from the user.
+
+Example:
+#include <stdio.h>
+
+int main(void)
+{
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    printf("Your age is %d\\n", age);
+    return 0;
+}
+
+Important:
+- %d tells scanf() to read an int.
+- &age passes the address where the input should be stored.
+- For ordinary variables, use &: int, float, double and char.
+- For a character array with %s, do not use &: scanf("%29s", name);
+- %s reads only up to whitespace; it does not read a full name with spaces.
+- Match the format specifier to the variable type.
+- In robust programs, check scanf()'s return value.
+
+Examples:
+int number;
+scanf("%d", &number);
+
+float price;
+scanf("%f", &price);
+
+double distance;
+scanf("%lf", &distance);
+
+char grade;
+scanf(" %c", &grade);  // Leading space skips leftover whitespace.
+
+char name[30];
+scanf("%29s", name);   // One word; maximum 29 chars plus terminating '\\0'.
+
+
+9. SUM OF TWO NUMBERS
+Program:
+#include <stdio.h>
+
+int main(void)
+{
+    int num1, num2, sum;
+
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    sum = num1 + num2;
+    printf("Sum = %d\\n", sum);
+
+    return 0;
+}
+
+How it works:
+1. Declare num1, num2 and sum.
+2. Ask the user for the first number and read it.
+3. Ask for the second number and read it.
+4. Add both numbers using +.
+5. Display the result using printf().
+
+Sample output:
+Enter first number: 10
+Enter second number: 20
+Sum = 30
+
+Safer input-checking version:
+#include <stdio.h>
+
+int main(void)
+{
+    int num1, num2;
+    printf("Enter two integers: ");
+
+    if (scanf("%d %d", &num1, &num2) != 2)
+    {
+        printf("Invalid input\\n");
+        return 1;
+    }
+
+    printf("Sum = %d\\n", num1 + num2);
+    return 0;
+}
+
+
+IMPORTANT POINTS – QUICK REVISION
+=================================
+1. A variable stores a value that can change.
+2. A data type defines the kind of value a variable can store.
+3. int is commonly used for whole numbers.
+4. float and double store floating-point values.
+5. char stores one character.
+6. A C string is stored in a character array and ends with '\\0'.
+7. Variable names cannot start with a digit or contain spaces.
+8. C is case-sensitive.
+9. A literal is a fixed value written directly in code.
+10. const declares an object that cannot be modified through that name.
+11. #define creates a preprocessor macro.
+12. Keywords are reserved words.
+13. Escape sequences begin with a backslash.
+14. printf() displays formatted output.
+15. scanf() reads formatted input.
+16. Use & with scanf() for ordinary variables.
+17. Do not use & with a character array in scanf("%s", name).
+18. Match format specifiers to data types.
+19. Use \\n for a new line.
+20. Use sizeof to check size in bytes.
+
+
+INTERVIEW QUESTIONS & ANSWERS
+=============================
+
+Q1. What is a variable in C?
+Ans. A variable is a named memory location used to store a value that can change during program execution.
+
+Q2. What is a data type?
+Ans. A data type specifies what kind of value a variable can store, such as an integer, floating-point number or character.
+
+Q3. Difference between int, float and char?
+Ans. int stores whole numbers, float stores floating-point numbers, and char stores a character.
+
+Q4. Difference between float and double?
+Ans. Both store floating-point values. double generally provides greater precision than float. Exact size and precision depend on the implementation.
+
+Q5. What is variable declaration?
+Ans. A declaration introduces a variable and specifies its type, for example: int age;
+
+Q6. What is initialization?
+Ans. Initialization means giving a variable its initial value, for example: int age = 22;
+
+Q7. What are naming conventions?
+Ans. They are guidelines for choosing clear and consistent names for variables and other identifiers.
+
+Q8. What is a literal?
+Ans. A literal is a fixed value written directly in code, such as 10, 3.14, 'A' or "Hello".
+
+Q9. What is a constant?
+Ans. A constant is a value intended not to change. const can prevent modification through a particular object name.
+
+Q10. Difference between const and #define?
+Ans. const declares a typed object that cannot be modified through that name. #define creates a preprocessor macro that performs text substitution.
+
+Q11. What are keywords?
+Ans. Keywords are reserved words with predefined meanings, such as int, if, else, return and while.
+
+Q12. What is an escape sequence?
+Ans. It is a backslash-based character combination used to represent special characters, such as \\n for a new line.
+
+Q13. What is printf()?
+Ans. printf() is a standard library function used to display formatted output.
+
+Q14. What is scanf()?
+Ans. scanf() is a standard library function used to read formatted input from the user.
+
+Q15. Why do we use & in scanf()?
+Ans. The address operator & passes the memory address of an ordinary variable so scanf() can store the input in it.
+
+Q16. Why is & not used with a character array in scanf("%s", name)?
+Ans. In this expression, the array name is converted to a pointer to its first element, so an additional & is not needed.
+
+Q17. Difference between %f and %lf?
+Ans. In printf(), %f prints a double value. In scanf(), %f reads a float and %lf reads a double.
+
+Q18. How do you find the size of a data type?
+Ans. Use sizeof, for example: sizeof(int).
+
+Q19. How do you add two numbers in C?
+Ans. Read two values, add them with the + operator, and display the result with printf().
+
+Q20. Is C case-sensitive?
+Ans. Yes. age, Age and AGE are treated as different identifiers.
+
+
+PRACTICAL CODING PRACTICE
+=========================
+Task 1: Create variables for your age, height and grade. Print all three.
+Task 2: Take two integers from the user and print their sum.
+Task 3: Take two integers and print sum, difference, product and quotient. Check that the second number is not zero before division.
+Task 4: Create a constant for the number of days in a week and print it.
+Task 5: Print your name and city on separate lines using escape sequences.
+
+
+SELF-TEST
+=========
+Try answering without looking at the notes:
+1. What is a variable?
+2. Which data type stores one character?
+3. Difference between a literal and a variable?
+4. Why do we use & in scanf()?
+5. Which escape sequence creates a new line?
+6. Can a variable name start with a number?
+7. Difference between const and #define?
+8. Write a program to add two numbers entered by the user.
+
+
+END OF NOTES 02
